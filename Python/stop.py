@@ -1,11 +1,13 @@
 import turtle
 
-turtle.color("blue")
+turtle.color("red")
 
-while True:
-	turtle.forward(200)
-	turtle.left(170)
-	if abs(turtle.position()) < 1:
-		break
+turtle.begin_fill()
+
+for i in range (0, 8):
+	turtle.forward(100)
+	turtle.left(45)
+
+turtle.end_fill()
 
 turtle.done()

@@ -36,8 +36,14 @@ a:hover {
 	color: white;
 }
 
-ul {
+ul.a {
 	list-style-type: disc;
+	color: lightgreen;
+	font-family: "Courier New";
+}
+
+ul.b {
+	list-style-type: circle;
 	color: lightgreen;
 	font-family: "Courier New";
 }
@@ -47,7 +53,7 @@ ul {
 <body>
 <h1>Joshua Walter's Portfolio</h1>
 <h2>Software</h2>
-<ul>
+<ul class="a">
 	<li><a href="C/C.html">C Programs</a></li>
 	<li><a href="C++/C++.html">C++ Programs</a></li>
 	<!--<li><a href="NASM.html">NASM Programs</a></li>-->
@@ -55,12 +61,26 @@ ul {
 	<li><a href="Python/Python.html">Python Scripts</a></li>
 </ul>
 <h2>Hardware</h2>
-<ul>
+<ul class="a">
 	<li><a href="Hardware/Desktop.html">Custom Desktop Computer</a></li>
 </ul>
 <h2>Links</h2>
-<ul>
+<ul class="a">
 	<li><a href="https://github.com/jkwalter">GitHub Profile</a></li>
+	<li>Development Environments</li>
+	<ul class="b">
+		<li><a href="http://www.vmware.com">VMware</a></li>
+		<li><a href="https://www.ubuntu.com">Ubuntu</a></li>
+		<li><a href="https://www.visualstudio.com">Microsoft Visual Studio</a></li>
+	</ul>
+	<li>Programming Resources</li>
+	<ul class="b">
+		<li><a href="https://www.codecademy.com">Codecademy</a></li>
+		<li><a href="https://www.w3schools.com">W3Schools</a></li>
+		<li><a href="http://www.cplusplus.com/doc/tutorial">C/C++ Tutorial</a></li>
+		<li><a href="https://docs.oracle.com/javase/tutorial">Java Tutorial</a></li>
+		<li><a href="https://docs.python.org/2/tutorial">Python Tutorial</a></li>
+	</ul>
 </ul>
 </body>
 </html>

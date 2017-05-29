@@ -36,19 +36,9 @@ void pop(node list)
 
  tmp = list;
 
- while (tmp != NULL)
-  {
-   printf("%d", tmp->digit);
-   tmp = tmp->next;
-  }
-}
-
-void deleteList(node list)
-{
- node tmp;
-
  while (list != NULL)
   {
+   printf("%d", list->digit);
    tmp = list;
    list = list->next;
    free(tmp);
@@ -88,8 +78,6 @@ int main(void)
  pop(list);
 
  printf("\n");
-
- deleteList(list);
 
  return 0;
 }

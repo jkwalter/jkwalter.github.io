@@ -34,8 +34,6 @@ void pop(node list)
 {
  node tmp;
 
- tmp = list;
-
  while (list != NULL)
   {
    printf("%d", list->digit);
@@ -54,9 +52,9 @@ int main(void)
 
  do
   {
-   printf("Enter any number greater than 1: ");
+   printf("Enter any positive number: ");
    scanf("%d", &num);
-  } while (num < 2);
+  } while (num < 1);
 
  printf("\n");
  printf("Decimal number: %d\n", num);
@@ -64,14 +62,7 @@ int main(void)
 
  while (num != 0)
   {
-   if (num % 2 == 1)
-    {
-     list = push(list, 1);
-    }
-   else
-    {
-     list = push(list, 0);
-    }
+   list = push(list, num % 2);
    num = num / 2;
   }
 

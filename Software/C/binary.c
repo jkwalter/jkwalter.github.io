@@ -9,22 +9,12 @@ struct linklist
  node next;
 };
 
-node createNode(int value)
+node push(node list, int value)
 {
  node tmp;
 
  tmp = malloc(sizeof(node));
  tmp->digit = value;
- tmp->next = NULL;
-
- return tmp;
-}
-
-node push(node list, int value)
-{
- node tmp;
-
- tmp = createNode(value);
  tmp->next = list;
 
  return tmp;

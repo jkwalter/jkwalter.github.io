@@ -10,4 +10,4 @@ for i in range(0, 8):
 
 turtle.end_fill()
 
-turtle.done()
+turtle.bye()

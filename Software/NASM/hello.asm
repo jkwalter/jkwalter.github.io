@@ -1,8 +1,12 @@
-; ASSEMBLING INSTRUCTIONS FOR LINUX
-; At the command line, type the following to assemble your code:
-;	nasm -f elf file.asm
-;	gcc -m32 -o file.out file.o
-; NOTE: Replace "file" with the actual file name.
+; Assembling and Running in Linux:
+;
+;  - Open a terminal
+;  - Navigate to the same directory as hello.asm
+;  - Type the following to assemble hello.asm
+;      nasm -f elf hello.asm
+;      gcc -m32 -o hello.out hello.o
+;  - Type the following to run the assembled code
+;      ./hello.out 
 
 SECTION .data	;initialized data
 

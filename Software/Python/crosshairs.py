@@ -2,7 +2,6 @@ import turtle
 
 turtle.color("black")
 
-turtle.home()
 turtle.forward(125)
 
 turtle.home()

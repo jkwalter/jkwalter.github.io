@@ -1,3 +1,14 @@
+/*
+Compiling and Running in Linux:
+
+ - Open a terminal
+ - Navigate to the same directory as binary.c
+ - Type the following to complie binary.c
+      gcc binary.c
+ - Type the following to run binary.c
+      ./a.out
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

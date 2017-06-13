@@ -1,3 +1,14 @@
+/*
+Compiling and Running in Linux:
+
+ - Open a terminal
+ - Navigate to the same directory as guess.c
+ - Type the following to complie guess.c
+      gcc guess.c
+ - Type the following to run guess.c
+      ./a.out
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

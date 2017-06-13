@@ -1,3 +1,14 @@
+/*
+Compiling and Running in Linux:
+
+ - Open a terminal
+ - Navigate to the same directory as password.c
+ - Type the following to complie password.c
+      gcc password.c
+ - Type the following to run password.c
+      ./a.out
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

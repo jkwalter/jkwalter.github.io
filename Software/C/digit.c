@@ -1,3 +1,14 @@
+/*
+Compiling and Running in Linux:
+
+ - Open a terminal
+ - Navigate to the same directory as digit.c
+ - Type the following to complie digit.c
+      gcc digit.c
+ - Type the following to run digit.c
+      ./a.out
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

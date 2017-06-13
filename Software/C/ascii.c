@@ -1,3 +1,14 @@
+/*
+Compiling and Running in Linux:
+
+ - Open a terminal
+ - Navigate to the same directory as ascii.c
+ - Type the following to complie ascii.c
+      gcc ascii.c
+ - Type the following to run ascii.c
+      ./a.out
+*/
+
 #include <stdio.h>
 
 int main(void)

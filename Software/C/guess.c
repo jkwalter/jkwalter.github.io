@@ -3,6 +3,7 @@ Compiling and Running in Linux:
 
  - Open a terminal
  - Navigate to the same directory as guess.c
+      cd ~/Programs/jkwalter.github.io/Software/C
  - Type the following to complie guess.c
       gcc guess.c
  - Type the following to run guess.c

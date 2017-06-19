@@ -3,6 +3,7 @@ Compiling and Running in Linux:
 
  - Open a terminal
  - Navigate to the same directory as binary.c
+      cd ~/Programs/jkwalter.github.io/Software/C
  - Type the following to complie binary.c
       gcc binary.c
  - Type the following to run binary.c

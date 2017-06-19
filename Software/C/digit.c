@@ -3,6 +3,7 @@ Compiling and Running in Linux:
 
  - Open a terminal
  - Navigate to the same directory as digit.c
+      cd ~/Programs/jkwalter.github.io/Software/C
  - Type the following to complie digit.c
       gcc digit.c
  - Type the following to run digit.c

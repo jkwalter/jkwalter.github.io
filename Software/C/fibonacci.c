@@ -3,6 +3,7 @@ Compiling and Running in Linux:
 
  - Open a terminal
  - Navigate to the same directory as fibonacci.c
+      cd ~/Programs/jkwalter.github.io/Software/C
  - Type the following to complie fibonacci.c
       gcc fibonacci.c
  - Type the following to run fibonacci.c

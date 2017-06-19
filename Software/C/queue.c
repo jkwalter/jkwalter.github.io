@@ -3,6 +3,7 @@ Compiling and Running in Linux:
 
  - Open a terminal
  - Navigate to the same directory as queue.c
+      cd ~/Programs/jkwalter.github.io/Software/C
  - Type the following to complie queue.c
       gcc queue.c
  - Type the following to run queue.c

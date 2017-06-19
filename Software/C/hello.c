@@ -1,5 +1,5 @@
 /*
-Compiling and Runningi in Linux:
+Compiling and Running in Linux:
 
  - Open a terminal
  - Navigate to the same directory as hello.c

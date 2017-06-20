@@ -1,5 +1,5 @@
 /*
-Compiling and Running in Linux:
+Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as binary.c
@@ -8,6 +8,16 @@ Compiling and Running in Linux:
       gcc binary.c
  - Type the following to run binary.c
       ./a.out
+
+Compiling and Running in Microsoft Visual Studio:
+
+ - Open Developer Command Prompt for Visual Studio
+ - Navigate to the same directory as binary.c
+      cd C:\Users\Josh\Documents\Programs\C
+ - Type the following to compile binary.c
+      cl binary.c
+ - Type the following to run binary.c
+      binary.exe
 */
 
 #include <stdio.h>

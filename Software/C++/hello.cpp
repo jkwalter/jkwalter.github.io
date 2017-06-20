@@ -1,5 +1,5 @@
 /*
-Compiling and Running in Linux:
+Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as hello.cpp

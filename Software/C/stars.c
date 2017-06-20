@@ -1,5 +1,5 @@
 /*
-Compiling and Running in Linux:
+Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as stars.c
@@ -8,6 +8,16 @@ Compiling and Running in Linux:
       gcc stars.c
  - Type the following to run stars.c
       ./a.out
+
+Compiling and Running in Microsoft Visual Studio:
+
+ - Open Developer Command Prompt for Visual Studio
+ - Navigate to the same directory as stars.c
+      cd C:\Users\Josh\Documents\Programs\C
+ - Type the following to compile stars.c
+      cl stars.c
+ - Type the following to run stars.c
+      stars.exe
 */
 
 #include <stdio.h>

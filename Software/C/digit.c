@@ -1,5 +1,5 @@
 /*
-Compiling and Running in Linux:
+Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as digit.c
@@ -8,6 +8,16 @@ Compiling and Running in Linux:
       gcc digit.c
  - Type the following to run digit.c
       ./a.out
+
+Compiling and Running in Microsoft Visual Studio:
+
+ - Open Developer Command Prompt for Visual Studio
+ - Navigate to the same directory as digit.c
+      cd C:\Users\Josh\Documents\Programs\C
+ - Type the following to compile digit.c
+      cl digit.c
+ - Type the following to run digit.c
+      digit.exe
 */
 
 #include <stdio.h>

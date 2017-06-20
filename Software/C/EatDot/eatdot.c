@@ -1,3 +1,23 @@
+/*
+Compiling and Running in UNIX:
+
+ - Open a terminal
+ - Navigate to the same directory as eatdot.c
+      cd ~/Programs/jkwalter.github.io/Software/C/EatDot
+ - Type the following to complie eatdot.c
+      gcc eatdot.c
+ - Type the following to run eatdot.c
+      ./a.out
+ - Type one of the following maze files after the program starts
+      maze1.txt
+      maze2.txt
+      maze3.txt
+ - Use the arrow keys to move the character
+
+NOTE: eatdot.c only works with Bash shell
+NOTE: Maze files and eatdot.c must be in the same directory
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -124,27 +144,24 @@ void moveLeft(char maze[], int old_position)
 
 int updateScore(int score, int old_dots, int new_dots, int old_doubles, int new_doubles)
 {
- int new_score = score;
-
  if (new_dots != old_dots)
   {
-   new_score = new_score + 3;
+   score = score + 3;
   }
  if (new_doubles != old_doubles)
   {
-   new_score = new_score * 2;
+   score = score * 2;
   }
 
- new_score--;
+ score--;
 
- printf("SCORE: %d\n", new_score);
- printf("\n");
-
- return new_score;
+ return score;
 }
 
-void openFile(FILE *fp, char filename[], char maze[], int i)
+void openFile(FILE *fp, char filename[], char maze[])
 {
+ int i;
+
  fp = fopen(filename, "r");
 
  if (fp == NULL)
@@ -161,17 +178,9 @@ void openFile(FILE *fp, char filename[], char maze[], int i)
  fclose(fp);
 }
 
-int findLength(char maze[])
+int findCharacter(char maze[], int length)
 {
- int length = 0;
-
- length = strlen(maze);
-
- return length;
-}
-
-int findCharacter(int i, char maze[], int length)
-{
+ int i;
  int position = 0;
 
  for (i = 0; i < length; i++)
@@ -185,8 +194,9 @@ int findCharacter(int i, char maze[], int length)
  return position;
 }
 
-int findDots(int i, char maze[], int length)
+int findDots(char maze[], int length)
 {
+ int i;
  int dots = 0;
 
  for (i = 0; i < length; i++)
@@ -200,8 +210,9 @@ int findDots(int i, char maze[], int length)
  return dots;
 }
 
-int findDoubles(int i, char maze[], int length)
+int findDoubles(char maze[], int length)
 {
+ int i;
  int doubles = 0;
 
  for (i = 0; i < length; i++)
@@ -215,7 +226,7 @@ int findDoubles(int i, char maze[], int length)
  return doubles;
 }
 
-void update(char maze[], char movement, int position, char enter)
+void update(char maze[], char movement, int position)
 {
  canonical_off();
  echo_off();
@@ -248,7 +259,6 @@ void update(char maze[], char movement, int position, char enter)
 int main(void)
 {
  FILE *fp;
- int i;
  char filename[25] = {'\0'};
  char maze[1000] = {'\0'};
  char enter;
@@ -263,42 +273,38 @@ int main(void)
  int total = 0;
 
  system("clear");
-
  printf("Enter the file name: ");
  scanf("%s", filename);
- enter = getchar();
+ scanf("%c", &enter);
 
- system("clear");
+ openFile(fp, filename, maze);
 
- openFile(fp, filename, maze, i);
+ length = strlen(maze);
 
- printf("SCORE: %d\n", score);
- printf("\n");
-
- printf("%s", maze);
- printf("\n");
-
- length = findLength(maze);
- position = findCharacter(i, maze, length);
- new_dots = findDots(i, maze, length);
- new_doubles = findDoubles(i, maze, length);
- old_dots = new_dots;
- old_doubles = new_doubles;
+ old_dots = findDots(maze, length);
+ old_doubles = findDoubles(maze, length);
  total = old_dots + old_doubles;
 
  while (total != 0)
   {
-   update(maze, movement, position, enter);
-   position = findCharacter(i, maze, length);
-   new_dots = findDots(i, maze, length);
-   new_doubles = findDoubles(i, maze, length);
    system("clear");
+   printf("SCORE: %d\n", score);
+   printf("\n");
+   printf("%s\n", maze);
+   position = findCharacter(maze, length);
+   update(maze, movement, position);
+   new_dots = findDots(maze, length);
+   new_doubles = findDoubles(maze, length);
    score = updateScore(score, old_dots, new_dots, old_doubles, new_doubles);
-   printf("%s", maze);
    old_dots = new_dots;
    old_doubles = new_doubles;
    total = old_dots + old_doubles;
   }
+
+ system("clear");
+ printf("SCORE: %d\n", score);
+ printf("\n");
+ printf("%s\n", maze);
 
  return 0;
 }

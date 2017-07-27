@@ -17,7 +17,7 @@ Compiling and Running in Microsoft Visual Studio:
  - Type the following to compile stars.c
       cl stars.c
  - Type the following to run stars.c
-      stars.exe
+      stars
 */
 
 #include <stdio.h>

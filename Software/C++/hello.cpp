@@ -17,7 +17,7 @@ Compiling and Running in Microsoft Visual Studio:
  - Type the following to compile hello.cpp
       cl hello.cpp
  - Type the following to run hello.cpp
-      hello.exe
+      hello
 */
 
 #include <iostream>

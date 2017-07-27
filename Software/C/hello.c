@@ -17,7 +17,7 @@ Compiling and Running in Microsoft Visual Studio:
  - Type the following to compile hello.c
       cl hello.c
  - Type the following to run hello.c
-      hello.exe
+      hello
 */
 
 #include <stdio.h>

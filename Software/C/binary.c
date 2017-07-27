@@ -17,7 +17,7 @@ Compiling and Running in Microsoft Visual Studio:
  - Type the following to compile binary.c
       cl binary.c
  - Type the following to run binary.c
-      binary.exe
+      binary
 */
 
 #include <stdio.h>

@@ -17,7 +17,7 @@ Compiling and Running in Microsoft Visual Studio:
  - Type the following to compile digit.c
       cl digit.c
  - Type the following to run digit.c
-      digit.exe
+      digit
 */
 
 #include <stdio.h>

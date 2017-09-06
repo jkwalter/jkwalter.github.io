@@ -12,113 +12,113 @@ Compiling and Running in Microsoft Visual Studio:
 
 class Character
 {
-    private int myHealth = 0;
-    private int attackValue = 0;
-    private int healValue = 0;
+	private int myHealth = 0;
+	private int attackValue = 0;
+	private int healValue = 0;
 
-    public int Health
-    {
-        get
-        {
-            return myHealth;
-        }
-        set
-        {
-            myHealth = value;
-        }
-    }
+	public int Health
+	{
+		get
+		{
+			return myHealth;
+		}
+		set
+		{
+			myHealth = value;
+		}
+	}
 
-    public int Attack
-    {
-        get
-        {
-            return attackValue;
-        }
-        set
-        {
-            attackValue = value;
-        }
-    }
+	public int Attack
+	{
+		get
+		{
+			return attackValue;
+		}
+		set
+		{
+			attackValue = value;
+		}
+	}
 
-    public int Heal
-    {
-        get
-        {
-            return healValue;
-        }
-        set
-        {
-            healValue = value;
-        }
-    }
+	public int Heal
+	{
+		get
+		{
+			return healValue;
+		}
+		set
+		{
+			healValue = value;
+		}
+	}
 
 	public static void Main()
 	{
-        Character Protagonist = new Character();
-        Character Antagonist = new Character();
-        System.ConsoleKey Choice;
-        System.ConsoleKey Key;
-        System.ConsoleKey Enter;
-        int Coin = 0;
-        int Option = 0;
-        int FirstTurn = 0;
-        int Dice1;
-        int Dice2;
-        System.Random Roll = new System.Random();
-        System.Random AntagonistDecision = new System.Random();
-        System.Random Toss = new System.Random();
+		Character Protagonist = new Character();
+		Character Antagonist = new Character();
+		System.ConsoleKey Choice;
+		System.ConsoleKey Key;
+		System.ConsoleKey Enter;
+		int Coin = 0;
+		int Option = 0;
+		int FirstTurn = 0;
+		int Dice1;
+		int Dice2;
+		System.Random Roll = new System.Random();
+		System.Random AntagonistDecision = new System.Random();
+		System.Random Toss = new System.Random();
 
-        System.Console.Clear();
+		System.Console.Clear();
 
-        Protagonist.Health = 50;
-        Antagonist.Health = 50;
+		Protagonist.Health = 50;
+		Antagonist.Health = 50;
 
-        Coin = Toss.Next(2);
-        FirstTurn = Coin;
+		Coin = Toss.Next(2);
+		FirstTurn = Coin;
 
-        do
-        {
-            if (Coin == 0)
-            {
-                if (Protagonist.Health != 0)
-                {
-                    if (FirstTurn == 0)
-                    {
-                        System.Console.WriteLine("   PROTAGONIST HEALTH: {0}", Protagonist.Health);
-                        System.Console.WriteLine("    ANTAGONIST HEALTH: {0}", Antagonist.Health);
-                        System.Console.WriteLine();
-                        System.Console.Write("Enter any key to continue: ");
-                        Key = System.Console.ReadKey().Key;
-                        Enter = System.Console.ReadKey().Key;
-                        System.Console.WriteLine();
-                        System.Console.WriteLine();
-                    }
-                    do
-                    {
-                        System.Console.WriteLine("PROTAGONIST OPTIONS");
-                        System.Console.WriteLine();
-                        System.Console.WriteLine("   1: Attack");
-                        System.Console.WriteLine("   2: Heal");
-                        System.Console.WriteLine();
-                        System.Console.Write("Enter your option here (1 or 2): ");
-                        Choice = System.Console.ReadKey().Key;
-                        Enter = System.Console.ReadKey().Key;
-                        System.Console.WriteLine();
-                        System.Console.WriteLine();
-                    } while (Choice != System.ConsoleKey.D1 && Choice != System.ConsoleKey.D2);
-                    if (Choice == System.ConsoleKey.D1)
-                    {
-                        Option = 1;
-                    }
-                    if (Choice == System.ConsoleKey.D2)
-                    {
-                        Option = 2;
-                    }
-                    switch (Option)
-                    {
-                        case 1:
-                            Dice1 = Roll.Next(6) + 1;
-                            Dice2 = Roll.Next(6) + 1;
+		do
+		{
+			if (Coin == 0)
+			{
+				if (Protagonist.Health != 0)
+				{
+					if (FirstTurn == 0)
+					{
+						System.Console.WriteLine("   PROTAGONIST HEALTH: {0}", Protagonist.Health);
+						System.Console.WriteLine("    ANTAGONIST HEALTH: {0}", Antagonist.Health);
+						System.Console.WriteLine();
+						System.Console.Write("Enter any key to continue: ");
+						Key = System.Console.ReadKey().Key;
+						Enter = System.Console.ReadKey().Key;
+						System.Console.WriteLine();
+						System.Console.WriteLine();
+					}
+					do
+					{
+						System.Console.WriteLine("PROTAGONIST OPTIONS");
+						System.Console.WriteLine();
+						System.Console.WriteLine("   1: Attack");
+						System.Console.WriteLine("   2: Heal");
+						System.Console.WriteLine();
+						System.Console.Write("Enter your option here (1 or 2): ");
+						Choice = System.Console.ReadKey().Key;
+						Enter = System.Console.ReadKey().Key;
+						System.Console.WriteLine();
+						System.Console.WriteLine();
+					} while (Choice != System.ConsoleKey.D1 && Choice != System.ConsoleKey.D2);
+					if (Choice == System.ConsoleKey.D1)
+					{
+						Option = 1;
+					}
+					if (Choice == System.ConsoleKey.D2)
+					{
+						Option = 2;
+					}
+					switch (Option)
+					{
+						case 1:
+							Dice1 = Roll.Next(6) + 1;
+							Dice2 = Roll.Next(6) + 1;
                             if (Dice1 + Dice2 == 2 || Dice1 + Dice2 == 12)
                             {
                                 Protagonist.Attack = 20;
@@ -323,20 +323,21 @@ class Character
                     System.Console.WriteLine();
                     System.Console.WriteLine();
                     Coin = 0;
-                }
-            }
-        } while (Protagonist.Health != 0 && Antagonist.Health != 0);
+				}
+			}
+		} while (Protagonist.Health != 0 && Antagonist.Health != 0);
 
-        if (Antagonist.Health == 0)
-        {
-            System.Console.WriteLine("VICTORY!");
-        }
-        if (Protagonist.Health == 0)
-        {
-            System.Console.WriteLine("DEFEAT!");
-        }
-        System.Console.WriteLine();
-        System.Console.WriteLine("   PROTAGONIST HEALTH: {0}", Protagonist.Health);
-        System.Console.WriteLine("    ANTAGONIST HEALTH: {0}", Antagonist.Health);
+		if (Antagonist.Health == 0)
+		{
+			System.Console.WriteLine("VICTORY!");
+		}
+		if (Protagonist.Health == 0)
+		{
+			System.Console.WriteLine("DEFEAT!");
+		}
+
+		System.Console.WriteLine();
+		System.Console.WriteLine("   PROTAGONIST HEALTH: {0}", Protagonist.Health);
+		System.Console.WriteLine("    ANTAGONIST HEALTH: {0}", Antagonist.Health);
 	}
 }

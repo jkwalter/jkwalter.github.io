@@ -2,7 +2,7 @@
 ;
 ;  - Open a terminal
 ;  - Navigate to the same directory as hello.asm
-;      cd ~/Programs/jkwalter.github.io/Software/NASM
+;      cd ~/Documents/Programs/jkwalter.github.io/Software/NASM
 ;  - Type the following to assemble hello.asm
 ;      nasm -f elf hello.asm
 ;      gcc -m32 -o hello.out hello.o

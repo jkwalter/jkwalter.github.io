@@ -3,8 +3,8 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as hello_omp.c
-      cd ~/Programs/jkwalter.github.io/Software/C
- - Type the following to complie hello_omp.c
+      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+ - Type the following to compile hello_omp.c
       gcc hello_omp.c -fopenmp
  - Type the following to run hello_omp.c
       ./a.out

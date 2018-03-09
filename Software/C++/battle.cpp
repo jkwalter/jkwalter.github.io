@@ -3,8 +3,8 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as battle.cpp
-      cd ~/Programs/jkwalter.github.io/Software/C++
- - Type the following to complie battle.cpp
+      cd ~/Documents/Programs/jkwalter.github.io/Software/C++
+ - Type the following to compile battle.cpp
       g++ battle.cpp
  - Type the following to run battle.cpp
       ./a.out

@@ -1,0 +1,21 @@
+/*
+Compiling and Running in UNIX:
+
+ - Open a terminal
+ - Navigate to the same directory as "program".c
+      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+ - Type the following to compile "program".c
+      gcc "program".c
+ - Type the following to run "program".c
+      ./a.out
+
+Compiling and Running in Microsoft Visual Studio:
+
+ - Open Developer Command Prompt for Visual Studio
+ - Navigate to the same directory as "program".c
+      cd "C:\Users\Josh Walter\Documents\Programs\C"
+ - Type the following to compile "program".c
+      cl "program".c
+ - Type the following to run "program".c
+      "program"
+*/

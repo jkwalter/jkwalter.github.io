@@ -3,8 +3,8 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as stars.c
-      cd ~/Programs/jkwalter.github.io/Software/C
- - Type the following to complie stars.c
+      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+ - Type the following to compile stars.c
       gcc stars.c
  - Type the following to run stars.c
       ./a.out
@@ -13,7 +13,7 @@ Compiling and Running in Microsoft Visual Studio:
 
  - Open Developer Command Prompt for Visual Studio
  - Navigate to the same directory as stars.c
-      cd C:\Users\Josh\Documents\Programs\C
+      cd "C:\Users\Josh Walter\Documents\Programs\C"
  - Type the following to compile stars.c
       cl stars.c
  - Type the following to run stars.c

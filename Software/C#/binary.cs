@@ -3,7 +3,7 @@ Compiling and Running in Microsoft Visual Studio:
 
  - Open Developer Command Prompt for Visual Studio
  - Navigate to the same directory as binary.cs
-      cd "C:\Users\Josh Walter\Documents\Visual Studio 2017\Projects"
+      cd "C:\Users\Josh Walter\Documents\Programs\C#"
  - Type the following to compile binary.cs
       csc binary.cs
  - Type the following to run binary.cs

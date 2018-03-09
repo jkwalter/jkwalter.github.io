@@ -3,8 +3,8 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as eatdot.c
-      cd ~/Programs/jkwalter.github.io/Software/C/EatDot
- - Type the following to complie eatdot.c
+      cd ~/Documents/Programs/jkwalter.github.io/Software/C/EatDot
+ - Type the following to compile eatdot.c
       gcc eatdot.c
  - Type the following to run eatdot.c
       ./a.out
@@ -14,7 +14,6 @@ Compiling and Running in UNIX:
       maze3.txt
  - Use the arrow keys to move the character
 
-NOTE: eatdot.c only works with Bash shell
 NOTE: Maze files and eatdot.c must be in the same directory
 */
 
@@ -60,7 +59,7 @@ void echo_on(void)
  tcsetattr(STDIN_FILENO, TCSANOW, &settings);
 }
 
-void moveUp(char maze[], int old_position)
+void move_up(char maze[], int old_position)
 {
  int newline = 0;
  int new_position = 0;
@@ -77,15 +76,10 @@ void moveUp(char maze[], int old_position)
   {
    maze[new_position] = 'X';
    maze[old_position] = ' ';
-   old_position = new_position;
-  }
- else
-  {
-   new_position = old_position;
   }
 }
 
-void moveDown(char maze[], int old_position)
+void move_down(char maze[], int old_position)
 {
  int newline = 0;
  int new_position = 0;
@@ -102,15 +96,10 @@ void moveDown(char maze[], int old_position)
   {
    maze[new_position] = 'X';
    maze[old_position] = ' ';
-   old_position = new_position;
-  }
- else
-  {
-   new_position = old_position;
   }
 }
 
-void moveRight(char maze[], int old_position)
+void move_right(char maze[], int old_position)
 {
  int new_position = old_position + 1;
 
@@ -118,15 +107,10 @@ void moveRight(char maze[], int old_position)
   {
    maze[new_position] = 'X';
    maze[old_position] = ' ';
-   old_position = new_position;
-  }
- else
-  {
-   new_position = old_position;
   }
 }
 
-void moveLeft(char maze[], int old_position)
+void move_left(char maze[], int old_position)
 {
  int new_position = old_position - 1;
 
@@ -134,31 +118,28 @@ void moveLeft(char maze[], int old_position)
   {
    maze[new_position] = 'X';
    maze[old_position] = ' ';
-   old_position = new_position;
-  }
- else
-  {
-   new_position = old_position;
   }
 }
 
-int updateScore(int score, int old_dots, int new_dots, int old_doubles, int new_doubles)
+int update_score(int score, int old_dots, int new_dots, int old_doubles, int new_doubles)
 {
+ int new_score;
+
  if (new_dots != old_dots)
   {
-   score = score + 3;
+   new_score = score + 3;
   }
  if (new_doubles != old_doubles)
   {
-   score = score * 2;
+   new_score = score * 2;
   }
 
- score--;
+ new_score--;
 
- return score;
+ return new_score;
 }
 
-void openFile(FILE *fp, char filename[], char maze[])
+void open_file(FILE *fp, char filename[], char maze[])
 {
  int i;
 
@@ -178,7 +159,7 @@ void openFile(FILE *fp, char filename[], char maze[])
  fclose(fp);
 }
 
-int findCharacter(char maze[], int length)
+int find_character(char maze[], int length)
 {
  int i;
  int position = 0;
@@ -194,7 +175,7 @@ int findCharacter(char maze[], int length)
  return position;
 }
 
-int findDots(char maze[], int length)
+int find_dots(char maze[], int length)
 {
  int i;
  int dots = 0;
@@ -210,7 +191,7 @@ int findDots(char maze[], int length)
  return dots;
 }
 
-int findDoubles(char maze[], int length)
+int find_doubles(char maze[], int length)
 {
  int i;
  int doubles = 0;
@@ -226,8 +207,10 @@ int findDoubles(char maze[], int length)
  return doubles;
 }
 
-void update(char maze[], char movement, int position)
+void update(char maze[], int position)
 {
+ char movement;
+
  canonical_off();
  echo_off();
 
@@ -237,19 +220,19 @@ void update(char maze[], char movement, int position)
 
  if (movement == 'A')
   {
-   moveUp(maze, position);
+   move_up(maze, position);
   }
  if (movement == 'B')
   {
-   moveDown(maze, position);
+   move_down(maze, position);
   }
  if (movement == 'C')
   {
-   moveRight(maze, position);
+   move_right(maze, position);
   }
  if (movement == 'D')
   {
-   moveLeft(maze, position);
+   move_left(maze, position);
   }
 
  canonical_on();
@@ -262,7 +245,6 @@ int main(void)
  char filename[25] = {'\0'};
  char maze[1000] = {'\0'};
  char enter;
- char movement;
  int score = 0;
  int length = 0;
  int position = 0;
@@ -277,12 +259,12 @@ int main(void)
  scanf("%s", filename);
  scanf("%c", &enter);
 
- openFile(fp, filename, maze);
+ open_file(fp, filename, maze);
 
  length = strlen(maze);
 
- old_dots = findDots(maze, length);
- old_doubles = findDoubles(maze, length);
+ old_dots = find_dots(maze, length);
+ old_doubles = find_doubles(maze, length);
  total = old_dots + old_doubles;
 
  while (total != 0)
@@ -291,11 +273,11 @@ int main(void)
    printf("SCORE: %d\n", score);
    printf("\n");
    printf("%s\n", maze);
-   position = findCharacter(maze, length);
-   update(maze, movement, position);
-   new_dots = findDots(maze, length);
-   new_doubles = findDoubles(maze, length);
-   score = updateScore(score, old_dots, new_dots, old_doubles, new_doubles);
+   position = find_character(maze, length);
+   update(maze, position);
+   new_dots = find_dots(maze, length);
+   new_doubles = find_doubles(maze, length);
+   score = update_score(score, old_dots, new_dots, old_doubles, new_doubles);
    old_dots = new_dots;
    old_doubles = new_doubles;
    total = old_dots + old_doubles;

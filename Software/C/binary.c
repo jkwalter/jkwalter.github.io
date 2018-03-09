@@ -3,8 +3,8 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as binary.c
-      cd ~/Programs/jkwalter.github.io/Software/C
- - Type the following to complie binary.c
+      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+ - Type the following to compile binary.c
       gcc binary.c
  - Type the following to run binary.c
       ./a.out

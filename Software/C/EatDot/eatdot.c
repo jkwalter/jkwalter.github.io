@@ -14,6 +14,7 @@ Compiling and Running in UNIX:
       maze3.txt
  - Use the arrow keys to move the character
 
+NOTE: eatdot.c only works with Bash shell
 NOTE: Maze files and eatdot.c must be in the same directory
 */
 

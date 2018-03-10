@@ -13,7 +13,7 @@ Compiling and Running in Microsoft Visual Studio:
 
  - Open Developer Command Prompt for Visual Studio
  - Navigate to the same directory as binary.c
-      cd C:\Users\Josh\Documents\Programs\C
+      cd "C:\Users\Josh Walter\Documents\Programs\C"
  - Type the following to compile binary.c
       cl binary.c
  - Type the following to run binary.c

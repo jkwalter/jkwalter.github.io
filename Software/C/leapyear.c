@@ -30,7 +30,7 @@ int main(void)
   {
    printf("Enter a year (0-9999): ");
    scanf("%d", &year);
-  } while (year < 0 && year > 9999);
+  } while (year < 0 || year > 9999);
 
  if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
   {

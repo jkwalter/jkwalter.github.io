@@ -36,15 +36,15 @@ int main(void)
 
  for (i = 2; i <= N; i++)
   {
-   print = 0;
+   print = 1;
    for (j = 2; j < i; j++)
     {
      if (i % j == 0)
       {
-       print = 1;
+       print = 0;
       }
     }
-   if (print == 0)
+   if (print == 1)
     {
      printf(" %3d\n", i);
     }

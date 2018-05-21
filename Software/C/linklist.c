@@ -1,3 +1,25 @@
+/*
+Compiling and Running in UNIX:
+
+ - Open a terminal
+ - Navigate to the same directory as linklist.c
+      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+ - Type the following to compile linklist.c
+      gcc linklist.c
+ - Type the following to run linklist.c
+      ./a.out
+
+Compiling and Running in Microsoft Visual Studio:
+
+ - Open Developer Command Prompt for Visual Studio
+ - Navigate to the same directory as linklist.c
+      cd "C:\Users\Josh Walter\Documents\Programs\C"
+ - Type the following to compile linklist.c
+      cl linklist.c
+ - Type the following to run linklist.c
+      linklist
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

@@ -86,28 +86,40 @@ node sort_list(node list)
 
  return list;
 }
-/*
+
 node remove_pick(node list, int pick)
 {
  node temporary;
+ node remove;
 
+ remove = list;
  temporary = list;
 
- if (temporary != NULL)
+ if (remove != NULL)
   {
-   while (temporary->next != NULL)
+   while (remove->value != pick)
     {
-     if (temporary->value == pick)
-      {
-       
-      }
+     remove = remove->next;
+    }
+   if (temporary == remove)
+    {
      temporary = temporary->next;
+     free(remove);
+     return temporary;
+    }
+   else
+    {
+     while (temporary->next != remove)
+      {
+       temporary = temporary->next;
+      }
+     temporary->next = remove->next;
+     free(remove);
+     return list;
     }
   }
-
- return list;
 }
-*/
+
 void delete_list(node list)
 {
  node temporary;
@@ -162,7 +174,7 @@ int main(void)
  //Print List
  printf("Printing List\n");
  print_list(list);
-/*
+
  //Remove Node
  pick = rand() % N;
  printf("Removing %d from the List\n", pick);
@@ -171,7 +183,7 @@ int main(void)
  //Print List
  printf("Printing List\n");
  print_list(list);
-*/
+
  //Delete List
  printf("Deleting List\n");
  delete_list(list);

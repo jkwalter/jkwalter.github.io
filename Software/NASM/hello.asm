@@ -1,4 +1,4 @@
-; Assembling and Running in Linux:
+; Assembling and Running in Ubuntu 64-bit:
 ;
 ;  - Open a terminal
 ;  - Navigate to the same directory as hello.asm
@@ -11,7 +11,7 @@
 
 SECTION .data	;initialized data
 
-msg: db "Hello world!", 10, 0
+msg: db "Hello, world!", 10, 0
 
 SECTION .bss	;uninitialized data
 

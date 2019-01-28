@@ -1,0 +1,367 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.01.28 08:36:48 =~=~=~=~=~=~=~=~=~=~=~=
+login as: jkwalter
+jkwalter@192.168.5.130's password: 
+Last login: Sun Jan 27 16:46:21 2019
+
+[jkwalter@localhost ~]$ man mount
+
+MOUNT(8)                     System Administration                    MOUNT(8)
+
+NAME
+       mount - mount a filesystem
+
+SYNOPSIS
+       mount [-lhV]
+
+       mount -a [-fFnrsvw] [-t vfstype] [-O optlist]
+
+       mount [-fnrsvw] [-o option[,option]...]  device|dir
+
+       mount [-fnrsvw] [-t vfstype] [-o options] device dir
+
+DESCRIPTION
+       All files accessible in a Unix system are arranged in one big tree, the
+       file hierarchy, rooted at /.  These files can be spread out  over  sev
+       eral  devices.  The mount command serves to attach the filesystem found
+       on some device to the big file tree. Conversely, the umount(8)  command
+       will detach it again.
+
+       The standard form of the mount command, is
+
+ Manual page mount(8) line 1 (press h for help or q to quit)
+[jkwalter@localhost ~]$ mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,seclabel,size=1913876k,nr_inodes=478469,mode=755)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,seclabel)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,blkio)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuset)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,devices)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuacct,cpu)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,memory)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,net_prio,net_cls)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,freezer)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,hugetlb)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,pids)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,perf_event)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+/dev/mapper/centos-root on / type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+selinuxfs on /sys/fs/selinux type selinuxfs (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=25274)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel)
+mqueue on /dev/mqueue type mqueue (rw,relatime,seclabel)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+/dev/sda1 on /boot type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=386152k,mode=700,uid=42,gid=42)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=386152k,mode=700,uid=1000,gid=1000)
+[jkwalter@localhost ~]$ echo $PS1
+[\u@\h \W]\$
+[jkwalter@localhost ~]$ PS1='\d \t>'
+Mon Jan 28 08:38:47>PS1='\w>'
+~>PS1='$PWD>'
+/home/jkwalter>logout
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.01.28 08:40:32 =~=~=~=~=~=~=~=~=~=~=~=
+login as: jkwalter
+jkwalter@192.168.5.130's password: 
+Last login: Mon Jan 28 08:37:00 2019 from 192.168.5.1
+
+[jkwalter@localhost ~]$ pwd
+/home/jkwalter
+[jkwalter@localhost ~]$ PS1='$PWD>'
+/home/jkwalter>cd /var/spool/mail
+/var/spool/mail>cd
+/home/jkwalter>logout
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.01.28 08:41:59 =~=~=~=~=~=~=~=~=~=~=~=
+login as: jkwalter
+jkwalter@192.168.5.130's password: 
+Last login: Mon Jan 28 08:40:48 2019 from 192.168.5.1
+
+[jkwalter@localhost ~]$ cd /home
+[jkwalter@localhost home]$ cd jkwalter
+[jkwalter@localhost ~]$ cd .
+[jkwalter@localhost ~]$ cd ..
+[jkwalter@localhost home]$ cd ..
+[jkwalter@localhost /]$ cd
+[jkwalter@localhost ~]$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+[jkwalter@localhost ~]$ cat > notes
+This is a note.
+[jkwalter@localhost ~]$ ls notes
+notes
+[jkwalter@localhost ~]$ ls /var
+account  crash  games     lib    log   opt       spool   yp
+adm      db     gopher    local  mail  preserve  target
+cache    empty  kerberos  lock   nis   run       tmp
+[jkwalter@localhost ~]$ ls -l /dev
+total 0
+crw-rw----. 1 root video    10, 175 Jan 28 08:33 agpgart
+crw-------. 1 root root     10, 235 Jan 28 08:33 autofs
+drwxr-xr-x. 2 root root         160 Jan 28 08:33 block
+drwxr-xr-x. 2 root root          80 Jan 28 08:33 bsg
+crw-------. 1 root root     10, 234 Jan 28 08:33 btrfs-control
+drwxr-xr-x. 3 root root          60 Jan 28 08:33 bus
+lrwxrwxrwx. 1 root root           3 Jan 28 08:33 cdrom -> sr0
+drwxr-xr-x. 2 root root          80 Jan 28 08:33 centos
+drwxr-xr-x. 2 root root        3060 Jan 28 08:33 char
+crw-------. 1 root root      5,   1 Jan 28 08:34 console
+lrwxrwxrwx. 1 root root          11 Jan 28 08:33 core -> /proc/kcore
+drwxr-xr-x. 4 root root          80 Jan 28 08:33 cpu
+crw-------. 1 root root     10,  61 Jan 28 08:33 cpu_dma_latency
+crw-------. 1 root root     10,  62 Jan 28 08:33 crash
+drwxr-xr-x. 5 root root         100 Jan 28 08:33 disk
+brw-rw----. 1 root disk    253,   0 Jan 28 08:33 dm-0
+brw-rw----. 1 root disk    253,   1 Jan 28 08:33 dm-1
+crw-rw----+ 1 root audio    14,   9 Jan 28 08:33 dmmidi
+drwxr-xr-x. 2 root root          80 Jan 28 08:33 dri
+crw-rw----. 1 root video    29,   0 Jan 28 08:33 fb0
+lrwxrwxrwx. 1 root root          13 Jan 28 08:33 fd -> /proc/self/fd
+crw-rw-rw-. 1 root root      1,   7 Jan 28 08:33 full
+crw-rw-rw-. 1 root root     10, 229 Jan 28 08:33 fuse
+crw-------. 1 root root    246,   0 Jan 28 08:33 hidraw0
+crw-------. 1 root root     10, 228 Jan 28 08:33 hpet
+drwxr-xr-x. 3 root root           0 Jan 28 08:33 hugepages
+crw-------. 1 root root     10, 183 Jan 28 08:33 hwrng
+lrwxrwxrwx. 1 root root          25 Jan 28 08:33 initctl -> /run/systemd/initctl/fifo
+drwxr-xr-x. 4 root root         300 Jan 28 08:33 input
+crw-r--r--. 1 root root      1,  11 Jan 28 08:33 kmsg
+srw-rw-rw-. 1 root root           0 Jan 28 08:33 log
+crw-rw----. 1 root disk     10, 237 Jan 28 08:33 loop-control
+crw-rw----. 1 root lp        6,   0 Jan 28 08:33 lp0
+crw-rw----. 1 root lp        6,   1 Jan 28 08:33 lp1
+crw-rw----. 1 root lp        6,   2 Jan 28 08:33 lp2
+crw-rw----. 1 root lp        6,   3 Jan 28 08:33 lp3
+drwxr-xr-x. 2 root root         100 Jan 28 08:33 mapper
+crw-------. 1 root root     10, 227 Jan 28 08:33 mcelog
+crw-r-----. 1 root kmem      1,   1 Jan 28 08:33 mem
+crw-rw----+ 1 root audio    14,   2 Jan 28 08:33 midi
+drwxrwxrwt. 2 root root          40 Jan 28 08:33 mqueue
+drwxr-xr-x. 2 root root          60 Jan 28 08:33 net
+crw-------. 1 root root     10,  60 Jan 28 08:33 network_latency
+crw-------. 1 root root     10,  59 Jan 28 08:33 network_throughput
+crw-rw-rw-. 1 root root      1,   3 Jan 28 08:33 null
+crw-------. 1 root root     10, 144 Jan 28 08:33 nvram
+crw-------. 1 root root      1,  12 Jan 28 08:33 oldmem
+crw-r-----. 1 root kmem      1,   4 Jan 28 08:33 port
+crw-------. 1 root root    108,   0 Jan 28 08:33 ppp
+crw-rw-rw-. 1 root tty       5,   2 Jan 28 08:45 ptmx
+drwxr-xr-x. 2 root root           0 Jan 28 08:33 pts
+crw-rw-rw-. 1 root root      1,   8 Jan 28 08:33 random
+drwxr-xr-x. 2 root root          60 Jan 28 08:33 raw
+lrwxrwxrwx. 1 root root           4 Jan 28 08:33 rtc -> rtc0
+crw-------. 1 root root    252,   0 Jan 28 08:33 rtc0
+brw-rw----. 1 root disk      8,   0 Jan 28 08:33 sda
+brw-rw----. 1 root disk      8,   1 Jan 28 08:33 sda1
+brw-rw----. 1 root disk      8,   2 Jan 28 08:33 sda2
+crw-rw----. 1 root disk     21,   0 Jan 28 08:33 sg0
+crw-rw----+ 1 root cdrom    21,   1 Jan 28 08:33 sg1
+drwxrwxrwt. 2 root root          40 Jan 28 08:33 shm
+crw-------. 1 root root     10, 231 Jan 28 08:33 snapshot
+drwxr-xr-x. 3 root root         200 Jan 28 08:33 snd
+brw-rw----+ 1 root cdrom    11,   0 Jan 28 08:33 sr0
+lrwxrwxrwx. 1 root root          15 Jan 28 08:33 stderr -> /proc/self/fd/2
+lrwxrwxrwx. 1 root root          15 Jan 28 08:33 stdin -> /proc/self/fd/0
+lrwxrwxrwx. 1 root root          15 Jan 28 08:33 stdout -> /proc/self/fd/1
+crw-rw-rw-. 1 root tty       5,   0 Jan 28 08:33 tty
+crw--w----. 1 root tty       4,   0 Jan 28 08:33 tty0
+crw--w----. 1 root tty       4,   1 Jan 28 08:33 tty1
+crw--w----. 1 root tty       4,  10 Jan 28 08:33 tty10
+crw--w----. 1 root tty       4,  11 Jan 28 08:33 tty11
+crw--w----. 1 root tty       4,  12 Jan 28 08:33 tty12
+crw--w----. 1 root tty       4,  13 Jan 28 08:33 tty13
+crw--w----. 1 root tty       4,  14 Jan 28 08:33 tty14
+crw--w----. 1 root tty       4,  15 Jan 28 08:33 tty15
+crw--w----. 1 root tty       4,  16 Jan 28 08:33 tty16
+crw--w----. 1 root tty       4,  17 Jan 28 08:33 tty17
+crw--w----. 1 root tty       4,  18 Jan 28 08:33 tty18
+crw--w----. 1 root tty       4,  19 Jan 28 08:33 tty19
+crw--w----. 1 root tty       4,   2 Jan 28 08:33 tty2
+crw--w----. 1 root tty       4,  20 Jan 28 08:33 tty20
+crw--w----. 1 root tty       4,  21 Jan 28 08:33 tty21
+crw--w----. 1 root tty       4,  22 Jan 28 08:33 tty22
+crw--w----. 1 root tty       4,  23 Jan 28 08:33 tty23
+crw--w----. 1 root tty       4,  24 Jan 28 08:33 tty24
+crw--w----. 1 root tty       4,  25 Jan 28 08:33 tty25
+crw--w----. 1 root tty       4,  26 Jan 28 08:33 tty26
+crw--w----. 1 root tty       4,  27 Jan 28 08:33 tty27
+crw--w----. 1 root tty       4,  28 Jan 28 08:33 tty28
+crw--w----. 1 root tty       4,  29 Jan 28 08:33 tty29
+crw--w----. 1 root tty       4,   3 Jan 28 08:33 tty3
+crw--w----. 1 root tty       4,  30 Jan 28 08:33 tty30
+crw--w----. 1 root tty       4,  31 Jan 28 08:33 tty31
+crw--w----. 1 root tty       4,  32 Jan 28 08:33 tty32
+crw--w----. 1 root tty       4,  33 Jan 28 08:33 tty33
+crw--w----. 1 root tty       4,  34 Jan 28 08:33 tty34
+crw--w----. 1 root tty       4,  35 Jan 28 08:33 tty35
+crw--w----. 1 root tty       4,  36 Jan 28 08:33 tty36
+crw--w----. 1 root tty       4,  37 Jan 28 08:33 tty37
+crw--w----. 1 root tty       4,  38 Jan 28 08:33 tty38
+crw--w----. 1 root tty       4,  39 Jan 28 08:33 tty39
+crw--w----. 1 root tty       4,   4 Jan 28 08:33 tty4
+crw--w----. 1 root tty       4,  40 Jan 28 08:33 tty40
+crw--w----. 1 root tty       4,  41 Jan 28 08:33 tty41
+crw--w----. 1 root tty       4,  42 Jan 28 08:33 tty42
+crw--w----. 1 root tty       4,  43 Jan 28 08:33 tty43
+crw--w----. 1 root tty       4,  44 Jan 28 08:33 tty44
+crw--w----. 1 root tty       4,  45 Jan 28 08:33 tty45
+crw--w----. 1 root tty       4,  46 Jan 28 08:33 tty46
+crw--w----. 1 root tty       4,  47 Jan 28 08:33 tty47
+crw--w----. 1 root tty       4,  48 Jan 28 08:33 tty48
+crw--w----. 1 root tty       4,  49 Jan 28 08:33 tty49
+crw--w----. 1 root tty       4,   5 Jan 28 08:33 tty5
+crw--w----. 1 root tty       4,  50 Jan 28 08:33 tty50
+crw--w----. 1 root tty       4,  51 Jan 28 08:33 tty51
+crw--w----. 1 root tty       4,  52 Jan 28 08:33 tty52
+crw--w----. 1 root tty       4,  53 Jan 28 08:33 tty53
+crw--w----. 1 root tty       4,  54 Jan 28 08:33 tty54
+crw--w----. 1 root tty       4,  55 Jan 28 08:33 tty55
+crw--w----. 1 root tty       4,  56 Jan 28 08:33 tty56
+crw--w----. 1 root tty       4,  57 Jan 28 08:33 tty57
+crw--w----. 1 root tty       4,  58 Jan 28 08:33 tty58
+crw--w----. 1 root tty       4,  59 Jan 28 08:33 tty59
+crw--w----. 1 root tty       4,   6 Jan 28 08:33 tty6
+crw--w----. 1 root tty       4,  60 Jan 28 08:33 tty60
+crw--w----. 1 root tty       4,  61 Jan 28 08:33 tty61
+crw--w----. 1 root tty       4,  62 Jan 28 08:33 tty62
+crw--w----. 1 root tty       4,  63 Jan 28 08:33 tty63
+crw--w----. 1 root tty       4,   7 Jan 28 08:33 tty7
+crw--w----. 1 root tty       4,   8 Jan 28 08:33 tty8
+crw--w----. 1 root tty       4,   9 Jan 28 08:33 tty9
+crw-rw----. 1 root dialout   4,  64 Jan 28 08:33 ttyS0
+crw-rw----. 1 root dialout   4,  65 Jan 28 08:33 ttyS1
+crw-rw----. 1 root dialout   4,  66 Jan 28 08:33 ttyS2
+crw-rw----. 1 root dialout   4,  67 Jan 28 08:33 ttyS3
+crw-------. 1 root root     10, 239 Jan 28 08:33 uhid
+crw-------. 1 root root     10, 223 Jan 28 08:33 uinput
+crw-rw-rw-. 1 root root      1,   9 Jan 28 08:33 urandom
+crw-------. 1 root root    247,   0 Jan 28 08:33 usbmon0
+crw-------. 1 root root    247,   1 Jan 28 08:33 usbmon1
+crw-------. 1 root root    247,   2 Jan 28 08:33 usbmon2
+crw-rw----. 1 root tty       7,   0 Jan 28 08:33 vcs
+crw-rw----. 1 root tty       7,   1 Jan 28 08:33 vcs1
+crw-rw----. 1 root tty       7,   2 Jan 28 08:33 vcs2
+crw-rw----. 1 root tty       7,   3 Jan 28 08:33 vcs3
+crw-rw----. 1 root tty       7,   4 Jan 28 08:33 vcs4
+crw-rw----. 1 root tty       7,   5 Jan 28 08:33 vcs5
+crw-rw----. 1 root tty       7,   6 Jan 28 08:33 vcs6
+crw-rw----. 1 root tty       7, 128 Jan 28 08:33 vcsa
+crw-rw----. 1 root tty       7, 129 Jan 28 08:33 vcsa1
+crw-rw----. 1 root tty       7, 130 Jan 28 08:33 vcsa2
+crw-rw----. 1 root tty       7, 131 Jan 28 08:33 vcsa3
+crw-rw----. 1 root tty       7, 132 Jan 28 08:33 vcsa4
+crw-rw----. 1 root tty       7, 133 Jan 28 08:33 vcsa5
+crw-rw----. 1 root tty       7, 134 Jan 28 08:33 vcsa6
+drwxr-xr-x. 2 root root          60 Jan 28 08:33 vfio
+crw-------. 1 root root     10,  63 Jan 28 08:33 vga_arbiter
+crw-------. 1 root root     10, 137 Jan 28 08:33 vhci
+crw-------. 1 root root     10, 238 Jan 28 08:33 vhost-net
+crw-------. 1 root root     10,  58 Jan 28 08:33 vmci
+crw-------. 1 root root     10,  57 Jan 28 08:33 vsock
+crw-rw-rw-. 1 root root      1,   5 Jan 28 08:33 zero
+[jkwalter@localhost ~]$ ls -l /
+total 24
+lrwxrwxrwx.   1 root root    7 Jan 20 21:19 bin -> usr/bin
+dr-xr-xr-x.   5 root root 4096 Jan 28 08:34 boot
+drwxr-xr-x.  20 root root 3300 Jan 28 08:33 dev
+drwxr-xr-x. 147 root root 8192 Jan 28 08:33 etc
+drwxr-xr-x.   3 root root   22 Jan 20 21:26 home
+lrwxrwxrwx.   1 root root    7 Jan 20 21:19 lib -> usr/lib
+lrwxrwxrwx.   1 root root    9 Jan 20 21:19 lib64 -> usr/lib64
+drwxr-xr-x.   2 root root    6 Apr 10  2018 media
+drwxr-xr-x.   2 root root    6 Apr 10  2018 mnt
+drwxr-xr-x.   3 root root   16 Jan 20 21:23 opt
+dr-xr-xr-x. 186 root root    0 Jan 28 08:33 proc
+dr-xr-x---.   5 root root  184 Jan 20 21:28 root
+drwxr-xr-x.  44 root root 1320 Jan 28 08:33 run
+lrwxrwxrwx.   1 root root    8 Jan 20 21:19 sbin -> usr/sbin
+drwxr-xr-x.   2 root root    6 Apr 10  2018 srv
+dr-xr-xr-x.  13 root root    0 Jan 28 08:33 sys
+drwxrwxrwt.  27 root root 4096 Jan 28 08:35 tmp
+drwxr-xr-x.  13 root root  155 Jan 20 21:19 usr
+drwxr-xr-x.  21 root root 4096 Jan 20 21:27 var
+[jkwalter@localhost ~]$ clear
+[jkwalter@localhost ~]$ ls -a
+.              .bashrc  Desktop    .ICEauthority  notes     Templates
+..             .cache   Documents  .local         Pictures  Videos
+.bash_history  .config  Downloads  .mozilla       Public    .viminfo
+.bash_profile  .dbus    .esd_auth  Music          .redhat
+[jkwalter@localhost ~]$ cat > first_name
+Joshua
+[jkwalter@localhost ~]$ cat > middle_name
+Kyle
+[jkwalter@localhost ~]$ cat > last_name
+Walter
+[jkwalter@localhost ~]$ cat > full_name1.txt
+Joshua Kyle Walter
+[jkwalter@localhost ~]$ cat > full_name22.txt
+Joshua Kyle Walter
+[jkwalter@localhost ~]$ ls *name
+first_name  last_name  middle_name
+[jkwalter@localhost ~]$ ls full_name?.txt
+full_name1.txt
+[jkwalter@localhost ~]$ ls *.txt
+full_name1.txt  full_name22.txt
+[jkwalter@localhost ~]$ mkdir dept_4540
+[jkwalter@localhost ~]$ ls
+dept_4540  Downloads       full_name22.txt  Music     Public
+Desktop    first_name      last_name        notes     Templates
+Documents  full_name1.txt  middle_name      Pictures  Videos
+[jkwalter@localhost ~]$ cd dept_4540
+[jkwalter@localhost dept_4540]$ cat > phones1
+219:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+[jkwalter@localhost dept_4540]$ cat phones1
+219:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+[jkwalter@localhost dept_4540]$ cd
+[jkwalter@localhost ~]$ mkdir dept_4550
+[jkwalter@localhost ~]$ ls
+dept_4540  Documents   full_name1.txt   middle_name  Pictures   Videos
+dept_4550  Downloads   full_name22.txt  Music        Public
+Desktop    first_name  last_name        notes        Templates
+[jkwalter@localhost ~]$ cd dept_4550
+[jkwalter@localhost dept_4550]$ cat > phones2
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Sarah
+[jkwalter@localhost dept_4550]$ cat phones2
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Sarah
+[jkwalter@localhost dept_4550]$ clear
+[jkwalter@localhost dept_4550]$ cd
+[jkwalter@localhost ~]$ mkdir corp_db
+[jkwalter@localhost ~]$ cd corp_db
+[jkwalter@localhost corp_db]$ cp ~/dept_4540/phones1 .
+[jkwalter@localhost corp_db]$ cp ~/dept_4550/phones2 .
+[jkwalter@localhost corp_db]$ ls
+phones1  phones2
+[jkwalter@localhost corp_db]$ cat phones1 phones2 > corp_phones
+[jkwalter@localhost corp_db]$ clear
+[jkwalter@localhost corp_db]$ more corp_phones
+219:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Sarah
+[jkwalter@localhost corp_db]$ cd
+[jkwalter@localhost ~]$ clear
+[jkwalter@localhost ~]$ chmod go+x ~
+[jkwalter@localhost ~]$ chmod ugo+x ~/corp_db
+[jkwalter@localhost ~]$ chmod o+w ~/corp_db/*
+[jkwalter@localhost ~]$ ls -l ~/corp_db
+total 12
+-rw-rw-rw-. 1 jkwalter jkwalter 160 Jan 28 08:54 corp_phones
+-rw-rw-rw-. 1 jkwalter jkwalter  84 Jan 28 08:53 phones1
+-rw-rw-rw-. 1 jkwalter jkwalter  76 Jan 28 08:53 phones2
+[jkwalter@localhost ~]$ exit
+logout

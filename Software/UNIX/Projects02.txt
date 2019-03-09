@@ -1,367 +1,732 @@
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.01.28 08:36:48 =~=~=~=~=~=~=~=~=~=~=~=
-login as: jkwalter
-jkwalter@192.168.5.130's password: 
-Last login: Sun Jan 27 16:46:21 2019
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.05.18 11:17:18 =~=~=~=~=~=~=~=~=~=~=~=
+login as: user
+user@192.168.1.3's password: 
+Last login: Wed May 18 11:11:15 2016 from 192.168.1.2
+--------------------------------------------------------------------
+ATTENTION!
 
-[jkwalter@localhost ~]$ man mount
+- When completing assignments, be sure to log on using PuTTY!  If
+  you do not use PuTTY, your work will NOT be saved to a log file.
 
-MOUNT(8)                     System Administration                    MOUNT(8)
+- Do NOT log on as root or other superuser unless directed to do so.
+--------------------------------------------------------------------
+
+[user@localhost ~]$ man mount
+MOUNT(8)                   Linux Programmers Manual                  MOUNT(8)
 
 NAME
-       mount - mount a filesystem
+       mount - mount a file system
 
 SYNOPSIS
        mount [-lhV]
 
        mount -a [-fFnrsvw] [-t vfstype] [-O optlist]
-
-       mount [-fnrsvw] [-o option[,option]...]  device|dir
-
+       mount [-fnrsvw] [-o options [,...]] device | dir
        mount [-fnrsvw] [-t vfstype] [-o options] device dir
 
 DESCRIPTION
-       All files accessible in a Unix system are arranged in one big tree, the
-       file hierarchy, rooted at /.  These files can be spread out  over  sev
-       eral  devices.  The mount command serves to attach the filesystem found
-       on some device to the big file tree. Conversely, the umount(8)  command
-       will detach it again.
+       All  files  accessible in a Unix system are arranged in one big
+       tree, the file hierarchy, rooted at  /.   These  files  can  be
+       spread  out  over  several devices. The mount command serves to
+       attach the file system found on some device  to  the  big  file
+       tree. Conversely, the umount(8) command will detach it again.
 
        The standard form of the mount command, is
+              mount -t type device dir
+       This tells the kernel to attach the file system found on device
+       (which is of type type) at the  directory  dir.   The  previous
+:       contents  (if  any) and owner and mode of dir become invisible,
+       and as long as this file system remains mounted,  the  pathname
+       dir refers to the root of the file system on device.
 
- Manual page mount(8) line 1 (press h for help or q to quit)
-[jkwalter@localhost ~]$ mount
-sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
-proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
-devtmpfs on /dev type devtmpfs (rw,nosuid,seclabel,size=1913876k,nr_inodes=478469,mode=755)
-securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
-tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,seclabel)
-devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
-tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,mode=755)
-tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
-cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
-pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
-cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,blkio)
-cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuset)
-cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,devices)
-cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuacct,cpu)
-cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,memory)
-cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,net_prio,net_cls)
-cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,freezer)
-cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,hugetlb)
-cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,pids)
-cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,perf_event)
-configfs on /sys/kernel/config type configfs (rw,relatime)
-/dev/mapper/centos-root on / type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
-selinuxfs on /sys/fs/selinux type selinuxfs (rw,relatime)
-systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=25274)
-hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel)
-mqueue on /dev/mqueue type mqueue (rw,relatime,seclabel)
-debugfs on /sys/kernel/debug type debugfs (rw,relatime)
-/dev/sda1 on /boot type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
-sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
-tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=386152k,mode=700,uid=42,gid=42)
-tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=386152k,mode=700,uid=1000,gid=1000)
-[jkwalter@localhost ~]$ echo $PS1
+       Three forms of invocation do not actually mount anything:
+              mount -h
+       prints a help message;
+              mount -V
+       prints a version string; and just
+              mount [-l] [-t type]
+       lists  all  mounted file systems (of type type).  The option -l
+       adds the (ext2, ext3 and XFS)  labels  in  this  listing.   See
+       below.
+
+       Since  Linux  2.4.0  it is possible to remount part of the file
+       hierarchy somewhere else. The call is
+              mount --bind olddir newdir
+       After this call the same contents is accessible in two  places.
+       One can also remount a single file (on a single file).
+
+       This call attaches only (part of) a single filesystem, not pos-
+       sible submounts. The entire file hierarchy including  submounts
+       is attached a second place using
+:              mount --rbind olddir newdir
+
+       Note  that the filesystem mount options will remain the same as
+       those on the original mount point, and  cannot  be  changed  by
+       passing the -o option along with --bind/--rbind.
+
+       Since  Linux  2.5.1 it is possible to atomically move a mounted
+       tree to another place. The call is
+              mount --move olddir newdir
+
+       Since Linux 2.6.15 it is possible to mark a mount and its  sub-
+       mounts  as shared, private, slave or unbindable. A shared mount
+       provides ability to create mirrors  of  that  mount  such  that
+       mounts  and  umounts within any of the mirrors propagate to the
+       other mirror. A slave mount receives propagation from its  mas-
+       ter, but any not vice-versa.  A private mount carries no propa-
+       gation abilities.  A unbindable mount is a private mount  which
+       cannot  cloned  through a bind operation. Detailed semantics is
+       documented in Documentation/sharedsubtree.txt file in the  ker-
+       nel source tree.
+              mount --make-shared mountpoint
+              mount --make-slave mountpoint
+              mount --make-private mountpoint
+:              mount --make-unbindable mountpoint
+
+       The  following  commands  allows  one to recursively change the
+       type of all the mounts under a given mountpoint.
+              mount --make-rshared mountpoint
+              mount --make-rslave mountpoint
+              mount --make-rprivate mountpoint
+              "mount --make-runbindable mountpoint"
+
+       The proc file system is not associated with a  special  device,
+       and when mounting it, an arbitrary keyword, such as proc can be
+       used instead of a device specification.  (The customary  choice
+       none  is  less  fortunate:  the  error message none busy from
+       umount can be confusing.)
+
+       Most devices are indicated by a file name (of a  block  special
+       device), like /dev/sda1, but there are other possibilities. For
+       example, in the case of an NFS  mount,  device  may  look  like
+       knuth.cwi.nl:/dir.   It is possible to indicate a block special
+       device using its volume label  or  UUID  (see  the  -L  and  -U
+       options below).
+
+       The  file /etc/fstab (see fstab(5)), may contain lines describ-
+:       ing  what  devices  are  usually  mounted  where,  using  which
+       options. This file is used in three ways:
+
+       (i) The command
+              mount -a [-t type] [-O optlist]
+       (usually  given  in  a bootscript) causes all file systems men-
+       tioned in fstab (of the proper type and/or having or not having
+       the  proper  options)  to  be  mounted as indicated, except for
+       those whose line contains the noauto  keyword.  Adding  the  -F
+       option  will  make  mount  fork,  so  that  the filesystems are
+       mounted simultaneously.
+
+       (ii) When mounting a file system mentioned in  fstab,  it  suf-
+       fices to give only the device, or only the mount point.
+
+       (iii)  Normally,  only  the  superuser  can mount file systems.
+       However, when fstab contains the user option on a line, anybody
+       can mount the corresponding system.
+
+       Thus, given a line
+              /dev/cdrom  /cd  iso9660  ro,user,noauto,unhide
+       any  user  can mount the iso9660 file system found on his CDROM
+       using the command
+:              mount /dev/cdrom
+       or
+              mount /cd
+       For more details, see fstab(5).  Only the user that  mounted  a
+       filesystem can unmount it again.  If any user should be able to
+       unmount, then use users instead of user in the fstab line.  The
+       owner  option  is similar to the user option, with the restric-
+       tion that the user must be the owner of the special file.  This
+       may be useful e.g. for /dev/fd if a login script makes the con-
+       sole user owner of this device.  The group option  is  similar,
+       with  the restriction that the user must be member of the group
+       of the special file.
+
+       The programs mount and umount  maintain  a  list  of  currently
+       mounted  file  systems  in the file /etc/mtab.  If no arguments
+       are given to mount, this list is printed.
+
+       When the proc filesystem is mounted (say at /proc),  the  files
+       /etc/mtab and /proc/mounts have very similar contents. The for-
+       mer has somewhat more information, such as  the  mount  options
+       used,  but  is  not  necessarily  up-to-date (cf. the -n option
+       below). It is possible to replace /etc/mtab by a symbolic  link
+       to  /proc/mounts,  and especially when you have very large num-
+:       bers of mounts things will be much faster  with  that  symlink,
+       but  some information is lost that way, and in particular work-
+       ing with the loop device will be less convenient, and using the
+       "user" option will fail.
+
+OPTIONS
+       The  full  set  of  options  used  by an invocation of mount is
+       determined by first extracting the options for the file  system
+       from  the  fstab  table, then applying any options specified by
+       the -o argument, and finally applying a -r or -w  option,  when
+       present.
+
+       Options available for the mount command:
+
+       -V     Output version.
+
+       -h     Print a help message.
+
+       -v     Verbose mode.
+
+       -a     Mount  all filesystems (of the given types) mentioned in
+              fstab.
+
+:       -F     (Used in conjunction with -a.)  Fork off a new  incarna-
+              tion  of mount for each device.  This will do the mounts
+              on different devices or different NFS servers in  paral-
+              lel.  This has the advantage that it is faster; also NFS
+              timeouts go in parallel.  A  disadvantage  is  that  the
+              mounts  are  done  in undefined order.  Thus, you cannot
+              use this option if you  want  to  mount  both  /usr  and
+              /usr/spool.
+
+       -f     Causes  everything to be done except for the actual sys-
+              tem call; if its not obvious, this  fakes  mounting
+              the  file  system.  This option is useful in conjunction
+              with the -v flag to determine what the mount command  is
+              trying  to  do.  It  can also be used to add entries for
+              devices that were mounted earlier with the -n option.
+
+       -i     Dont call the /sbin/mount.<filesystem> helper  even  if
+              it exists.
+
+       -l     Add  the  ext2, ext3 and XFS labels in the mount output.
+              Mount must have permission to read the disk device (e.g.
+              be  suid  root)  for  this  to work.  One can set such a
+              label for ext2 or ext3 using the e2label(8) utility,  or
+:              for  XFS using xfs_admin(8), or for reiserfs using reis-
+              erfstune(8).
+
+       -n     Mount without writing in /etc/mtab.  This  is  necessary
+              for example when /etc is on a read-only file system.
+
+       -p num In  case  of  a  loop  mount  with  encryption, read the
+              passphrase from file descriptor num instead of from  the
+              terminal.
+
+       -s     Tolerate  sloppy mount options rather than failing. This
+              will ignore mount options not supported by a  filesystem
+              type.  Not  all  filesystems  support  this option. This
+              option exists for  support  of  the  Linux  autofs-based
+              automounter.
+
+       -r     Mount the file system read-only. A synonym is -o ro.
+
+       -w     Mount the file system read/write. This is the default. A
+              synonym is -o rw.
+
+       -L label
+              Mount the partition that has the specified label.
+:
+       -U uuid
+              Mount the partition that has the specified uuid.   These
+              two  options  require the file /proc/partitions (present
+              since Linux 2.1.116) to exist.
+
+       -t vfstype
+              The argument following the -t is used  to  indicate  the
+              file  system type.  The file system types which are cur-
+              rently supported  include:  adfs,  affs,  autofs,  cifs,
+              coda, coherent, cramfs, debugfs, devpts, efs, ext, ext2,
+              ext3, hfs, hpfs, iso9660, jfs, minix, msdos, ncpfs, nfs,
+              nfs4,  ntfs,  proc, qnx4, ramfs, reiserfs, romfs, smbfs,
+              sysv, tmpfs, udf, ufs, umsdos, usbfs, vfat, xenix,  xfs,
+              xiafs.   Note  that coherent, sysv and xenix are equiva-
+              lent and that xenix and coherent will be removed at some
+              point  in  the  future   use sysv instead. Since kernel
+              version 2.1.21 the types ext and xiafs do not exist any-
+              more. Earlier, usbfs was known as usbdevfs.
+
+              For  most types all the mount program has to do is issue
+              a simple mount(2) system call, and no detailed knowledge
+              of  the  filesystem  type  is required.  For a few types
+:              however (like nfs, nfs4, cifs, smbfs, ncpfs) ad hoc code
+              is necessary. The nfs ad hoc code is built in, but cifs,
+              smbfs, and ncpfs have a separate mount program. In order
+              to make it possible to treat all types in a uniform way,
+              mount will execute the program /sbin/mount.TYPE (if that
+              exists)  when called with type TYPE.  Since various ver-
+              sions of the smbmount  program  have  different  calling
+              conventions,  /sbin/mount.smbfs  may  have to be a shell
+              script that sets up the desired call.
+
+              If no -t option is given, or if the auto type is  speci-
+              fied,  mount  will  try  to  guess the desired type.  If
+              mount was compiled with the blkid library, the  guessing
+              is done by this library. Otherwise, mount guesses itself
+              by probing the superblock; if that does not turn up any-
+              thing  that  looks  familiar, mount will try to read the
+              file /etc/filesystems,  or,  if  that  does  not  exist,
+              /proc/filesystems.   All  of the filesystem types listed
+              there will be tried, except for those that  are  labeled
+              "nodev"   (e.g.,  devpts,  proc,  nfs,  and  nfs4).   If
+              /etc/filesystems ends in a line with a  single  *  only,
+              mount will read /proc/filesystems afterwards.
+
+:              The  auto  type may be useful for user-mounted floppies.
+              Creating a file /etc/filesystems can be useful to change
+              the  probe order (e.g., to try vfat before msdos or ext3
+              before ext2) or if you use a kernel  module  autoloader.
+              Warning:  the  probing uses a heuristic (the presence of
+              appropriate magic),  and  could  recognize  the  wrong
+              filesystem   type,  possibly  with  catastrophic  conse-
+              quences. If your data is valuable, dont  ask  mount  to
+              guess.
+
+              More than one type may be specified in a comma separated
+              list.  The list of file system  types  can  be  prefixed
+              with  no  to  specify  the file system types on which no
+              action should be taken.  (This can  be  meaningful  with
+              the -a option.)
+
+              For example, the command:
+                     mount -a -t nomsdos,ext
+              mounts  all  file systems except those of type msdos and
+              ext.
+
+       -O     Used in  conjunction  with  -a,  to  limit  the  set  of
+              filesystems to which the -a is applied.  Like -t in this
+:[user@localhost ~]$ mount
+/dev/sda3 on / type ext3 (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+devpts on /dev/pts type devpts (rw,gid=5,mode=620)
+/dev/sda1 on /boot type ext3 (rw)
+tmpfs on /dev/shm type tmpfs (rw)
+none on /proc/sys/fs/binfmt_misc type binfmt_misc (rw)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw)
+[user@localhost ~]$ echo $PS1
 [\u@\h \W]\$
-[jkwalter@localhost ~]$ PS1='\d \t>'
-Mon Jan 28 08:38:47>PS1='\w>'
+[user@localhost ~]$ PS1='\d \t>'
+Wed May 18 11:19:06>PS1='\w'>'
 ~>PS1='$PWD>'
-/home/jkwalter>logout
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.01.28 08:40:32 =~=~=~=~=~=~=~=~=~=~=~=
-login as: jkwalter
-jkwalter@192.168.5.130's password: 
-Last login: Mon Jan 28 08:37:00 2019 from 192.168.5.1
-
-[jkwalter@localhost ~]$ pwd
-/home/jkwalter
-[jkwalter@localhost ~]$ PS1='$PWD>'
-/home/jkwalter>cd /var/spool/mail
-/var/spool/mail>cd
-/home/jkwalter>logout
-=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2019.01.28 08:41:59 =~=~=~=~=~=~=~=~=~=~=~=
-login as: jkwalter
-jkwalter@192.168.5.130's password: 
-Last login: Mon Jan 28 08:40:48 2019 from 192.168.5.1
-
-[jkwalter@localhost ~]$ cd /home
-[jkwalter@localhost home]$ cd jkwalter
-[jkwalter@localhost ~]$ cd .
-[jkwalter@localhost ~]$ cd ..
-[jkwalter@localhost home]$ cd ..
-[jkwalter@localhost /]$ cd
-[jkwalter@localhost ~]$ ls
-Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
-[jkwalter@localhost ~]$ cat > notes
-This is a note.
-[jkwalter@localhost ~]$ ls notes
-notes
-[jkwalter@localhost ~]$ ls /var
-account  crash  games     lib    log   opt       spool   yp
-adm      db     gopher    local  mail  preserve  target
-cache    empty  kerberos  lock   nis   run       tmp
-[jkwalter@localhost ~]$ ls -l /dev
-total 0
-crw-rw----. 1 root video    10, 175 Jan 28 08:33 agpgart
-crw-------. 1 root root     10, 235 Jan 28 08:33 autofs
-drwxr-xr-x. 2 root root         160 Jan 28 08:33 block
-drwxr-xr-x. 2 root root          80 Jan 28 08:33 bsg
-crw-------. 1 root root     10, 234 Jan 28 08:33 btrfs-control
-drwxr-xr-x. 3 root root          60 Jan 28 08:33 bus
-lrwxrwxrwx. 1 root root           3 Jan 28 08:33 cdrom -> sr0
-drwxr-xr-x. 2 root root          80 Jan 28 08:33 centos
-drwxr-xr-x. 2 root root        3060 Jan 28 08:33 char
-crw-------. 1 root root      5,   1 Jan 28 08:34 console
-lrwxrwxrwx. 1 root root          11 Jan 28 08:33 core -> /proc/kcore
-drwxr-xr-x. 4 root root          80 Jan 28 08:33 cpu
-crw-------. 1 root root     10,  61 Jan 28 08:33 cpu_dma_latency
-crw-------. 1 root root     10,  62 Jan 28 08:33 crash
-drwxr-xr-x. 5 root root         100 Jan 28 08:33 disk
-brw-rw----. 1 root disk    253,   0 Jan 28 08:33 dm-0
-brw-rw----. 1 root disk    253,   1 Jan 28 08:33 dm-1
-crw-rw----+ 1 root audio    14,   9 Jan 28 08:33 dmmidi
-drwxr-xr-x. 2 root root          80 Jan 28 08:33 dri
-crw-rw----. 1 root video    29,   0 Jan 28 08:33 fb0
-lrwxrwxrwx. 1 root root          13 Jan 28 08:33 fd -> /proc/self/fd
-crw-rw-rw-. 1 root root      1,   7 Jan 28 08:33 full
-crw-rw-rw-. 1 root root     10, 229 Jan 28 08:33 fuse
-crw-------. 1 root root    246,   0 Jan 28 08:33 hidraw0
-crw-------. 1 root root     10, 228 Jan 28 08:33 hpet
-drwxr-xr-x. 3 root root           0 Jan 28 08:33 hugepages
-crw-------. 1 root root     10, 183 Jan 28 08:33 hwrng
-lrwxrwxrwx. 1 root root          25 Jan 28 08:33 initctl -> /run/systemd/initctl/fifo
-drwxr-xr-x. 4 root root         300 Jan 28 08:33 input
-crw-r--r--. 1 root root      1,  11 Jan 28 08:33 kmsg
-srw-rw-rw-. 1 root root           0 Jan 28 08:33 log
-crw-rw----. 1 root disk     10, 237 Jan 28 08:33 loop-control
-crw-rw----. 1 root lp        6,   0 Jan 28 08:33 lp0
-crw-rw----. 1 root lp        6,   1 Jan 28 08:33 lp1
-crw-rw----. 1 root lp        6,   2 Jan 28 08:33 lp2
-crw-rw----. 1 root lp        6,   3 Jan 28 08:33 lp3
-drwxr-xr-x. 2 root root         100 Jan 28 08:33 mapper
-crw-------. 1 root root     10, 227 Jan 28 08:33 mcelog
-crw-r-----. 1 root kmem      1,   1 Jan 28 08:33 mem
-crw-rw----+ 1 root audio    14,   2 Jan 28 08:33 midi
-drwxrwxrwt. 2 root root          40 Jan 28 08:33 mqueue
-drwxr-xr-x. 2 root root          60 Jan 28 08:33 net
-crw-------. 1 root root     10,  60 Jan 28 08:33 network_latency
-crw-------. 1 root root     10,  59 Jan 28 08:33 network_throughput
-crw-rw-rw-. 1 root root      1,   3 Jan 28 08:33 null
-crw-------. 1 root root     10, 144 Jan 28 08:33 nvram
-crw-------. 1 root root      1,  12 Jan 28 08:33 oldmem
-crw-r-----. 1 root kmem      1,   4 Jan 28 08:33 port
-crw-------. 1 root root    108,   0 Jan 28 08:33 ppp
-crw-rw-rw-. 1 root tty       5,   2 Jan 28 08:45 ptmx
-drwxr-xr-x. 2 root root           0 Jan 28 08:33 pts
-crw-rw-rw-. 1 root root      1,   8 Jan 28 08:33 random
-drwxr-xr-x. 2 root root          60 Jan 28 08:33 raw
-lrwxrwxrwx. 1 root root           4 Jan 28 08:33 rtc -> rtc0
-crw-------. 1 root root    252,   0 Jan 28 08:33 rtc0
-brw-rw----. 1 root disk      8,   0 Jan 28 08:33 sda
-brw-rw----. 1 root disk      8,   1 Jan 28 08:33 sda1
-brw-rw----. 1 root disk      8,   2 Jan 28 08:33 sda2
-crw-rw----. 1 root disk     21,   0 Jan 28 08:33 sg0
-crw-rw----+ 1 root cdrom    21,   1 Jan 28 08:33 sg1
-drwxrwxrwt. 2 root root          40 Jan 28 08:33 shm
-crw-------. 1 root root     10, 231 Jan 28 08:33 snapshot
-drwxr-xr-x. 3 root root         200 Jan 28 08:33 snd
-brw-rw----+ 1 root cdrom    11,   0 Jan 28 08:33 sr0
-lrwxrwxrwx. 1 root root          15 Jan 28 08:33 stderr -> /proc/self/fd/2
-lrwxrwxrwx. 1 root root          15 Jan 28 08:33 stdin -> /proc/self/fd/0
-lrwxrwxrwx. 1 root root          15 Jan 28 08:33 stdout -> /proc/self/fd/1
-crw-rw-rw-. 1 root tty       5,   0 Jan 28 08:33 tty
-crw--w----. 1 root tty       4,   0 Jan 28 08:33 tty0
-crw--w----. 1 root tty       4,   1 Jan 28 08:33 tty1
-crw--w----. 1 root tty       4,  10 Jan 28 08:33 tty10
-crw--w----. 1 root tty       4,  11 Jan 28 08:33 tty11
-crw--w----. 1 root tty       4,  12 Jan 28 08:33 tty12
-crw--w----. 1 root tty       4,  13 Jan 28 08:33 tty13
-crw--w----. 1 root tty       4,  14 Jan 28 08:33 tty14
-crw--w----. 1 root tty       4,  15 Jan 28 08:33 tty15
-crw--w----. 1 root tty       4,  16 Jan 28 08:33 tty16
-crw--w----. 1 root tty       4,  17 Jan 28 08:33 tty17
-crw--w----. 1 root tty       4,  18 Jan 28 08:33 tty18
-crw--w----. 1 root tty       4,  19 Jan 28 08:33 tty19
-crw--w----. 1 root tty       4,   2 Jan 28 08:33 tty2
-crw--w----. 1 root tty       4,  20 Jan 28 08:33 tty20
-crw--w----. 1 root tty       4,  21 Jan 28 08:33 tty21
-crw--w----. 1 root tty       4,  22 Jan 28 08:33 tty22
-crw--w----. 1 root tty       4,  23 Jan 28 08:33 tty23
-crw--w----. 1 root tty       4,  24 Jan 28 08:33 tty24
-crw--w----. 1 root tty       4,  25 Jan 28 08:33 tty25
-crw--w----. 1 root tty       4,  26 Jan 28 08:33 tty26
-crw--w----. 1 root tty       4,  27 Jan 28 08:33 tty27
-crw--w----. 1 root tty       4,  28 Jan 28 08:33 tty28
-crw--w----. 1 root tty       4,  29 Jan 28 08:33 tty29
-crw--w----. 1 root tty       4,   3 Jan 28 08:33 tty3
-crw--w----. 1 root tty       4,  30 Jan 28 08:33 tty30
-crw--w----. 1 root tty       4,  31 Jan 28 08:33 tty31
-crw--w----. 1 root tty       4,  32 Jan 28 08:33 tty32
-crw--w----. 1 root tty       4,  33 Jan 28 08:33 tty33
-crw--w----. 1 root tty       4,  34 Jan 28 08:33 tty34
-crw--w----. 1 root tty       4,  35 Jan 28 08:33 tty35
-crw--w----. 1 root tty       4,  36 Jan 28 08:33 tty36
-crw--w----. 1 root tty       4,  37 Jan 28 08:33 tty37
-crw--w----. 1 root tty       4,  38 Jan 28 08:33 tty38
-crw--w----. 1 root tty       4,  39 Jan 28 08:33 tty39
-crw--w----. 1 root tty       4,   4 Jan 28 08:33 tty4
-crw--w----. 1 root tty       4,  40 Jan 28 08:33 tty40
-crw--w----. 1 root tty       4,  41 Jan 28 08:33 tty41
-crw--w----. 1 root tty       4,  42 Jan 28 08:33 tty42
-crw--w----. 1 root tty       4,  43 Jan 28 08:33 tty43
-crw--w----. 1 root tty       4,  44 Jan 28 08:33 tty44
-crw--w----. 1 root tty       4,  45 Jan 28 08:33 tty45
-crw--w----. 1 root tty       4,  46 Jan 28 08:33 tty46
-crw--w----. 1 root tty       4,  47 Jan 28 08:33 tty47
-crw--w----. 1 root tty       4,  48 Jan 28 08:33 tty48
-crw--w----. 1 root tty       4,  49 Jan 28 08:33 tty49
-crw--w----. 1 root tty       4,   5 Jan 28 08:33 tty5
-crw--w----. 1 root tty       4,  50 Jan 28 08:33 tty50
-crw--w----. 1 root tty       4,  51 Jan 28 08:33 tty51
-crw--w----. 1 root tty       4,  52 Jan 28 08:33 tty52
-crw--w----. 1 root tty       4,  53 Jan 28 08:33 tty53
-crw--w----. 1 root tty       4,  54 Jan 28 08:33 tty54
-crw--w----. 1 root tty       4,  55 Jan 28 08:33 tty55
-crw--w----. 1 root tty       4,  56 Jan 28 08:33 tty56
-crw--w----. 1 root tty       4,  57 Jan 28 08:33 tty57
-crw--w----. 1 root tty       4,  58 Jan 28 08:33 tty58
-crw--w----. 1 root tty       4,  59 Jan 28 08:33 tty59
-crw--w----. 1 root tty       4,   6 Jan 28 08:33 tty6
-crw--w----. 1 root tty       4,  60 Jan 28 08:33 tty60
-crw--w----. 1 root tty       4,  61 Jan 28 08:33 tty61
-crw--w----. 1 root tty       4,  62 Jan 28 08:33 tty62
-crw--w----. 1 root tty       4,  63 Jan 28 08:33 tty63
-crw--w----. 1 root tty       4,   7 Jan 28 08:33 tty7
-crw--w----. 1 root tty       4,   8 Jan 28 08:33 tty8
-crw--w----. 1 root tty       4,   9 Jan 28 08:33 tty9
-crw-rw----. 1 root dialout   4,  64 Jan 28 08:33 ttyS0
-crw-rw----. 1 root dialout   4,  65 Jan 28 08:33 ttyS1
-crw-rw----. 1 root dialout   4,  66 Jan 28 08:33 ttyS2
-crw-rw----. 1 root dialout   4,  67 Jan 28 08:33 ttyS3
-crw-------. 1 root root     10, 239 Jan 28 08:33 uhid
-crw-------. 1 root root     10, 223 Jan 28 08:33 uinput
-crw-rw-rw-. 1 root root      1,   9 Jan 28 08:33 urandom
-crw-------. 1 root root    247,   0 Jan 28 08:33 usbmon0
-crw-------. 1 root root    247,   1 Jan 28 08:33 usbmon1
-crw-------. 1 root root    247,   2 Jan 28 08:33 usbmon2
-crw-rw----. 1 root tty       7,   0 Jan 28 08:33 vcs
-crw-rw----. 1 root tty       7,   1 Jan 28 08:33 vcs1
-crw-rw----. 1 root tty       7,   2 Jan 28 08:33 vcs2
-crw-rw----. 1 root tty       7,   3 Jan 28 08:33 vcs3
-crw-rw----. 1 root tty       7,   4 Jan 28 08:33 vcs4
-crw-rw----. 1 root tty       7,   5 Jan 28 08:33 vcs5
-crw-rw----. 1 root tty       7,   6 Jan 28 08:33 vcs6
-crw-rw----. 1 root tty       7, 128 Jan 28 08:33 vcsa
-crw-rw----. 1 root tty       7, 129 Jan 28 08:33 vcsa1
-crw-rw----. 1 root tty       7, 130 Jan 28 08:33 vcsa2
-crw-rw----. 1 root tty       7, 131 Jan 28 08:33 vcsa3
-crw-rw----. 1 root tty       7, 132 Jan 28 08:33 vcsa4
-crw-rw----. 1 root tty       7, 133 Jan 28 08:33 vcsa5
-crw-rw----. 1 root tty       7, 134 Jan 28 08:33 vcsa6
-drwxr-xr-x. 2 root root          60 Jan 28 08:33 vfio
-crw-------. 1 root root     10,  63 Jan 28 08:33 vga_arbiter
-crw-------. 1 root root     10, 137 Jan 28 08:33 vhci
-crw-------. 1 root root     10, 238 Jan 28 08:33 vhost-net
-crw-------. 1 root root     10,  58 Jan 28 08:33 vmci
-crw-------. 1 root root     10,  57 Jan 28 08:33 vsock
-crw-rw-rw-. 1 root root      1,   5 Jan 28 08:33 zero
-[jkwalter@localhost ~]$ ls -l /
-total 24
-lrwxrwxrwx.   1 root root    7 Jan 20 21:19 bin -> usr/bin
-dr-xr-xr-x.   5 root root 4096 Jan 28 08:34 boot
-drwxr-xr-x.  20 root root 3300 Jan 28 08:33 dev
-drwxr-xr-x. 147 root root 8192 Jan 28 08:33 etc
-drwxr-xr-x.   3 root root   22 Jan 20 21:26 home
-lrwxrwxrwx.   1 root root    7 Jan 20 21:19 lib -> usr/lib
-lrwxrwxrwx.   1 root root    9 Jan 20 21:19 lib64 -> usr/lib64
-drwxr-xr-x.   2 root root    6 Apr 10  2018 media
-drwxr-xr-x.   2 root root    6 Apr 10  2018 mnt
-drwxr-xr-x.   3 root root   16 Jan 20 21:23 opt
-dr-xr-xr-x. 186 root root    0 Jan 28 08:33 proc
-dr-xr-x---.   5 root root  184 Jan 20 21:28 root
-drwxr-xr-x.  44 root root 1320 Jan 28 08:33 run
-lrwxrwxrwx.   1 root root    8 Jan 20 21:19 sbin -> usr/sbin
-drwxr-xr-x.   2 root root    6 Apr 10  2018 srv
-dr-xr-xr-x.  13 root root    0 Jan 28 08:33 sys
-drwxrwxrwt.  27 root root 4096 Jan 28 08:35 tmp
-drwxr-xr-x.  13 root root  155 Jan 20 21:19 usr
-drwxr-xr-x.  21 root root 4096 Jan 20 21:27 var
-[jkwalter@localhost ~]$ clear
-[jkwalter@localhost ~]$ ls -a
-.              .bashrc  Desktop    .ICEauthority  notes     Templates
-..             .cache   Documents  .local         Pictures  Videos
-.bash_history  .config  Downloads  .mozilla       Public    .viminfo
-.bash_profile  .dbus    .esd_auth  Music          .redhat
-[jkwalter@localhost ~]$ cat > first_name
-Joshua
-[jkwalter@localhost ~]$ cat > middle_name
-Kyle
-[jkwalter@localhost ~]$ cat > last_name
-Walter
-[jkwalter@localhost ~]$ cat > full_name1.txt
-Joshua Kyle Walter
-[jkwalter@localhost ~]$ cat > full_name22.txt
-Joshua Kyle Walter
-[jkwalter@localhost ~]$ ls *name
-first_name  last_name  middle_name
-[jkwalter@localhost ~]$ ls full_name?.txt
-full_name1.txt
-[jkwalter@localhost ~]$ ls *.txt
-full_name1.txt  full_name22.txt
-[jkwalter@localhost ~]$ mkdir dept_4540
-[jkwalter@localhost ~]$ ls
-dept_4540  Downloads       full_name22.txt  Music     Public
-Desktop    first_name      last_name        notes     Templates
-Documents  full_name1.txt  middle_name      Pictures  Videos
-[jkwalter@localhost ~]$ cd dept_4540
-[jkwalter@localhost dept_4540]$ cat > phones1
-219:432:4567:Harrison:Joel
-219:432:4587:Mitchell:Barbara
-219:432:4589:Olson:Timothy
-[jkwalter@localhost dept_4540]$ cat phones1
-219:432:4567:Harrison:Joel
-219:432:4587:Mitchell:Barbara
-219:432:4589:Olson:Timothy
-[jkwalter@localhost dept_4540]$ cd
-[jkwalter@localhost ~]$ mkdir dept_4550
-[jkwalter@localhost ~]$ ls
-dept_4540  Documents   full_name1.txt   middle_name  Pictures   Videos
-dept_4550  Downloads   full_name22.txt  Music        Public
-Desktop    first_name  last_name        notes        Templates
-[jkwalter@localhost ~]$ cd dept_4550
-[jkwalter@localhost dept_4550]$ cat > phones2
-219:432:4591:Moore:Sarah
-219:432:4522:Polk:John
-219:432:4501:Robinson:Sarah
-[jkwalter@localhost dept_4550]$ cat phones2
-219:432:4591:Moore:Sarah
-219:432:4522:Polk:John
-219:432:4501:Robinson:Sarah
-[jkwalter@localhost dept_4550]$ clear
-[jkwalter@localhost dept_4550]$ cd
-[jkwalter@localhost ~]$ mkdir corp_db
-[jkwalter@localhost ~]$ cd corp_db
-[jkwalter@localhost corp_db]$ cp ~/dept_4540/phones1 .
-[jkwalter@localhost corp_db]$ cp ~/dept_4550/phones2 .
-[jkwalter@localhost corp_db]$ ls
-phones1  phones2
-[jkwalter@localhost corp_db]$ cat phones1 phones2 > corp_phones
-[jkwalter@localhost corp_db]$ clear
-[jkwalter@localhost corp_db]$ more corp_phones
-219:432:4567:Harrison:Joel
-219:432:4587:Mitchell:Barbara
-219:432:4589:Olson:Timothy
-219:432:4591:Moore:Sarah
-219:432:4522:Polk:John
-219:432:4501:Robinson:Sarah
-[jkwalter@localhost corp_db]$ cd
-[jkwalter@localhost ~]$ clear
-[jkwalter@localhost ~]$ chmod go+x ~
-[jkwalter@localhost ~]$ chmod ugo+x ~/corp_db
-[jkwalter@localhost ~]$ chmod o+w ~/corp_db/*
-[jkwalter@localhost ~]$ ls -l ~/corp_db
-total 12
--rw-rw-rw-. 1 jkwalter jkwalter 160 Jan 28 08:54 corp_phones
--rw-rw-rw-. 1 jkwalter jkwalter  84 Jan 28 08:53 phones1
--rw-rw-rw-. 1 jkwalter jkwalter  76 Jan 28 08:53 phones2
-[jkwalter@localhost ~]$ exit
+/home/user>exit
 logout
+    1  man mount
+    2  mount
+    3  echo $PS1
+    4  PS1='\d\t>'
+    5  PS1='\w>'
+    6  PS1='$PWD>'
+    7  pwd
+    8  PS1='$PWD>'
+    9  cd /var/spool/mail
+   10  cd
+   11  man mount
+   12  mount
+   13  echo $PS1
+   14  PS1='\d \t>'
+   15  PS1='\w>'
+   16  PS1='$PWD>'
+   17  exit
+login as: user
+user@192.168.1.3's password: 
+Last login: Wed May 18 11:17:25 2016 from 192.168.1.2
+--------------------------------------------------------------------
+ATTENTION!
+
+- When completing assignments, be sure to log on using PuTTY!  If
+  you do not use PuTTY, your work will NOT be saved to a log file.
+
+- Do NOT log on as root or other superuser unless directed to do so.
+--------------------------------------------------------------------
+
+[user@localhost ~]$ pwd
+/home/user
+[user@localhost ~]$ PS1='$PWD>'
+/home/user>cd /var/spool/mail
+/var/spool/mail>cd
+/home/user>exit
+logout
+    1  pwd
+    2  PS1='$PWD>'
+    3  cd /var/spool/mail
+    4  cd
+    5  exit
+login as: user
+user@192.168.1.3's password: 
+Last login: Wed May 18 11:22:30 2016 from 192.168.1.2
+--------------------------------------------------------------------
+ATTENTION!
+
+- When completing assignments, be sure to log on using PuTTY!  If
+  you do not use PuTTY, your work will NOT be saved to a log file.
+
+- Do NOT log on as root or other superuser unless directed to do so.
+--------------------------------------------------------------------
+
+[user@localhost ~]$ cd /home
+[user@localhost home]$ cd user
+[user@localhost ~]$ cd .
+[user@localhost ~]$ cd ..
+[user@localhost home]$ cd ..
+[user@localhost /]$ cd 
+[user@localhost ~]$ ls
+current_users  favorite_foods  notes       who_info
+Desktop        month           users_info  year_2009
+[user@localhost ~]$ l s notes
+notes
+[user@localhost ~]$ ls /var
+account  crash  empty  gdm  local  log   nis  preserve  run    tmp  yp
+cache    db     games  lib  lock   mail  opt  racoon    spool  www
+[user@localhost ~]$ ls -l /dev
+total 0
+crw------- 1 root root    10,  175 May 18 10:56 agpgart
+drwxr-xr-x 3 root root          60 May 18 10:56 bus
+lrwxrwxrwx 1 root root           3 May 18 10:56 cdrom -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 cdrom-hdc -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 cdrw -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 cdrw-hdc -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 cdwriter -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 cdwriter-hdc -> hdc
+crw------- 1 root root     5,    1 May 18 10:56 console
+lrwxrwxrwx 1 root root          11 May 18 10:56 core -> /proc/kcore
+drwxr-xr-x 6 root root         120 May 18 10:56 disk
+lrwxrwxrwx 1 root root           3 May 18 10:56 dvd -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 dvd-hdc -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 dvdrw -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 dvdrw-hdc -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 dvdwriter -> hdc
+lrwxrwxrwx 1 root root           3 May 18 10:56 dvdwriter-hdc -> hdc
+lrwxrwxrwx 1 root root          13 May 18 10:56 fd -> /proc/self/fd
+brw-rw---- 1 root floppy   2,    0 May 18 10:56 fd0
+brw-rw---- 1 root floppy   2,   84 May 18 10:56 fd0u1040
+brw-rw---- 1 root floppy   2,   88 May 18 10:56 fd0u1120
+brw-rw---- 1 root floppy   2,   28 May 18 10:56 fd0u1440
+brw-rw---- 1 root floppy   2,   44 May 18 10:56 fd0u1680
+brw-rw---- 1 root floppy   2,   60 May 18 10:56 fd0u1722
+brw-rw---- 1 root floppy   2,   76 May 18 10:56 fd0u1743
+brw-rw---- 1 root floppy   2,   96 May 18 10:56 fd0u1760
+brw-rw---- 1 root floppy   2,  116 May 18 10:56 fd0u1840
+brw-rw---- 1 root floppy   2,  100 May 18 10:56 fd0u1920
+brw-rw---- 1 root floppy   2,   12 May 18 10:56 fd0u360
+brw-rw---- 1 root floppy   2,   16 May 18 10:56 fd0u720
+brw-rw---- 1 root floppy   2,  120 May 18 10:56 fd0u800
+brw-rw---- 1 root floppy   2,   52 May 18 10:56 fd0u820
+brw-rw---- 1 root floppy   2,   68 May 18 10:56 fd0u830
+lrwxrwxrwx 1 root root           3 May 18 10:56 floppy -> fd0
+lrwxrwxrwx 1 root root           3 May 18 10:56 floppy-fd0 -> fd0
+crw-rw-rw- 1 root root     1,    7 May 18 10:56 full
+srwxrwxrwx 1 root root           0 May 18 10:56 gpmctl
+brw-rw---- 1 root disk    22,    0 May 18 10:56 hdc
+crw------- 1 root root    10,  228 May 18 10:56 hpet
+prw------- 1 root root           0 May 18 10:57 initctl
+drwxr-xr-x 2 root root         240 May 18 10:56 input
+lrwxrwxrwx 1 root root           9 May 18 10:56 js0 -> input/js0
+crw------- 1 root root     1,   11 May 18 10:56 kmsg
+srw-rw-rw- 1 root root           0 May 18 10:56 log
+brw-r----- 1 root disk     7,    0 May 18 10:56 loop0
+brw-r----- 1 root disk     7,    1 May 18 10:56 loop1
+brw-r----- 1 root disk     7,    2 May 18 10:56 loop2
+brw-r----- 1 root disk     7,    3 May 18 10:56 loop3
+brw-r----- 1 root disk     7,    4 May 18 10:56 loop4
+brw-r----- 1 root disk     7,    5 May 18 10:56 loop5
+brw-r----- 1 root disk     7,    6 May 18 10:56 loop6
+brw-r----- 1 root disk     7,    7 May 18 10:56 loop7
+crw-rw---- 1 root lp       6,    0 May 18 10:56 lp0
+lrwxrwxrwx 1 root root          13 May 18 10:56 MAKEDEV -> /sbin/MAKEDEV
+drwxr-xr-x 2 root root          60 May 18 10:56 mapper
+brw-r----- 1 root disk     9,    0 May 18 10:56 md0
+crw-r----- 1 root kmem     1,    1 May 18 10:56 mem
+drwxr-xr-x 2 root root          60 May 18 10:56 net
+crw-rw-rw- 1 root root     1,    3 May 18 10:56 null
+crw-rw---- 1 root root    10,  144 May 18 10:56 nvram
+crw------- 1 root root     1,   12 May 18 10:56 oldmem
+lrwxrwxrwx 1 root root           3 May 18 10:56 par0 -> lp0
+crw-rw---- 1 root lp      99,    0 May 18 10:56 parport0
+crw-rw---- 1 root lp      99,    1 May 18 10:56 parport1
+crw-rw---- 1 root lp      99,    2 May 18 10:56 parport2
+crw-rw---- 1 root lp      99,    3 May 18 10:56 parport3
+crw-r----- 1 root kmem     1,    4 May 18 10:56 port
+crw------- 1 root root   108,    0 May 18 10:56 ppp
+crw-rw-rw- 1 root tty      5,    2 May 18 11:27 ptmx
+drwxr-xr-x 2 root root           0 May 18 05:56 pts
+lrwxrwxrwx 1 root root           4 May 18 10:56 ram -> ram1
+brw-r----- 1 root disk     1,    0 May 18 05:56 ram0
+brw-r----- 1 root disk     1,    1 May 18 05:56 ram1
+brw-r----- 1 root disk     1,   10 May 18 05:56 ram10
+brw-r----- 1 root disk     1,   11 May 18 05:56 ram11
+brw-r----- 1 root disk     1,   12 May 18 05:56 ram12
+brw-r----- 1 root disk     1,   13 May 18 05:56 ram13
+brw-r----- 1 root disk     1,   14 May 18 05:56 ram14
+brw-r----- 1 root disk     1,   15 May 18 05:56 ram15
+brw-r----- 1 root disk     1,    2 May 18 05:56 ram2
+brw-r----- 1 root disk     1,    3 May 18 05:56 ram3
+brw-r----- 1 root disk     1,    4 May 18 05:56 ram4
+brw-r----- 1 root disk     1,    5 May 18 05:56 ram5
+brw-r----- 1 root disk     1,    6 May 18 05:56 ram6
+brw-r----- 1 root disk     1,    7 May 18 05:56 ram7
+brw-r----- 1 root disk     1,    8 May 18 05:56 ram8
+brw-r----- 1 root disk     1,    9 May 18 05:56 ram9
+lrwxrwxrwx 1 root root           4 May 18 10:56 ramdisk -> ram0
+crw-rw-rw- 1 root root     1,    8 May 18 10:56 random
+crw------- 1 root root   162,    0 May 18 10:56 rawctl
+brw------- 1 root root     8,    3 May 18 05:56 root
+crw-r--r-- 1 root root    10,  135 May 18 05:56 rtc
+brw-r----- 1 root disk     8,    0 May 18 05:56 sda
+brw-r----- 1 root disk     8,    1 May 18 10:56 sda1
+brw-r----- 1 root disk     8,    2 May 18 05:56 sda2
+brw-r----- 1 root disk     8,    3 May 18 10:56 sda3
+crw------- 1 root root    21,    0 May 18 10:56 sg0
+drwxrwxrwt 2 root root          40 May 18 10:56 shm
+crw------- 1 root root    10,  231 May 18 10:56 snapshot
+lrwxrwxrwx 1 root root          15 May 18 10:56 stderr -> /proc/self/fd/2
+lrwxrwxrwx 1 root root          15 May 18 10:56 stdin -> /proc/self/fd/0
+lrwxrwxrwx 1 root root          15 May 18 10:56 stdout -> /proc/self/fd/1
+crw------- 1 root root     4,    0 May 18 05:56 systty
+crw-rw-rw- 1 root tty      5,    0 May 18 10:56 tty
+crw-rw---- 1 root root     4,    0 May 18 05:56 tty0
+crw------- 1 root root     4,    1 May 18 10:56 tty1
+crw-rw---- 1 root tty      4,   10 May 18 05:56 tty10
+crw-rw---- 1 root tty      4,   11 May 18 05:56 tty11
+crw-rw---- 1 root tty      4,   12 May 18 05:56 tty12
+crw-rw---- 1 root tty      4,   13 May 18 10:56 tty13
+crw-rw---- 1 root tty      4,   14 May 18 10:56 tty14
+crw-rw---- 1 root tty      4,   15 May 18 10:56 tty15
+crw-rw---- 1 root tty      4,   16 May 18 10:56 tty16
+crw-rw---- 1 root tty      4,   17 May 18 10:56 tty17
+crw-rw---- 1 root tty      4,   18 May 18 10:56 tty18
+crw-rw---- 1 root tty      4,   19 May 18 10:56 tty19
+crw------- 1 root root     4,    2 May 18 10:56 tty2
+crw-rw---- 1 root tty      4,   20 May 18 10:56 tty20
+crw-rw---- 1 root tty      4,   21 May 18 10:56 tty21
+crw-rw---- 1 root tty      4,   22 May 18 10:56 tty22
+crw-rw---- 1 root tty      4,   23 May 18 10:56 tty23
+crw-rw---- 1 root tty      4,   24 May 18 10:56 tty24
+crw-rw---- 1 root tty      4,   25 May 18 10:56 tty25
+crw-rw---- 1 root tty      4,   26 May 18 10:56 tty26
+crw-rw---- 1 root tty      4,   27 May 18 10:56 tty27
+crw-rw---- 1 root tty      4,   28 May 18 10:56 tty28
+crw-rw---- 1 root tty      4,   29 May 18 10:56 tty29
+crw------- 1 root root     4,    3 May 18 10:56 tty3
+crw-rw---- 1 root tty      4,   30 May 18 10:56 tty30
+crw-rw---- 1 root tty      4,   31 May 18 10:56 tty31
+crw-rw---- 1 root tty      4,   32 May 18 10:56 tty32
+crw-rw---- 1 root tty      4,   33 May 18 10:56 tty33
+crw-rw---- 1 root tty      4,   34 May 18 10:56 tty34
+crw-rw---- 1 root tty      4,   35 May 18 10:56 tty35
+crw-rw---- 1 root tty      4,   36 May 18 10:56 tty36
+crw-rw---- 1 root tty      4,   37 May 18 10:56 tty37
+crw-rw---- 1 root tty      4,   38 May 18 10:56 tty38
+crw-rw---- 1 root tty      4,   39 May 18 10:56 tty39
+crw------- 1 root root     4,    4 May 18 10:56 tty4
+crw-rw---- 1 root tty      4,   40 May 18 10:56 tty40
+crw-rw---- 1 root tty      4,   41 May 18 10:56 tty41
+crw-rw---- 1 root tty      4,   42 May 18 10:56 tty42
+crw-rw---- 1 root tty      4,   43 May 18 10:56 tty43
+crw-rw---- 1 root tty      4,   44 May 18 10:56 tty44
+crw-rw---- 1 root tty      4,   45 May 18 10:56 tty45
+crw-rw---- 1 root tty      4,   46 May 18 10:56 tty46
+crw-rw---- 1 root tty      4,   47 May 18 10:56 tty47
+crw-rw---- 1 root tty      4,   48 May 18 10:56 tty48
+crw-rw---- 1 root tty      4,   49 May 18 10:56 tty49
+crw------- 1 root root     4,    5 May 18 10:56 tty5
+crw-rw---- 1 root tty      4,   50 May 18 10:56 tty50
+crw-rw---- 1 root tty      4,   51 May 18 10:56 tty51
+crw-rw---- 1 root tty      4,   52 May 18 10:56 tty52
+crw-rw---- 1 root tty      4,   53 May 18 10:56 tty53
+crw-rw---- 1 root tty      4,   54 May 18 10:56 tty54
+crw-rw---- 1 root tty      4,   55 May 18 10:56 tty55
+crw-rw---- 1 root tty      4,   56 May 18 10:56 tty56
+crw-rw---- 1 root tty      4,   57 May 18 10:56 tty57
+crw-rw---- 1 root tty      4,   58 May 18 10:56 tty58
+crw-rw---- 1 root tty      4,   59 May 18 10:56 tty59
+crw------- 1 root root     4,    6 May 18 10:56 tty6
+crw-rw---- 1 root tty      4,   60 May 18 10:56 tty60
+crw-rw---- 1 root tty      4,   61 May 18 10:56 tty61
+crw-rw---- 1 root tty      4,   62 May 18 10:56 tty62
+crw-rw---- 1 root tty      4,   63 May 18 10:56 tty63
+crw-rw---- 1 root root     4,    7 May 18 05:56 tty7
+crw-rw---- 1 root tty      4,    8 May 18 10:56 tty8
+crw-rw---- 1 root tty      4,    9 May 18 05:56 tty9
+crw-rw---- 1 root uucp     4,   64 May 18 05:56 ttyS0
+crw-rw---- 1 root uucp     4,   65 May 18 05:56 ttyS1
+crw-rw---- 1 root uucp     4,   66 May 18 05:56 ttyS2
+crw-rw---- 1 root uucp     4,   67 May 18 05:56 ttyS3
+cr--r--r-- 1 root root     1,    9 May 18 10:56 urandom
+crw------- 1 root root   442,    0 May 18 10:56 usbdev1.1_ep00
+crw------- 1 root root   442,    0 May 18 10:56 usbdev1.1_ep81
+crw------- 1 root root   442, 2048 May 18 10:56 usbdev2.1_ep00
+crw------- 1 root root   442, 2048 May 18 10:56 usbdev2.1_ep81
+crw------- 1 root root   442, 2049 May 18 10:56 usbdev2.2_ep00
+crw------- 1 root root   442, 2049 May 18 10:56 usbdev2.2_ep81
+crw------- 1 root root   442, 2049 May 18 10:56 usbdev2.2_ep82
+crw------- 1 root root   442, 2050 May 18 10:56 usbdev2.3_ep00
+crw------- 1 root root   442, 2050 May 18 10:56 usbdev2.3_ep81
+crw------- 1 vcsa tty      7,    0 May 18 10:56 vcs
+crw------- 1 vcsa tty      7,    1 May 18 10:56 vcs1
+crw------- 1 vcsa tty      7,    2 May 18 10:56 vcs2
+crw------- 1 vcsa tty      7,    3 May 18 10:56 vcs3
+crw------- 1 vcsa tty      7,    4 May 18 10:56 vcs4
+crw------- 1 vcsa tty      7,    5 May 18 10:56 vcs5
+crw------- 1 vcsa tty      7,    6 May 18 10:56 vcs6
+crw------- 1 vcsa tty      7,    7 May 18 10:57 vcs7
+crw------- 1 vcsa tty      7,  128 May 18 10:56 vcsa
+crw------- 1 vcsa tty      7,  129 May 18 10:56 vcsa1
+crw------- 1 vcsa tty      7,  130 May 18 10:56 vcsa2
+crw------- 1 vcsa tty      7,  131 May 18 10:56 vcsa3
+crw------- 1 vcsa tty      7,  132 May 18 10:56 vcsa4
+crw------- 1 vcsa tty      7,  133 May 18 10:56 vcsa5
+crw------- 1 vcsa tty      7,  134 May 18 10:56 vcsa6
+crw------- 1 vcsa tty      7,  135 May 18 10:57 vcsa7
+crw------- 1 root root    10,   63 May 18 10:56 vmci
+crw-rw-rw- 1 root root    10,   61 May 18 10:56 vsock
+lrwxrwxrwx 1 root root           4 May 18 10:56 X0R -> null
+crw-rw-rw- 1 root root     1,    5 May 18 10:56 zero
+[user@localhost ~]$ ls -l /
+total 146
+drwxr-xr-x  2 root root  4096 Aug 26  2009 bin
+drwxr-xr-x  4 root root  1024 Aug 25  2008 boot
+drwxr-xr-x 10 root root  4100 May 18 10:57 dev
+drwxr-xr-x 91 root root 12288 May 18 10:56 etc
+drwxr-xr-x  4 root root  4096 Aug 25  2008 home
+drwxr-xr-x 14 root root  4096 Aug 26  2009 lib
+drwx------  2 root root 16384 Aug 22  2008 lost+found
+drwxr-xr-x  2 root root  4096 May 18 10:56 media
+drwxr-xr-x  2 root root     0 May 18 10:56 misc
+drwxr-xr-x  3 root root  4096 Aug 19  2015 mnt
+drwxr-xr-x  2 root root     0 May 18 10:56 net
+drwxr-xr-x  2 root root  4096 Mar 29  2007 opt
+dr-xr-xr-x 90 root root     0 May 18 05:56 proc
+drwxr-x--- 14 root root  4096 Aug 19  2015 root
+drwxr-xr-x  2 root root 12288 May 16 10:44 sbin
+drwxr-xr-x  2 root root  4096 Aug 22  2008 selinux
+drwxr-xr-x  2 root root  4096 Mar 29  2007 srv
+drwxr-xr-x 11 root root     0 May 18 05:56 sys
+drwxrwxrwt  8 root root  4096 May 18 11:17 tmp
+drwxr-xr-x 15 root root  4096 Aug 22  2008 usr
+drwxr-xr-x 22 root root  4096 Aug 22  2008 var
+[user@localhost ~]$ clear
+[user@localhost ~]$ ls -a
+.              Desktop         .gnome             .metacity  users_info
+..             .dmrc           .gnome2            month      who_info
+.bash_history  .eggcups        .gnome2_private    .mozilla   year_2009
+.bash_logout   .esd_auth       .gstreamer-0.10    .nautilus
+.bash_profile  favorite_foods  .gtkrc-1.2-gnome2  notes
+.bashrc        .gconf          .ICEauthority      .redhat
+current_users  .gconfd         .lesshst           .Trash
+[user@localhost ~]$ cat > first_name
+Josh
+[user@localhost ~]$ cat > middle_name
+Kyle
+[user@localhost ~]$ cat > last_name
+Walter
+[user@localhost ~]$ cat > full_name1.txt
+Josh Kyle Walter
+[user@localhost ~]$ fullcfullafulltfull full>full full_name22.txt
+Josh Kely     yle Walter
+[user@localhost ~]$ ls *name
+first_name  last_name  middle_name
+[user@localhost ~]$ ls full_name?.txt
+full_name1.txt
+[user@localhost ~]$ ls *.txt
+full_name1.txt  full_name22.txt
+[user@localhost ~]$ mkdir dept_4540
+[user@localhost ~]$ ls
+current_users  favorite_foods  full_name22.txt  month       who_info
+dept_4540      first_name      last_name        notes       year_2009
+Desktop        full_name1.txt  middle_name      users_info
+[user@localhost ~]$ cd dept_4540
+[user@localhost dept_4540]$ cat > phones1
+219:432:4567:Harrison:Joel
+219:435 2:43 587:Mitchell:Bara bara
+219:432:4589:Olson:Timothy
+[user@localhost dept_4540]$ cat phones1
+219:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+[user@localhost dept_4540]$ cd 
+[user@localhost ~]$ mkdir dept_4550
+[user@localhost ~]$ ls
+current_users  Desktop         full_name1.txt   middle_name  users_info
+dept_4540      favorite_foods  full_name22.txt  month        who_info
+dept_4550      first_name      last_name        notes        year_2009
+[user@localhost ~]$ cd dept_4550
+[user@localhost dept_4550]$ cat > phones2
+219:432:4591:Moore  :Sarah
+219:432:4522:Polk:John
+219:432:444501^[[D^[[D             501:Robinson:lisa    Lisa
+[user@localhost dept_4550]$ cat phones2
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Lisa
+[user@localhost dept_4550]$ clear
+[user@localhost dept_4550]$ cd
+[user@localhost ~]$ mkdir corp_db
+[user@localhost ~]$ cd coprp_db
+[user@localhost corp_db]$ cp ~/dept_4540/phones1 .
+[user@localhost corp_db]$ cp ~d/dept_4550/phones2 .
+[user@localhost corp_db]$ ls
+phones1  phones2
+[user@localhost corp_db]$ cat phones1 phones2 > corp_phones
+[user@localhost corp_db]$ clear
+[user@localhost corp_db]$ more corp_phones
+219:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Lisa
+[user@localhost corp_db]$ cd
+[user@localhost ~]$ clear
+[user@localhost ~]$ chommod go+x ~
+[user@localhost ~]$ chommod ugo +x ~ /corp_db
+[user@localhost ~]$ chomod o+w ~/corp_db/*
+[user@localhost ~]$ ls -l ~/coprrp_db
+total 12
+-rw-rw-rw- 1 user user 159 May 18 11:40 corp_phones
+-rw-rw-rw- 1 user user  84 May 18 11:39 phones1
+-rw-rw-rw- 1 user user  75 May 18 11:39 phones2
+[user@localhost ~]$ exit
+logout
+    1  cd /home
+    2  cd user
+    3  cd .
+    4  cd ..
+    5  cd ..
+    6  cd 
+    7  ls
+    8  ls notes
+    9  ls /var
+   10  ls -l /dev
+   11  ls -l /
+   12  clear
+   13  ls -a
+   14  cat > first_name
+   15  cat > middle_name
+   16  cat > last_name
+   17  cat > full_name1.txt
+   18  cat > full_name22.txt
+   19  ls *name
+   20  ls full_name?.txt
+   21  ls *.txt
+   22  mkdir dept_4540
+   23  ls
+   24  cd dept_4540
+   25  cat > phones1
+   26  cat phones1
+   27  cd 
+   28  mkdir dept_4550
+   29  ls
+   30  cd dept_4550
+   31  cat > phones2
+   32  cat phones2
+   33  clear
+   34  cd
+   35  mkdir corp_db
+   36  cd corp_db
+   37  cp ~/dept_4540/phones1 .
+   38  cp ~/dept_4550/phones2 .
+   39  ls
+   40  cat phones1 phones2 > corp_phones
+   41  clear
+   42  more corp_phones
+   43  cd
+   44  clear
+   45  chmod go+x ~
+   46  chmod ugo+x ~/corp_db
+   47  chmod o+w ~/corp_db/*
+   48  ls -l ~/corp_db
+   49  exit

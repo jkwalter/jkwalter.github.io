@@ -1,0 +1,1795 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.06.08 08:43:29 =~=~=~=~=~=~=~=~=~=~=~=
+login as: user
+user@192.168.1.3's password: 
+Last login: Wed Jun  8 08:41:53 2016
+--------------------------------------------------------------------
+ATTENTION!
+
+- When completing assignments, be sure to log on using PuTTY!  If
+  you do not use PuTTY, your work will NOT be saved to a log file.
+
+- Do NOT log on as root or other superuser unless directed to do so.
+--------------------------------------------------------------------
+
+[user@localhost ~]$ vimtutor
+"/usr/share/vim/vim70/tutor/tutor" "/usr/share/vim/vim70/tutor/tutor" [readonly] 970 lines, 33259 characters
+"/tmp/tutorNO8026" "/tmp/tutorNO8026" 970 lines, 33259 characters written
+"/tmp/tutorNO8026" "/tmp/tutorNO8026" 970 lines, 33259 characters================================================================================
+=    W e l c o m e   t o   t h e   V I M   T u t o r    -    Version 1.7       =
+================================================================================Vim is a very powerful editor that has many commands, too many toexplain in a tutor such as this.  This tutor is designed to describeenough of the commands that you will be able to easily use Vim asan all-purpose editor.The approximate time required to complete the tutor is 25-30 minutes,depending upon how much time is spent with experimentation.ATTENTION:The commands in the lessons will modify the text.  Make a copy of thisfile to practise on (if you started "vimtutor" this is already a copy).It is important to remember that this tutor is set up to teach byuse.  That means that you need to execute the commands to learn themproperly.  If you only read the text, you will forget the commands!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now, make sure that your Shift-Lock key is NOT depressed and pressthe   j   key enough times to move the cursor so that Lesson 1.1
+completely fills the screen.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.1:  MOVING THE CURSOR
+
+
+** To move the cursor, press the h,j,k,l keys as indicated. **
+^
+kHint:  The h key is at the left and moves left.
+< hl >The l key is at the right and moves right.
+jThe j key looks like a down arrow
+v
+1. Move the cursor around the screen until you are comfortable.
+
+2. Hold down the down key (j) until it repeats.
+Now you know how to move to the next lesson.
+
+3. Using the down key, move to Lesson 1.2.
+
+Note: If you are ever unsure about something you typed, press <ESC> to place
+you in Normal mode.  Then retype the command you wanted.
+
+Note: The cursor keys should also work.  But using hjkl you will be able to
+move around much faster, once you get used to it.  Really!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.2: EXITING VIM
+
+
+!! NOTE: Before executing any of the steps below, read this entire lesson!!
+
+1. Press the <ESC> key (to make sure you are in Normal mode).
+
+2. Type:      :q! <ENTER>.
+This exits the editor, DISCARDING any changes you have made.
+
+3. When you see the shell prompt, type the command that got you into this
+tutor.  That would be:     vimtutor <ENTER>
+
+4. If you have these steps memorized and are confident, execute steps
+1 through 3 to exit and re-enter the editor.
+
+NOTE:  :q! <ENTER>  discards any changes you made.  In a few lessons you
+will learn how to save the changes to a file.
+
+5. Move the cursor down to Lesson 1.3.
+
+:q:q!:q![user@localhost ~]$ vimtutor
+"/usr/share/vim/vim70/tutor/tutor" "/usr/share/vim/vim70/tutor/tutor" [readonly] 970 lines, 33259 characters
+"/tmp/tutorIl8037" "/tmp/tutorIl8037" 970 lines, 33259 characters written
+"/tmp/tutorIl8037" "/tmp/tutorIl8037" 970 lines, 33259 characters================================================================================
+=    W e l c o m e   t o   t h e   V I M   T u t o r    -    Version 1.7       =
+================================================================================Vim is a very powerful editor that has many commands, too many toexplain in a tutor such as this.  This tutor is designed to describeenough of the commands that you will be able to easily use Vim asan all-purpose editor.The approximate time required to complete the tutor is 25-30 minutes,depending upon how much time is spent with experimentation.ATTENTION:The commands in the lessons will modify the text.  Make a copy of thisfile to practise on (if you started "vimtutor" this is already a copy).It is important to remember that this tutor is set up to teach byuse.  That means that you need to execute the commands to learn themproperly.  If you only read the text, you will forget the commands!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now, make sure that your Shift-Lock key is NOT depressed and pressthe   j   key enough times to move the cursor so that Lesson 1.1
+completely fills the screen.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.1:  MOVING THE CURSOR
+
+
+** To move the cursor, press the h,j,k,l keys as indicated. **
+^
+kHint:  The h key is at the left and moves left.
+< hl >The l key is at the right and moves right.
+jThe j key looks like a down arrow
+v
+1. Move the cursor around the screen until you are comfortable.
+
+2. Hold down the down key (j) until it repeats.
+Now you know how to move to the next lesson.
+
+3. Using the down key, move to Lesson 1.2.
+
+Note: If you are ever unsure about something you typed, press <ESC> to place
+you in Normal mode.  Then retype the command you wanted.
+
+Note: The cursor keys should also work.  But using hjkl you will be able to
+move around much faster, once you get used to it.  Really!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.2: EXITING VIM
+
+
+!! NOTE: Before executing any of the steps below, read this entire lesson!!
+
+1. Press the <ESC> key (to make sure you are in Normal mode).
+
+2. Type:      :q! <ENTER>.
+This exits the editor, DISCARDING any changes you have made.
+
+3. When you see the shell prompt, type the command that got you into this
+tutor.  That would be:     vimtutor <ENTER>
+
+4. If you have these steps memorized and are confident, execute steps
+1 through 3 to exit and re-enter the editor.
+
+NOTE:  :q! <ENTER>  discards any changes you made.  In a few lessons you
+will learn how to save the changes to a file.
+
+5. Move the cursor down to Lesson 1.3.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.3: TEXT EDITING - DELETION
+
+
+** Press  x  to delete the character under the cursor. **
+
+1. Move the cursor to the line below marked --->.
+
+2. To fix the errors, move the cursor until it is on top of the
+character to be deleted.
+
+3. Press the  x  key to delete the unwanted character.
+
+4. Repeat steps 2 through 4 until the sentence is correct.
+
+---> The ccow jumpedd ovverr thhe mooon.
+
+5. Now that the line is correct, go on to Lesson 1.4.
+
+NOTE: As you go through this tutor, do not try to memorize, learn by usage.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---> The cow jumpedd ovverr thhe mooon.cow jumped ovverr thhe mooon.d overr thhe mooon.verr the mooon.e moon.
+
+
+
+
+
+Lesson 1.4: TEXT EDITING - INSERTION
+
+
+** Press  i  to insert text. **
+
+1. Move the cursor to the first line below marked --->.
+
+2. To make the first line the same as the second, move the cursor on top
+of the first character AFTER where the text is to be inserted.
+
+3. Press  i  and type in the necessary additions.
+
+4. As each error is fixed press <ESC> to return to Normal mode.
+Repeat steps 2 through 4 to correct the sentence.
+
+---> There is text misng this .
+---> There is some text missing from this line.
+
+5. When you are comfortable inserting text move to the summary below.
+
+
+-- INSERT --stext misng this .otext misng this .mtext misng this .etext misng this . text misng this . text mis-- INSERT --sng this .ing this .ing -- INSERT --fthis .rthis .othis .mthis . this . this -- INSERT --l.i.n.e.
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.5: TEXT EDITING - APPENDING
+
+
+** Press  A  to append text. **
+
+1. Move the cursor to the first line below marked --->.
+It does not matter on what character the cursor is in that line.
+
+2. Press  A  and type in the necessary additions.
+
+3. As the text has been appended press <ESC> to return to Normal mode.
+
+4. Move the cursor to the second line marked ---> and repeat
+steps 2 and 3 to correct this sentence.
+
+---> There is some text missing from th
+There is some text missing from this line.
+---> There is also some text miss
+There is also some text missing here.
+
+5. When you are comfortable appending text move to lesson 1.6.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.6: EDITING A FILE
+-- INSERT --is line.-- INSERT --ing here,.k
+
+
+
+
+** Use  :wq  to save a file and exit. **
+
+!! NOTE: Before executing any of the steps below, read this entire lesson!!
+
+1. Exit this tutor as you did in lesson 1.2:  :q!
+
+2. At the shell prompt type this command:  vim tutor <ENTER>
+'vim' is the command to start the Vim editor, 'tutor' is the name of the
+file you wish to edit.  Use a file that may be changed.
+
+3. Insert and delete text as you learned in the previous lessons.
+
+4. Save the file with changes and exit Vim with:  :wq  <ENTER>
+
+5. Restart the vimtutor and move down to the following summary.
+
+6. After reading the above steps and understanding them: do it.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:q:q!:q![user@localhost ~]$ vim tutor
+"tutor" [New File]~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             0,0-1         All-- INSERT --0,1           AllT1,2           Allh1,3           Alli1,4           Alls1,5           All1,6           Alli1,7           Alls1,8           All1,9           Alla1,10          All1,11          Allt1,12          Alle1,13          Allx1,14          Allt1,15          All1,16          Allf1,17          Alli1,18          Alll1,19          Alle1,20          All!1,21          All1,20          All-- INSERT --1,21          All2,1           AllS2,2           Allo2,3           Allm2,4           Alle2,5           All2,6           Allt2,7           Alle2,8           Allx2,9           Allt2,10          All2,11          Alli2,12          Alls2,13          All2,14          Alli2,15          Alln2,16          All2,17          Allt2,18          Allh2,19          Alli2,20          Alls2,21          All2,22          Allf2,23          Alli2,24          Alll2,25          Alle2,26          All!2,27          All2,26          All:w:wq:wq"tutor" "tutor" [New] 2L, 48C written
+[user@localhost ~]$ vimtutor
+"/usr/share/vim/vim70/tutor/tutor" "/usr/share/vim/vim70/tutor/tutor" [readonly] 970 lines, 33259 characters
+"/tmp/tutorlv8053" "/tmp/tutorlv8053" 970 lines, 33259 characters written
+"/tmp/tutorlv8053" "/tmp/tutorlv8053" 970 lines, 33259 characters================================================================================
+=    W e l c o m e   t o   t h e   V I M   T u t o r    -    Version 1.7       =
+================================================================================Vim is a very powerful editor that has many commands, too many toexplain in a tutor such as this.  This tutor is designed to describeenough of the commands that you will be able to easily use Vim asan all-purpose editor.The approximate time required to complete the tutor is 25-30 minutes,depending upon how much time is spent with experimentation.ATTENTION:The commands in the lessons will modify the text.  Make a copy of thisfile to practise on (if you started "vimtutor" this is already a copy).It is important to remember that this tutor is set up to teach byuse.  That means that you need to execute the commands to learn themproperly.  If you only read the text, you will forget the commands!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now, make sure that your Shift-Lock key is NOT depressed and pressthe   j   key enough times to move the cursor so that Lesson 1.1
+completely fills the screen.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.1:  MOVING THE CURSOR
+
+
+** To move the cursor, press the h,j,k,l keys as indicated. **
+^
+kHint:  The h key is at the left and moves left.
+< hl >The l key is at the right and moves right.
+jThe j key looks like a down arrow
+v
+1. Move the cursor around the screen until you are comfortable.
+
+2. Hold down the down key (j) until it repeats.
+Now you know how to move to the next lesson.
+
+3. Using the down key, move to Lesson 1.2.
+
+Note: If you are ever unsure about something you typed, press <ESC> to place
+you in Normal mode.  Then retype the command you wanted.
+
+Note: The cursor keys should also work.  But using hjkl you will be able to
+move around much faster, once you get used to it.  Really!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.2: EXITING VIM
+
+
+!! NOTE: Before executing any of the steps below, read this entire lesson!!
+
+1. Press the <ESC> key (to make sure you are in Normal mode).
+
+2. Type:      :q! <ENTER>.
+This exits the editor, DISCARDING any changes you have made.
+
+3. When you see the shell prompt, type the command that got you into this
+tutor.  That would be:     vimtutor <ENTER>
+
+4. If you have these steps memorized and are confident, execute steps
+1 through 3 to exit and re-enter the editor.
+
+NOTE:  :q! <ENTER>  discards any changes you made.  In a few lessons you
+will learn how to save the changes to a file.
+
+5. Move the cursor down to Lesson 1.3.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.3: TEXT EDITING - DELETION
+
+
+** Press  x  to delete the character under the cursor. **
+
+1. Move the cursor to the line below marked --->.
+
+2. To fix the errors, move the cursor until it is on top of the
+character to be deleted.
+
+3. Press the  x  key to delete the unwanted character.
+
+4. Repeat steps 2 through 4 until the sentence is correct.
+
+---> The ccow jumpedd ovverr thhe mooon.
+
+5. Now that the line is correct, go on to Lesson 1.4.
+
+NOTE: As you go through this tutor, do not try to memorize, learn by usage.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.4: TEXT EDITING - INSERTION
+
+
+** Press  i  to insert text. **
+
+1. Move the cursor to the first line below marked --->.
+
+2. To make the first line the same as the second, move the cursor on top
+of the first character AFTER where the text is to be inserted.
+
+3. Press  i  and type in the necessary additions.
+
+4. As each error is fixed press <ESC> to return to Normal mode.
+Repeat steps 2 through 4 to correct the sentence.
+
+---> There is text misng this .
+---> There is some text missing from this line.
+
+5. When you are comfortable inserting text move to the summary below.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.5: TEXT EDITING - APPENDING
+
+
+** Press  A  to append text. **
+
+1. Move the cursor to the first line below marked --->.
+It does not matter on what character the cursor is in that line.
+
+2. Press  A  and type in the necessary additions.
+
+3. As the text has been appended press <ESC> to return to Normal mode.
+
+4. Move the cursor to the second line marked ---> and repeat
+steps 2 and 3 to correct this sentence.
+
+---> There is some text missing from th
+There is some text missing from this line.
+---> There is also some text miss
+There is also some text missing here.
+
+5. When you are comfortable appending text move to lesson 1.6.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.6: EDITING A FILE
+
+
+** Use  :wq  to save a file and exit. **
+
+!! NOTE: Before executing any of the steps below, read this entire lesson!!
+
+1. Exit this tutor as you did in lesson 1.2:  :q!
+
+2. At the shell prompt type this command:  vim tutor <ENTER>
+'vim' is the command to start the Vim editor, 'tutor' is the name of the
+file you wish to edit.  Use a file that may be changed.
+
+3. Insert and delete text as you learned in the previous lessons.
+
+4. Save the file with changes and exit Vim with:  :wq  <ENTER>
+
+5. Restart the vimtutor and move down to the following summary.
+
+6. After reading the above steps and understanding them: do it.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 1 SUMMARY
+
+
+1. The cursor is moved using either the arrow keys or the hjkl keys.
+h (left)j (down)k (up)l (right)
+
+2. To start Vim from the shell prompt type:  vim FILENAME <ENTER>
+
+3. To exit Vim type:     <ESC>   :q!   <ENTER>  to trash all changes.
+OR type:      <ESC>   :wq   <ENTER>  to save the changes.
+
+4. To delete the character at the cursor type:  x
+
+5. To insert or append text type:
+i   type inserted text   <ESC>insert before the cursor
+A   type appended text   <ESC>append after the line
+
+NOTE: Pressing <ESC> will place you in Normal mode or will cancel
+an unwanted and partially completed command.
+
+Now continue with Lesson 2.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.1: DELETION COMMANDS
+
+
+** Type  dw  to delete a word. **
+
+1. Press  <ESC>  to make sure you are in Normal mode.
+
+2. Move the cursor to the line below marked --->.
+
+3. Move the cursor to the beginning of a word that needs to be deleted.
+
+4. Type   dw   to make the word disappear.
+
+NOTE: The letter  d  will appear on the last line of the screen as you type
+it.  Vim is waiting for you to type  w .  If you see another character
+than  d  you typed something wrong; press  <ESC>  and start over.
+
+---> There are a some words fun that don't belong paper in this sentence.
+
+5. Repeat steps 3 and 4 until the sentence is correct and go to Lesson 2.2.
+---> There are some words fun that don't belong paper in this sentence.some words that don't belong paper in this sentence.that don't belong in this sentence.in this sentence
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.2: MORE DELETION COMMANDS
+
+
+** Type  d$  to delete to the end of the line. **
+
+1. Press  <ESC>  to make sure you are in Normal mode.
+
+2. Move the cursor to the line below marked --->.
+
+3. Move the cursor to the end of the correct line (AFTER the first . ).
+
+4. Type    d$    to delete to the end of the line.
+
+---> Somebody typed the end of this line twice. end of this line twice.
+
+
+5. Move on to Lesson 2.3 to understand what is happening.
+---> Somebody typed the end of this line twice.
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.3: ON OPERATORS AND MOTIONS
+
+
+Many commands that change text are made from an operator and a motion.
+The format for a delete command with the  d  delete operator is as follows:
+
+d   motion
+
+Where:
+d      - is the delete operator.
+motion - is what the operator will operate on (listed below).
+
+A short list of motions:
+w - until the start of the next word, EXCLUDING its first character.
+e - to the end of the current word, INCLUDING the last character.
+$ - to the end of the line, INCLUDING the last character.
+
+Thus typing  de  will delete from the cursor to the end of the word.
+
+NOTE:  Pressing just the motion while in Normal mode without an operator will
+move the cursor as specified.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.4: USING A COUNT FOR A MOTION
+
+
+** Typing a number before a motion repeats it that many times. **
+
+1. Move the cursor to the start of the line marked ---> below.
+
+2. Type  2w  to move the cursor two words forward.
+
+3. Type  3e  to move the cursor to the end of the third word forward.
+
+4. Type  0  (zero) to move to the start of the line.
+
+5. Repeat steps 2 and 3 with different numbers.
+
+---> This is just a line with words you can move around in.u can 
+
+6. Move on to Lesson 2.5.
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.5: USING A COUNT TO DELETE MORE
+
+
+** Typing a number with an operator repeats it that many times. **
+
+In the combination of the delete operator and a motion mentioned above you
+insert a count before the motion to delete more:
+d   number   motion
+
+1. Move the cursor to the first UPPER CASE word in the line marked --->.
+
+2. Type  2dw  to delete the two UPPER CASE words
+
+3. Repeat steps 1 and 2 with a different count to delete the consecutive
+UPPER CASE words with one command
+
+--->  this ABC DE line FGHI JK LMN OP of words is Q RS TUV cleaned up.line FGHI JK LMN OP of words is Q RS TUV cleaned up.line of words is Q RS TUV cleaned up.cleaned up.
+
+NOTE:  A count between the operator  d  and the motion works similar to
+using the motion without an operator.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.6: OPERATING ON LINES
+
+
+** Type  dd   to delete a whole line. **
+
+Due to the frequency of whole line deletion, the designers of Vi decided
+it would be easier to simply type two d's to delete a line.
+
+1. Move the cursor to the second line in the phrase below.
+2. Type  dd  to delete the line.
+3. Now move to the fourth line.
+4. Type   2dd   to delete two lines.
+
+--->  1)  Roses are red,
+--->  2)  Mud is fun,
+--->  3)  Violets are blue,
+--->  4)  I have a car,
+--->  5)  Clocks tell time,
+--->  6)  Sugar is sweet
+--->  7)  And so are you.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.7: THE UNDO COMMAND
+
+
+
+
+
+
+
+** Press  u  to undo the last commands,   U  to fix a whole line. **
+
+1. Move the cursor to the line below marked ---> and place it on the
+first error.
+2. Type  x  to delete the first unwanted character.
+3. Now type  u  to undo the last command executed.
+4. This time fix all the errors on the line using the  x  command.
+5. Now type a capital  U  to return the line to its original state.
+6. Now type  u  a few times to undo the  U  and preceding commands.
+7. Now type CTRL-R (keeping CTRL key pressed while hitting R) a few times
+to redo the commands (undo the undo's).
+
+---> Fiix the errors oon thhis line and reeplace them witth undo.
+
+8. These are very useful commands.  Now move on to the Lesson 2 Summary.
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---> Fix the errors oon thhis line and reeplace them witth undo.1 change; before #10  2 seconds agoix the errors oon thhis line and reeplace them witth undo.ix the errors oon thhis line and reeplace them witth undo.ix the errors on thhis line and reeplace them witth undo.on this line and reeplace them witth undo.his line and replace them witth undo.eplace them with undo.ix the errors oon thhis line and reeplace them witth undo.1 change; before #16  3 seconds agox the errors on this line and replace them with undo.1 change; before #15  7 seconds agoth undo.1 change; before #14  11 seconds agoeplace them witth undo.1 change; before #13  16 seconds agohis line and reeplace them witth undo.1 change; before #12  18 seconds agoon thhis line and reeplace them witth undo.1 change; before #11  24 seconds agoix the errors oon thhis line and reeplace them witth undo.1 change; after #11  30 seconds agox the errors oon thhis line and reeplace them witth undo.1 change; after #12  25 seconds agon thhis line and reeplace them witth undo.1 change; after #13  24 seconds agois line and reeplace them witth undo.1 change; after #14  21 seconds agoplace them witth undo.1 change; after #15  19 seconds agoh undo.
+
+
+
+
+
+
+LESSON 2 SUMMARY
+
+
+1. To delete from the cursor upto the next word type:    dw
+2. To delete from the cursor to the end of a line type:    d$
+3. To delete a whole line type:    dd
+
+4. To repeat a motion prepend it with a number:   2w
+5. The format for a change command is:
+operator   [number]   motion
+where:
+operator - is what to do, such as  d  for delete
+[number] - is an optional count to repeat the motion
+motion   - moves over the text to operator on, such as  w (word),
+$ (to the end of line), etc.
+
+6. To move to the start of the line use a zero:  0
+
+7. To undo previous actions, type:u  (lowercase u)
+To undo all the changes on a line, type:  U  (capital U)
+To undo the undo's, type:CTRL-R
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.1: THE PUT COMMAND
+
+
+** Type  p  to put previously deleted text after the cursor. **
+
+1. Move the cursor to the first ---> line below.
+
+2. Type  dd  to delete the line and store it in a Vim register.
+
+3. Move the cursor to the c) line, ABOVE where the deleted line should go.
+
+4. Type   p   to put the line below the cursor.
+
+5. Repeat steps 2 through 4 to put all the lines in correct order.
+
+---> d) Can you learn too?
+---> b) Violets are blue,
+---> c) Intelligence is learned,
+---> a) Roses are red,
+
+
+
+
+
+
+---> d) Can you learn too?
+---> a) Roses are red,
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.2: THE REPLACE COMMAND
+
+
+** Type  rx  to replace the character at the cursor with  x . **
+
+1. Move the cursor to the first line below marked --->.
+
+2. Move the cursor so that it is on top of the first error.
+
+3. Type   r   and then the character which should be there.
+
+4. Repeat steps 2 and 3 until the first line is equal to the second one.
+
+--->  Whan this lime was tuoed in, someone presswd some wrojg keys!
+--->  When this line was typed in, someone pressed some wrong keys!
+
+5. Now move on to Lesson 3.2.--->  Wheen this lime was tuyypped in, someone presseed some wron
+
+
+NOTE: Remember that you should be learning by doing, not memorization.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.3: THE CHANGE OPERATOR
+
+
+** To change until the end of a word, type  ce . **
+
+1. Move the cursor to the first line below marked --->.
+
+2. Place the cursor on the  u  in  lubw.
+
+3. Type  ce  and the correct word (in this case, type  ine ).
+
+4. Press <ESC> and move to the next character that needs to be changed.
+
+5. Repeat steps 3 and 4 until the first sentence is the same as the second.
+
+---> This lubw has a few wptfd that mrrf changing usf the change command.
+---> This line has a few words that need changing using the change command.
+---> This l
+
+
+-- INSERT -- has a few wptfd that mrrf changing usf the change command.i has a few wptfd that mrrf changing usf the change command.n has a few wptfd that mrrf changing usf the change command.e has a few wptfd that mrrf changing usf the change command.e has a few w
+
+
+-- INSERT -- that mrrf changing usf the change command.o that mrrf changing usf the change command.r that mrrf changing usf the change command.d that mrrf changing usf the change command.s that mrrf changing usf the change command.s that 
+
+
+-- INSERT -- changing usf the change command.n changing usf the change command.e changing usf the change command.e changing usf the change command.d changing usf the change command.d changing us
+
+
+-- INSERT -- change command.i change command.n change command.g change command.  change command.t change command.h change command.e change command.
+
+
+Notice that  ce  deletes the word and places you in Insert mode.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.4: MORE CHANGES USING c
+
+
+** The change command is used with the same motions as delete. **
+
+1. The change operator works in the same way as delete.  The format is:
+
+c    [number]   motion
+
+2. The motions are the same, such as   w (word) and  $ (end of line).
+
+3. Move to the first line below marked --->.
+
+4. Move the cursor to the first error.
+
+5. Type  c$  and type the rest of the line like the second and press <ESC>.
+
+---> The end of this line needs some help to make it like the second.
+---> The end of this line needs to be corrected using the  c$  command.
+
+NOTE:  You can use the Backspace key to correct mistakes while typing.---> The end of this line needs s-- INSERT --to be corrected using the  c$  ocmmancommand.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 3 SUMMARY
+
+
+1. To put back text that has just been deleted, type   p .  This puts the
+deleted text AFTER the cursor (if a line was deleted it will go on the
+line below the cursor).
+
+2. To replace the character under the cursor, type   r   and then the
+character you want to have there.
+
+3. The change operator allows you to change from the cursor to where the
+motion takes you.  eg. Type  ce  to change from the cursor to the end of
+the word,  c$  to change to the end of a line.
+
+4. The format for change is:
+
+c   [number]   motion
+
+Now go on to the next lesson.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 4.1: CURSOR LOCATION AND FILE STATUS
+
+** Type CTRL-G to show your location in the file and the file status.
+Type  G  to move to a line in the file. **
+
+Note: Read this entire lesson before executing any of the steps!!
+
+1. Hold down the Ctrl key and press  g .  We call this CTRL-G.
+A message will appear at the bottom of the page with the filename and the
+position in the file.  Remember the line number for Step 3.
+
+NOTE:  You may see the cursor position in the lower right corner of the screen
+This happens when the 'ruler' option is set (explained in lesson 6).
+
+2. Press  G  to move you to the bottom of the file.
+Type  gg  to move you to the start of the file.
+
+3. Type the number of the line you were on and then  G .  This will
+return you to the line you were on when you first pressed CTRL-G.
+
+4. If you feel confident to do this, execute steps 1 through 3.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"/tmp/tutorlv8053" [Modified] line 503 of 967 --52%-- col 1manual next: ":help user-manual".
+
+  For further reading and studying, this book is recommended:Vim - Vi Improved - by Steve OuallinePublisher: New Riders
+  The first book completely dedicated to Vim.  Especially useful for beginnerss.
+  There are many examples and pictures.
+  See http://iccf-holland.org/click5.html
+
+  This book is older and more about Vi than Vim, but also recommended:Learning the Vi Editor - by Linda LambPublisher: O'Reilly & Associates Inc.
+  It is a good book to get to know almost anything you want to do with Vi.
+  The sixth edition also includes information on Vim.
+
+  This tutorial was written by Michael C. Pierce and Robert K. Ware,
+  Colorado School of Mines using ideas supplied by Charles Smith,
+  Colorado State University.  E-mail: bware@mines.colorado.edu.
+
+  Modified for Vim by Bram Moolenaar.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~================================================================================
+=    W e l c o m e   t o   t h e   V I M   T u t o r    -    Version 1.7       =
+================================================================================Vim is a very powerful editor that has many commands, too many toexplain in a tutor such as this.  This tutor is designed to describeenough of the commands that you will be able to easily use Vim asan all-purpose editor.The approximate time required to complete the tutor is 25-30 minutes,depending upon how much time is spent with experimentation.ATTENTION:The commands in the lessons will modify the text.  Make a copy of thisfile to practise on (if you started "vimtutor" this is already a copy).It is important to remember that this tutor is set up to teach byuse.  That means that you need to execute the commands to learn themproperly.  If you only read the text, you will forget the commands!NOTE:  You may see the cursor position in the lower right corner of the screenThis happens when the 'ruler' option is set (explained in lesson 6).
+
+  2. Press  G  to move you to the bottom of the file.Type  gg  to move you to the start of the file.
+
+  3. Type the number of the line you were on and then  G .  This willreturn you to the line you were on when you first pressed CTRL-G.
+
+  4. If you feel confident to do this, execute steps 1 through 3.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Lesson 4.2: THE SEARCH COMMAND** Type  /  followed by a phrase to search for the phrase. **
+
+  1. In Normal mode type the  /  character.  Notice that it and the cursorappear at the bottom of the screen as with the  :  command.
+
+  2. Now type 'errroor' <ENTER>.  This is the word you want to search for.
+
+
+
+
+
+
+
+
+
+
+3. To search for the same phrase again, simply type  n .
+To search for the same phrase in the opposite direction, type  N .
+
+4. To search for a phrase in the backward direction, use  ?  instead of  / .
+
+5. To go back to where you came from press  CTRL-O  (Keep Ctrl down while
+pressing the letter o).  Repeat to go back further.  CTRL-I goes forward.
+
+Note: "errroor" is not the way to spell error;  errroor is an error.
+Note: When the search reaches the end of the file it will continue at the
+start, unless the 'wrapscan' option has been reset.
+
+/e/er/err/errr/errro/errroo/errroor/errroor/errroorsearch hit BOTTOM, continuing at TOPsearch hit BOTTOM, continuing at TOP/errroor?errroor
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 4.3: MATCHING PARENTHESES SEARCH
+
+
+** Type  %  to find a matching ),], or } . **
+
+1. Place the cursor on any (, [, or { in the line below marked --->.
+
+2. Now type the  %  character.
+
+3. The cursor will move to the matching parenthesis or bracket.
+
+4. Type  %  to move the cursor to the other matching bracket.
+
+5. Move the cursor to another (,),[,],{ or } and see what  %  does.
+
+---> This ( is a test line with ('s, ['s ] and {'s } in it. ))
+is 
+
+
+
+Note: This is very useful in debugging a program with unmatched parentheses!
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 4.4: THE SUBSTITUTE COMMAND
+
+
+** Type  :s/old/new/g  to substitute 'new' for 'old'. **
+
+1. Move the cursor to the line below marked --->.
+
+2. Type  :s/thee/the <ENTER> .  Note that this command only changes the
+first occurrence of "thee" in the line.
+
+3. Now type  :s/thee/the/g .  Adding the  g  flag means to substitute
+globally in the line, change all occurrences of "thee" in the line.
+
+---> thee best time to see thee flowers is in thee spring.
+
+4. To change every occurrence of a character string between two lines,
+type   :#,#s/old/new/g    where #,# are the line numbers of the range:s:s/:s/t:s/th:s/the:s/thee:s/theen:s/theen:s/thee:s/thee/:s/thee/t:s/thee/th:s/thee/the:s/thee/the best time to see thee flowers is in thee spring.:s:s/:s/t:s/th:s/the:s/thee:s/thee/:s/thee/t:s/thee/th:s/thee/the:s/thee/the/:s/thee/the/g:s/thee/the/g flowers is in the spring.
+
+
+
+of lines where the subsitution is to be done.
+Type   :%s/old/new/g      to change every occurrence in the whole file.
+Type   :%s/old/new/gc     to find every occurrence in the whole file,
+with a prompt wether to substitute or not.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 4 SUMMARY
+
+
+1. CTRL-G  displays your location in the file and the file status.
+G  moves to the end of the file.
+number  G  moves to that line number.
+gg  moves to the first line.
+
+2. Typing  /  followed by a phrase searches FORWARD for the phrase.
+Typing  ?  followed by a phrase searches BACKWARD for the phrase.
+After a search type  n  to find the next occurrence in the same direction
+or  N  to search in the opposite direction.
+CTRL-O takes you back to older positions, CTRL-I to newer positions.
+
+3. Typing  %  while the cursor is on a (,),[,],{, or } goes to its match.
+
+4. To substitute new for the first old in a line type    :s/old/new
+To substitute new for all 'old's on a line type:s/old/new/g
+To substitute phrases between two line #'s type:#,#s/old/new/g
+To substitute all occurrences in the file type:%s/old/new/g
+To ask for confirmation each time add 'c':%s/old/new/gc
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 5.1: HOW TO EXECUTE AN EXTERNAL COMMAND
+
+
+** Type  :!  followed by an external command to execute that command. **
+
+1. Type the familiar command  :  to set the cursor at the bottom of the
+screen.  This allows you to enter a command-line command.
+
+2. Now type the  !  (exclamation point) character.  This allows you to
+execute any external shell command.
+
+3. As an example type   ls   following the ! and then hit <ENTER>.  This
+will show you a listing of your directory, just as if you were at the
+shell prompt.  Or use  :!dir  if ls doesn't work.
+
+Note:  It is possible to execute any external command this way, also with
+arguments.
+
+Note:  All  :  commands must be finished by hitting <ENTER>
+From here one we will not always mention it.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:1:1::!:!l:!ls:!ls:!ls
+[No write since last change]
+12linefile     dept_4550       full_name1.txtnotes     today
+corp_db        Desktop       full_name22.txtpractice     tutor
+current_users  favorite_foods  last_namesecond.file  users_info
+datainfo       first.file      middle_nametextfiles    who_info
+dept_4540      first_name      monththird.file   year_2009
+
+Press ENTER or type command to continueLesson 5.1: HOW TO EXECUTE AN EXTERNAL COMMAND** Type  :!  followed by an external command to execute that command. **
+
+  1. Type the familiar command  :  to set the cursor at the bottom of thescreen.  This allows you to enter a command-line command.
+
+  2. Now type the  !  (exclamation point) character.  This allows you toexecute any external shell command.
+
+  3. As an example type   ls   following the ! and then hit <ENTER>.  Thiswill show you a listing of your directory, just as if you were at theshell prompt.  Or use  :!dir  if ls doesn't work.
+
+Note:  It is possible to execute any external command this way, also witharguments.
+
+Note:  All  :  commands must be finished by hitting <ENTER>From here one we will not always mention it.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~** Type  :!  followed by an external command to execute that command. **1. Type the familiar command  :  to set the cursor at the bottom of the
+     screen.  This allows you to enter a command-line command.2. Now type the  !  (exclamation point) character.  This allows you to
+     execute any external shell command.3. As an example type   ls   following the ! and then hit <ENTER>.  This
+     will show you a listing of your directory, just as if you were at theshell prompt.  Or use  :!dir  if ls doesn't work.Note:  It is possible to execute any external command this way, also with
+       arguments.Note:  All  :  commands must be finished by hitting <ENTER>
+       From here one we will not always mention it.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                      Lesson 5.2: MORE ON WRITING FILES
+
+
+** To save the changes made to the text, type  :w FILENAME. **
+
+1. Type  :!dir  or  :!ls  to get a listing of your directory.
+You already know you must hit <ENTER> after this.
+
+2. Choose a filename that does not exist yet, such as TEST.
+
+3. Now type:   :w TEST   (where TEST is the filename you chose.)
+
+4. This saves the whole file (the Vim Tutor) under the name TEST.
+To verify this, type    :!dir  or  :!ls   again to see your directory.
+
+Note: If you were to exit Vim and start it again with  vim TEST , the file
+would be an exact copy of the tutor when you saved it.
+
+:!:!l:!ls:!ls:!ls
+[No write since last change]
+12linefile     dept_4550       full_name1.txtnotes     today
+corp_db        Desktop       full_name22.txtpractice     tutor
+current_users  favorite_foods  last_namesecond.file  users_info
+datainfo       first.file      middle_nametextfiles    who_info
+dept_4540      first_name      monththird.file   year_2009
+
+Press ENTER or type command to continue:w:w :w T:w TE:w TES:w TEST:w TEST"TEST" "TEST" [New] 967L, 33114C writtenNote:  All  :  commands must be finished by hitting <ENTER>From here one we will not always mention it.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Lesson 5.2: MORE ON WRITING FILES** To save the changes made to the text, type  :w FILENAME. **
+
+  1. Type  :!dir  or  :!ls  to get a listing of your directory.You already know you must hit <ENTER> after this.
+
+  2. Choose a filename that does not exist yet, such as TEST.
+
+  3. Now type:   :w TEST   (where TEST is the filename you chose.)
+
+  4. This saves the whole file (the Vim Tutor) under the name TEST.To verify this, type    :!dir  or  :!ls   again to see your directory.
+
+Note: If you were to exit Vim and start it again with  vim TEST , the filewould be an exact copy of the tutor when you saved it.
+
+"TEST" [New] 967L, 33114C written:!:!l:!ls:!ls:!ls
+[No write since last change]
+12linefile     Desktoplast_name    TEST who_info
+corp_db        favorite_foodsmiddle_name  textfiles year_2009
+current_users  first.filemonth     third.file
+datainfo       first_namenotes     today
+dept_4540      full_name1.txtpractice     tutor
+dept_4550      full_name22.txtsecond.file  users_info
+
+Press ENTER or type command to continueNote:  All  :  commands must be finished by hitting <ENTER>From here one we will not always mention it.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Lesson 5.2: MORE ON WRITING FILES** To save the changes made to the text, type  :w FILENAME. **
+
+  1. Type  :!dir  or  :!ls  to get a listing of your directory.You already know you must hit <ENTER> after this.
+
+  2. Choose a filename that does not exist yet, such as TEST.
+
+  3. Now type:   :w TEST   (where TEST is the filename you chose.)
+
+  4. This saves the whole file (the Vim Tutor) under the name TEST.To verify this, type    :!dir  or  :!ls   again to see your directory.
+
+Note: If you were to exit Vim and start it again with  vim TEST , the filewould be an exact copy of the tutor when you saved it.
+       From here one we will not always mention it.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                      Lesson 5.2: MORE ON WRITING FILES** To save the changes made to the text, type  :w FILENAME. **1. Type  :!dir  or  :!ls  to get a listing of your directory.
+     You already know you must hit <ENTER> after this.2. Choose a filename that does not exist yet, such as TEST.3. Now type:   :w TEST   (where TEST is the filename you chose.)4. This saves the whole file (the Vim Tutor) under the name TEST.
+     To verify this, type    :!dir  or  :!ls   again to see your directory.Note: If you were to exit Vim and start it again with  vim TEST , the file
+      would be an exact copy of the tutor when you saved it.5. Now remove the file by typing (MS-DOS):    :!del TEST
+or (Unix):      :!rm TEST
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:!:!r:!rm:!rm :!rm T:!rm TE:!rm TES:!rm TEST:!rm TEST:!rm TEST
+[No write since last change]
+
+Press ENTER or type command to continueLesson 5.2: MORE ON WRITING FILES** To save the changes made to the text, type  :w FILENAME. **
+
+  1. Type  :!dir  or  :!ls  to get a listing of your directory.You already know you must hit <ENTER> after this.
+
+  2. Choose a filename that does not exist yet, such as TEST.
+
+  3. Now type:   :w TEST   (where TEST is the filename you chose.)
+
+  4. This saves the whole file (the Vim Tutor) under the name TEST.To verify this, type    :!dir  or  :!ls   again to see your directory.
+
+Note: If you were to exit Vim and start it again with  vim TEST , the filewould be an exact copy of the tutor when you saved it.
+
+  5. Now remove the file by typing (MS-DOS):    :!del TESTor (Unix):      :!rm TEST
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~** To save the changes made to the text, type  :w FILENAME. **1. Type  :!dir  or  :!ls  to get a listing of your directory.
+     You already know you must hit <ENTER> after this.2. Choose a filename that does not exist yet, such as TEST.3. Now type:   :w TEST   (where TEST is the filename you chose.)4. This saves the whole file (the Vim Tutor) under the name TEST.
+     To verify this, type    :!dir  or  :!ls   again to see your directory.Note: If you were to exit Vim and start it again with  vim TEST , the file
+      would be an exact copy of the tutor when you saved it.5. Now remove the file by typing (MS-DOS):    :!del TEST
+                                or (Unix):      :!rm TEST~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                    Lesson 5.3: SELECTING TEXT TO WRITE
+
+
+** To save part of the file, type  v  motion  :w FILENAME **
+
+1. Move the cursor to this line.
+
+2. Press  v  and move the cursor to the fifth item below.  Notice that the
+text is highlighted.
+3. Press the  :  character.  At the bottom of the screen  :'<,'> will appearr.
+
+4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verify
+that you see  :'<,'>w TEST  before you press Enter.
+
+5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  !ls
+to see it.  Do not remove it yet!  We will use it in the next lesson.
+
+NOTE:  Pressing  v  starts Visual selection.  You can move the cursor around
+to make the selection bigger or smaller.  Then you can use an operator
+to do something with the text.  For example,  d  deletes the text.-- VISUAL --  1. Move the cursor to this line. 
+ 
+  2. Press  v  and move the cursor to the fifth item below.  Notice that the 
+     text is highlighted. 
+ 
+  3. Press the  :  character.  At the bottom of the screen  :'<,'> will appearr. 
+ 
+  4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verify     that you see  :'<,'>w TEST  before you press Enter. 
+ 
+  5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  !ls      to see it.  Do not remove it yet!  We will use it in the next lesson. 
+:':'<:'<,:'<,':'<,'>:'<,'>w:'<,'>w :'<,'>w T:'<,'>w TE:'<,'>w TES:'<,'>w TEST:'<,'>w TEST"TEST" "TEST" [New] 13L, 512C written  1. Move the cursor to this line.  2. Press  v  and move the cursor to the fifth item below.  Notice that the     text is highlighted.  3. Press the  :  character.  At the bottom of the screen  :'<,'> will appearr.  4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verify     that you see  :'<,'>w TEST  before you press Enter.  5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  !ls     to see it.  Do not remove it yet!  We will use it in the next lesson."TEST" [New] 13L, 512C written:!:!l:!ls:!ls:!ls
+[No write since last change]
+12linefile     Desktoplast_name    TEST who_info
+corp_db        favorite_foodsmiddle_name  textfiles year_2009
+current_users  first.filemonth     third.file
+datainfo       first_namenotes     today
+dept_4540      full_name1.txtpractice     tutor
+dept_4550      full_name22.txtsecond.file  users_info
+
+Press ENTER or type command to continue~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Lesson 5.3: SELECTING TEXT TO WRITE** To save part of the file, type  v  motion  :w FILENAME **
+
+  1. Move the cursor to this line.
+
+  2. Press  v  and move the cursor to the fifth item below.  Notice that thetext is highlighted.
+
+  3. Press the  :  character.  At the bottom of the screen  :'<,'> will appearr.
+
+  4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verifythat you see  :'<,'>w TEST  before you press Enter.
+
+  5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  !lsto see it.  Do not remove it yet!  We will use it in the next lesson.
+
+NOTE:  Pressing  v  starts Visual selection.  You can move the cursor aroundto make the selection bigger or smaller.  Then you can use an operatorto do something with the text.  For example,  d  deletes the text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 5.4: RETRIEVING AND MERGING FILES
+
+
+** To insert the contents of a file, type  :r FILENAME  **
+
+1. Place the cursor just above this line.
+
+NOTE:  After executing Step 2 you will see text from Lesson 5.3.  Then move
+DOWN to see this lesson again.2. Now retrieve your TEST file using the command   :r TEST   where TEST is
+
+the name of the file you used.
+The file you retrieve is placed below the cursor line.
+
+3. To verify that a file was retrieved, cursor back and notice that there
+are now two copies of Lesson 5.3, the original and the file version.
+
+NOTE:  You can also read the output of an external command.  For example,
+:r !ls  reads the output of the ls command and puts it below the
+cursor.
+:r:r :r T:r TE:r TES:r TEST:r TEST"TEST" "TEST" 13L, 512CMove the cursor to this line.  2. Press  v  and move the cursor to the fifth item below.  Notice that thetext is highlighted.3. Press the  :  character.  At the bottom of the screen  :'<,'> will appearr.4. Type  w TEST  , where TEST is a filename that does not exist yet.  Verify   that you see  :'<,'>w TEST  before you press Enter.5. Vim will write the selected lines to the file TEST.  Use  :!dir  or  !ls
+     to see it.  Do not remove it yet!  We will use it in the next lesson.1. Place the cursor just above this line.
+
+  
+
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+  
+
+  
+
+NOTE:  After executing Step 2 you will see text from Lesson 5.3.  Then move
+DOWN to see this lesson again.  
+
+2. Now retrieve your TEST file using the command   :r TEST   where TEST is  
+the name of the file you used.  
+The file you retrieve is placed below the cursor line.  
+
+3. To verify that a file was retrieved, cursor back and notice that there  
+are now two copies of Lesson 5.3, the original and the file version.  
+
+NOTE:  You can also read the output of an external command.  For example,NO
+:r !ls  reads the output of the ls command and puts it below the  cursor.  
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 5 SUMMARY
+
+
+1.  :!command  executes an external command.  
+
+Some useful examples are:  
+(MS-DOS)(Unix)
+:!dir:!ls-  shows a directory listing.
+:!del FILENAME   :!rm FILENAME   -  removes file FILENAME.
+
+2.  :w FILENAME  writes the current Vim file to disk with name FILENAME.  
+
+3.  v  motion  :w FILENAME  saves the Visually selected lines in file  
+FILENAME.  
+
+4.  :r FILENAME  retrieves disk file FILENAME and puts it below the  
+cursor position.  
+
+5.  :r !dir  reads the output of the dir command and puts it below the  
+cursor position  
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 6.1: THE OPEN COMMAND
+
+
+** Type  o  to open a line below the cursor and place you in Insert mode. ** *
+
+1. Move the cursor to the line below marked --->.  
+2. Type the lowercase letter  o  to open up a line BELOW the cursor and placce
+you in Insert mode.  
+
+3. Now type some text and press <ESC> to exit Insert mode.  
+
+---> After typing  o  the cursor is placed on the open line in Insert mode.--
+
+4. To open up a line ABOVE the cursor, simply type a capital  O , rather  
+than a lowercase  o.  Try this on the line below.  
+
+---> Open up a line above this by typing O while the cursor is on this line.--
+
+
+-- INSERT ---- INSERT --k
+
+
+
+
+
+-- INSERT -----> Open up a line above this by typing O while the cursor is on this line.
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 6.2: THE APPEND COMMAND
+
+
+** Type  a  to insert text AFTER the cursor. **1. Move the cursor to the start of the line below marked --->.
+
+
+2. Press  e  until the cursor is on the end of  li .
+
+3. Type an  a  (lowercase) to append text AFTER the cursor.
+
+4. Complete the word like the line below it.  Press <ESC> to exit Insert
+mode.
+
+5. Use  e  to move to the next incomplete word and repeat steps 3 and 4.
+
+---> This li will allow you to pract appendi text to a line.
+---> This line will allow you to practice appending text to a line.---> This l
+
+-- INSERT --n will allow you to pract appendi text to a line.e will allow you to pract appendi text to a line.e will allow you to prac
+
+-- INSERT --i appendi text to a line.c appendi text to a line.e appendi text to a line.
+
+-- INSERT --n text to a line.g text to a line.
+ 
+
+Note:  a, i and A all go to the same Insert mode, the only difference is where
+the characters are inserted.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 6.3: ANOTHER WAY TO REPLACE
+
+
+** Type a capital  R  to replace more than one character. **
+
+1. Move the cursor to the first line below marked --->.  Move the cursor to
+the beginning of the first  xxx .
+
+2. Now press  R  and type the number below it in the second line, so that it
+replaces the xxx .
+
+3. Press <ESC> to leave Replace mode.  Notice that the rest of the line
+remains unmodified.
+
+5. Repeat the steps to replace the remaining xxx.
+
+---> Adding 123 to xxx gives you xxx.
+---> Adding 123 to 456 gives you 579.
+
+NOTE:  Replace mode is like Insert mode, but every typed character deletes an
+existing character.-- REPLACE --4566 gives you -- REPLACE --579
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 6.4: COPY AND PASTE TEXT
+
+
+** use the  y  operator to copy text and  p  to paste it **
+
+1. Go to the line marked with ---> below and place the cursor after "a)".
+
+2. Start Visual mode with  v  and move the cursor to just before "first".
+
+3. Type  y  to yank (copy) the highlighted text.
+
+4. Move the cursor to the end of the next line:  j$
+
+5. Type  p  to put (paste) the text.  Then type:  a second <ESC> .
+
+6. Use Visual mode to select " item.", yank it with  y , move to the end of
+the next line with  j$  and put the text there with  p .
+
+--->  a) this is the first item.
+
+
+b)
+--->  a)
+
+
+-- VISUAL -- this is the this is the) this is the
+
+-- INSERT --second
+
+
+-- VISUAL -- item. item.d item.
+
+
+Note: you can also use  y  as an operator;  yw  yanks one word.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 6.5: SET OPTION
+
+
+** Set an option so a search or substitute ignores case **
+
+1. Search for 'ignore' by entering:   /ignore  <ENTER>
+Repeat several times by pressing  n .
+
+2. Set the 'ic' (Ignore case) option by entering:   :set ic
+
+3. Now search for 'ignore' again by pressing  n
+Notice that Ignore and IGNORE are now also found.
+
+4. Set the 'hlsearch' and 'incsearch' options:  :set hls is
+
+5. Now type the search command again and see what happens:  /ignore <ENTER>
+
+6. To disable ignoring case enter:  :set noic
+
+Note:  To remove the highlighting of matches enter:   :nohlsearch
+Note:  If you want to ignore case for just one search command, use  \c
+in the phrase:  /ignore\c  <ENTER>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/i/ig/ign/igno/ignor/ignore/ignore/ignore2. Type  a  to insert text AFTER the cursor.Type  A  to insert text after the end of the line.
+
+  3. The  e  command moves to the end of a word.
+
+  4. The  y  operator yanks (copies) text,  p  puts (pastes) it.
+
+  5. Typing a capital  R  enters Replace mode until  <ESC>  is pressed.
+
+  6. Typing ":set xxx" sets the option "xxx".  Some options are:'ic' 'ignorecase'ignore upper/lower case when searching'is' 'incsearch'show partial matches for a search phrase'hls' 'hlsearch'highlight all matching phrasesYou can either use the long or the short option name.
+
+  7. Prepend "no" to switch an option off:   :set noic
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LESSON 7.1: GETTING HELP** Use the on-line help system **/ignore/ignoresearch hit BOTTOM, continuing at TOPthe next line with  j$  and put the text there with  p .
+
+--->  a) this is the first item.b) this is the second item.Note: you can also use  y  as an operator;  yw  yanks one word.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Lesson 6.5: SET OPTION** Set an option so a search or substitute ignores case **
+
+  1. Search for 'ignore' by entering:   /ignore  <ENTER>Repeat several times by pressing  n .
+
+  2. Set the 'ic' (Ignore case) option by entering:   :set ic
+
+  3. Now search for 'ignore' again by pressing  nNotice that Ignore and IGNORE are now also found.
+
+  4. Set the 'hlsearch' and 'incsearch' options:  :set hls is
+
+search hit BOTTOM, continuing at TOP/ignore/ignore/ignore:s:se:set:set :set i:set ic:set ic/i/ig/ign/igno/ignor/ignore/ignore/ignore/ignore:s:se:set:set :set h:set hl:set hls:set hls :set hls i:set hls is:set hls isignoreignoreignoreIgnoreignoreIgnore and IGNORE
+
+
+5. Now type the search command again and see what happens:  /ignore <ENTER>
+
+6. To disable ignoring case enter:  :set noic
+
+Note:  To remove the highlighting of matches enter:   :nohlsearch
+/ii
+/i/ig
+i
+Note:  If you want to ignore case for just one search command, use  \c/ig/ignn
+/ign/ignoo
+/igno/ignorr
+/ignor/ignoree
+/ignore/ignore/ignoreignore:s:se:set:set :set n:set no:set noi:set noic:set noicIgnoreIgnore and IGNORE:n:no:noh:nohl:nohls:nohlse:nohlsea:nohlsear:nohlsearc:nohlsearch:nohlsearchignoreignoreignoreignoreignoreignore
+in the phrase:  /ignore\c  <ENTER>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 6 SUMMARY
+
+1. Type  o  to open a line BELOW the cursor and start Insert mode.
+Type  O  to open a line ABOVE the cursor.
+
+2. Type  a  to insert text AFTER the cursor.
+Type  A  to insert text after the end of the line.
+
+3. The  e  command moves to the end of a word.
+
+4. The  y  operator yanks (copies) text,  p  puts (pastes) it.
+
+5. Typing a capital  R  enters Replace mode until  <ESC>  is pressed.
+
+6. Typing ":set xxx" sets the option "xxx".  Some options are:
+'ic' 'ignorecase'ignore upper/lower case when searching
+'is' 'incsearch'show partial matches for a search phrase
+'hls' 'hlsearch'highlight all matching phrases
+You can either use the long or the short option name.
+
+7. Prepend "no" to switch an option off:   :set noic
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 7.1: GETTING HELP
+
+
+** Use the on-line help system **
+
+Vim has a comprehensive on-line help system.  To get started, try one of
+these three:
+- press the <HELP> key (if you have one)
+- press the <F1> key (if you have one)
+- type   :help <ENTER>
+
+Read the text in the help window to find out how the help works.
+type  CTRL-W CTRL-W   to jump from one window to another
+Type    :q <ENTER>    to close the help window.
+
+You can find help on just about any subject, by giving an argument to the
+":help" command.  Try these (don't forget pressing <ENTER>):
+
+:help w
+:help c_CTRL-D
+:help insert-index
+:help user-manual
+:h:he:hel:helo:helo:hel:help:help"help.txt" "help.txt" [readonly] 214L, 7883C*help.txt*      For Vim version 7.0.  Last change: 2006 Jun 16VIM - main help filekMove around:  Use the cursor keys, or "h" to go left,h   l"j" to go down, "k" to go up, "l" to go right.j
+Close this window:  Use ":q<Enter>". Get out of Vim:  Use ":qa!<Enter>" (careful, all changes are lost!).Jump to a subject:  Position the cursor on a tag (e.g. |bars|) and hit CTRL-].With the mouse:  ":set mouse=a" to enable the mouse (in xterm or GUI).Double-click the left mouse button on a tag, e.g. |bars|.
+        Jump back:  Type CTRL-T or CTRL-O (repeat to go further back).Get specific help:  It is possible to go directly to whatever you want helpon, by giving an argument to the |:help| command.
+                    It is possible to further specify the context:                                                      *help-context*WHATPREPEND    EXAMPLE       Normal mode command      (nothing)   :help x
+help.txt [Help][RO]                                                           user-manual/tmp/tutorlv8053 [+]                                                          :q:q!:q!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LESSON 7.1: GETTING HELP** Use the on-line help system **
+
+  Vim has a comprehensive on-line help system.  To get started, try one of
+  these three:- press the <HELP> key (if you have one)- press the <F1> key (if you have one)- type   :help <ENTER>
+
+  Read the text in the help window to find out how the help works.
+  type  CTRL-W CTRL-W   to jump from one window to another
+  Type    :q <ENTER>    to close the help window.
+
+  You can find help on just about any subject, by giving an argument to the
+  ":help" command.  Try these (don't forget pressing <ENTER>)::help w:help c_CTRL-D:help insert-index:help user-manual
+:h:he:hel:helo:helo:hel:help:help :help w:help w"motion.txt.gz" "motion.txt.gz" [readonly][noeol][converted] 48L, 22865C
+E434: Can't find tag pattern
+Press ENTER or type command to continue^_<8b>^H^@^@^@^@^@^B^C¼<ks^[7<92><9f><89>_<81>°¼E<89>!^Y9¹ÛM^TÅYI<91>mådÉ+Ëò]© d×<90>^C^NG^Z^N<98>y<88>f<Þß~ý^@0^X>dy×^WYä`ðhô»^[^Mv§º<88>u:(Þ^W]ÿ<9ee>êL^ÆSy§²^\Úåß^F;^C)O<82>¼<90>£I<90>FjW~¿³óWù{<99>ÊÇ?
+!Z-)/<8f>_Èó£§GçG§<87>GòÅþéëý^S<9c>l¸<90>^GY0<95>/´NT^Z^D^Yô?,³^\Öàeó^Vþë<8e>¨ ­oÚº²<9b>^Fwq^TàSW<88><8b><89>Ê<95>^\éé4HÃ^\FÞ)YL <85>g<9a>é<¦-Hy<¦^W©<9a>»V^YYçR<8f>Çð^__<89>|<94>)<95>ö¨^[^?Ç^NðM'<89>
+e¡e>Ñs^?ú­\)^Y$¹<96>^]îvSNg^]    ^HÓ^@Ów¤<9e>^QìÛ^C!^^^O`Ãô<84>½à<8d>Ê<82>Bgy« ²_+ñý@<9e>¨qÑÏâhRÔÈ¨^R×h±Q<89>^_^Fòõ¬^_êyêu,¹¥îõ_^CùFg¡<87>Øj^NÏu<87>ÿ^^È^Kõ¾<<90>zx£Fþ<9a>ÜPwük³c®^Rø<80>W®'·Tâo°Ñ »¥µ¦ð¥<9e>âÇ^A0ÈtFo^P_õ<9b><9f>^Fò2Èb]æ^^^^DwÜR÷^RÏT¨Jd¦pâ|W^H íB<97>r^^¤^E<92>é6^E2Í'*SÔ^\Àg<9c>^RÝÆq¢d<99>3<8f>´^O/ÎOúÏÚ<96>}DÅ^^M<95>^DÒR<87>H.u<91>UôÎtb<96>ÂùsUP÷NV&*³äî<89>5|<88>^L5Òi^Q§%ì)Y^PG¥^Vº¼^H
+Ø{^R§JnÍ'ñh"óDÏs<89>Ô^T(y^A¼,<8a>D!+^]½^G<8e><89>U:^BÞ<84>-e¹<9c>ej¬^XôÉÍm"oÕ""<97>C5Ì<8e>^W<84><8a> <99>^GÐÎÜU¦¡Ê^PÒ8^Cä<80>^Hg9lì@Eq<9a>â<94>z\<80>^Xx^S^GY^FÈÅ<999>{Í©C-S]^H<83>û X^B#Ô0/H«<9c>¦jªÓx$ï<82>¤T({Ô    ^Q<93>¨^@ ÈôT&Zß^B4ÂL^C3^Lu<<90><85>4E<9c>Þâ¨^[^Y ^L^Y<80>f:F¬F<84>ª9tÍ^G¤^\dç.Î<8a>2^@^A<8e>^KK^Z9<82>qCÅ<<84>Ór^ZÜ^B<83>^TH¤<^^^B<83>`Û<92>")´°4Ì^Mk^Uô^WàN5ª¿,^X^U<80>#è;      <92>1 ^XX<88>å<9a>^A<98>_¾è¿Í<8a>^Du¦}b^Ei<84>©Ö<92>fû@ºP^Fc<84>^Z^Zì^XÛ­<87>h<98>^D^V^^MFD¸^W<90><8d>9¶@]P µç^Ak_^@^EÌ^C^Q
+motion.txt.gz [Help][RO]                                                      user-manual/tmp/tutorlv8053 [+]                                                          :q:q!:q!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LESSON 7.1: GETTING HELP** Use the on-line help system **
+
+  Vim has a comprehensive on-line help system.  To get started, try one of
+  these three:- press the <HELP> key (if you have one)- press the <F1> key (if you have one)- type   :help <ENTER>
+
+  Read the text in the help window to find out how the help works.
+  type  CTRL-W CTRL-W   to jump from one window to another
+  Type    :q <ENTER>    to close the help window.
+
+  You can find help on just about any subject, by giving an argument to the
+  ":help" command.  Try these (don't forget pressing <ENTER>)::help w:help c_CTRL-D:help insert-index:help user-manual
+:h:he:hel:help:help :help c:help c_:help c_C:help c_CT:help c_CTR:help c_CTRL:help c_CTRL-:help c_CTRL-D:help c_CTRL-D"cmdline.txt.gz" "cmdline.txt.gz" [readonly][noeol][converted] 36L, 21939C
+E434: Can't find tag pattern
+Press ENTER or type command to continue^_<8b>^H^@^@^@^@^@^B^CÍ}ysÛFÒ÷ßÄ§<98>ÀñCR¡(ËÎµôµ²#?ñ®<8f>¬ÏÝ²^R/H<82>^TÖ$À^@ ee­i^?ö·^?Ý=^G@ÊI\yªÞTE^F<81>¹§§ïîÙ<9b>,§<8b>,O<87>õ»zÏ^Xs¯(Í<8b>liÞ¦e<95>^U¹ùnxxehÌ<83>¤ªÍä4ÉçéÈ\½rå[ó·õÂ^\~^_EQ§cÌ<8b>û^OÍ<93>ã{ÇO<8e>^_Ý=6^O<8f>^^=?z@m<99>ñ ¹¹S&Kó°(^Vi<9e>$%<97>ïtöîJ§ûËb<9a>î<99>½»År<99>äÓ}ÿ.
+_^Y¼òµZ^Uè'¾ïOÜ×Ñ^´]ßd<95>YWéÔÔ<85>Ió:-Íñ;3<91>R<95>éÅ£¸?0U<9a><94><93>S³Jj*<990>WQ/><88>^M^U0ñm|ÆÓ,[ rPó<8b>¸?<8c>¢;I<95>MìkÃÝ¦Ó¬Îò9zNß­^V      ½<9b><9a>,ÇBB®ÐÆÕ+¦<98><99>ú4ÅÀJC^U×É"Ú¬«òõÕ+Ø<90>^Mµ{84<8d>¹h£<9d>ÎF'¼¯o6ÑÕVQ^ZÌj<91>Ö´<8dd>¾°^?·<89>®^M<83>5à*UÐ,ÿÞD_o^U2%à ò%å÷&úf»èl<91>Ì©dún<9f><9f>6Ñ·\¦Z¥<93>,Y`%ÊddBk^Q´¦ß6Ñw­é<9c>eù´8^KF(/6QtóOýïâ%^Gè¶V<9d>@íQQ.<93>Åâ<<98><8d>IJ^B¸<9c>vµ<96>>-<9f><95>E^ÛÝ<9e>¬Ë<8a><8e>Ùª¨2l^D<9d>¯^?^Uk3IòhY¼M©n±Î¹^V^Wn.A}Êo^Wé¬fp,³ùim[[|<93><9e>WÔÚK-^UÝ¸ÏC¸<85>^O^Cs.<9d>Ð^A<98>Ï^W©^Y§õY<9a>æ:LÀ)Ú+pðë2{<83>^W~BÃèý <8b>lÄÕ<8b><9c>¦<9a>ð!à<91>(j<90><82>vÔ^Xí^G,M<9d>Òï¤6Ù^Lýó^PÇERNÍ´H+<93>^Wµ9MMhÎgE)=ú<89>^Xú7ÉÏuÑ¢<82>þ<94>^NpPÀÏ<88><8e><8f><89>G<93>¼(Óe²<8a>qÄ§é^L^K<96>ä R<8f>Ê<9b>YÁ#^^N# ¹ô]<82><93>0^H×<93>êÔTõùÂ^_]ô3¢]Ç§}þDHòVÔq<9d><99>^[w÷<8f>n<99>^[?^VË´ýþ^^½^?<82>ýi^?¸C^_^^Ð ^N6ß^_W<93>[csãéþîO3|Òæz7naí^R<80><8f>ÙÜ¸µ¹nêó^UMw± )^R¾Yd´^Y^@Ê¾`Ü^Prë¢Ø_^T^@@Ý<97>§i^CÈ^DmQõyZóôQ<8c>÷<99>^Vù^LÛ8ËjÚ^X©TMJ<82><9f><81>^@^D¶h<95><94>µì6^W;Ë h4c*wZ<9c>^AÈ<9f>yÐwpÄ^@Ï0C½¾ÍªlL<8b><8f>v^FQ}º®ì^N^CN°%ÔÜyAãD'C;371j£.Ês¢^@ö))zÖ:A<95><8c>^OÍ
+^QÀA¥EN<97>ã´<94>£<9a>^X­mê<84>F^S<9c>Î2<9d>È^B§K^?^R×+>7<84><88>òÖ1¤¾Ë<94>; £@                                                                             cmdline.txt.gz [Help][RO]                                                     user-manual/tmp/tutorlv8053 [+]                                                          :q:q!:q!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LESSON 7.1: GETTING HELP** Use the on-line help system **
+
+  Vim has a comprehensive on-line help system.  To get started, try one of
+  these three:- press the <HELP> key (if you have one)- press the <F1> key (if you have one)- type   :help <ENTER>
+
+  Read the text in the help window to find out how the help works.
+  type  CTRL-W CTRL-W   to jump from one window to another
+  Type    :q <ENTER>    to close the help window.
+
+  You can find help on just about any subject, by giving an argument to the
+  ":help" command.  Try these (don't forget pressing <ENTER>)::help w:help c_CTRL-D:help insert-index:help user-manual
+:h:he:hel:help:help :help i:help in:help ins:help inse:help inser:help insert:help insert-:help insert-i:help insert-in:help insert-ind:help insert-inde:help insert-index:help insert-index"index.txt.gz" "index.txt.gz" [readonly][noeol][converted] 49L, 29122C
+E434: Can't find tag pattern
+Press ENTER or type command to continue^_<8b>^H^@^@^@^@^@^B^CÍ}kcÛÆ±ögêW Êé<91>äJr<92>¶çô°<8e><9b>Ä±^S'<8e>âÚN<9c>^Feel<88>^D)Ø @^C .4ÝßþÎ33»ØÅ<85>¢/}[^?°^@bf¯³³³sÛ^[I6<89>/<8f>«ËêF<80>^?÷ò"ø9<99>>^GçqQ&y^Vüïñ'ÇAð *«`|^Ve³x^X|öÉ'ÿ^S|·Léaggg0^H<82><9f>ïÿ^P<º{ïî£»'wî^F?|yòÓ<977>^OPØéUðU^QÍ<83>^_ò<<8d>³(*^@.ÿnp½7v<9e><9c>%e0MÒ8^XçY^U%Y^YDA<9a>Puù4<88>Ò<944>~<9e>Ï£lB@Ô²8^Z<9f>^Eó|^R^_^F^WIuF U4^Kès^Pí<94>gyQ^E<93>¸^\^WÉ¢¢¶S»<9f><9c>Å \^X^UZÄAI^@ñ$ ^}ùøÎýûÁy<94>.ãã<9d><9d>'Éb^X<=<8b>³ Íó<97>I6ãºÆq<81>ö^DÓe6FqQ<99a>TW<87>Á²<8c>©Ú2<8e>j<8a>6<8e>jº{<;>Ü©r.<82>ñ'q^ZW(¬ÌçquFO<8c><^Lvoò§x<97>ªþô8¸<9f><95>T^S÷
+^C³Nøý<88>Çg½óÙqp<92>^Wó(­^A2~7^@4Ì<9f>^]S1OâK^Z³Ó^Wñ¸*^A¥<8f>
+@Å<%<84>üÂ<8e>'`î<yôàè©<82>üá8xüj<89>q:-¢ñË¸r@×¡^Býñ8¸c&¤¬¢<82>;ÈS±7Û^[¬g
+ö§~°^U<81>­Ö;TÛÏI¹tûuÎï¦_uMGi<92>ÅA<IP
+^@ãË#¼^YHªìî/n¿^Xb<<9f>^X<80>^]^Pu<94>^E9^Qõy^R_<80>´r&^Qj]^\^GgqºÀ
+^HÖòë^QHf}Ü<85>vºLRTl©BJXÛW<83>fi<98>^WST$Ñi^Z+ðy2?2?Yxjÿ^BTÁ<88>^X.¥^?4.Hªx®È x?"ªGM;<9f>^?Ð^?^]ÔÈ^Kµ¦Ç^[;;Tõ`@¬ ^X^L"îòà<9f>;G^_æßÎ:yÆ$ùÅz ^?^G^C©=X^Tñy<922>/Ëô*<90>_h^]W x¬ý²Ê^WÌXä<93>-æK-æËk<8b>!l<86>üj0Èò
+Ët^R<98>R¾:<9a>åY¼¶¥ÞÑRï^L^F¯<96>I¥^E9\)_<82>WÆcÃI¸iÑé)ê<8e>0bÄ^G2"<86>2Ø^S\ î ÑìVÇ¶<92>¯µ<92>¯^G^Ca^VÄµ<88><81><9d>%Óê"<99>Ð:"êÀ<8c>d¨?¨<88>Í<8d><97>EA¯\^Y^^V<8c>-ê®^Vu×<8e>^B<83>Ó^LÒüÅEpq<96>^P'#.|^Z§Ä^_´¬<92>ÛÍ<88>÷<9c>AÙ?¥Î^Q[<9f>ÄÓ h<99>RåÕ^<89>^Vì<8d><93>ìe|Uî^EUÎM(â#m<9f>Ó¸^@^M;°-ûæÙ^KmÛ7^Aÿù<8e>[^^^P<9b>¢11"^:ÎÓå<£^VÆÄ<95>¤ñÌPÁQâIg9/Þ¿<88>[_^Sòíw-ç¥ß¥ï¥<9c>åâ]Kyù¾^EÜúiqûÝÊXÚ2<96>^Cþ^@                                                                             @                                                                             @                                                                             @                                                                             @                                                                             index.txt.gz [Help][RO]                                                       user-manual/tmp/tutorlv8053 [+]                                                          :q:q!:q!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LESSON 7.1: GETTING HELP** Use the on-line help system **
+
+  Vim has a comprehensive on-line help system.  To get started, try one of
+  these three:- press the <HELP> key (if you have one)- press the <F1> key (if you have one)- type   :help <ENTER>
+
+  Read the text in the help window to find out how the help works.
+  type  CTRL-W CTRL-W   to jump from one window to another
+  Type    :q <ENTER>    to close the help window.
+
+  You can find help on just about any subject, by giving an argument to the
+  ":help" command.  Try these (don't forget pressing <ENTER>)::help w:help c_CTRL-D:help insert-index:help user-manual
+:h:he:hel:help:help :help u:help us:help use:help user:help user-:help user-m:help user-ma:help user-man:help user-manu:help user-manua:help user-manual:help user-manual"usr_toc.txt.gz" "usr_toc.txt.gz" [readonly][noeol][converted] 14L, 4774C
+E434: Can't find tag pattern
+Press ENTER or type command to continue^_<8b>^H^@^@^@^@^@^B^C­Ymo^S;^Vþ<9c>ü
+<8b><8f>^H¸íd<92>&]!T ½Û]J^Q-·ÚO+gâ$^&ãY<8f>§i®¢ýí{Þ</^An<8b>^D^RÜ^[<9f>c<8f>}}^<9e>ó^\ûy]ù^?^G<97>½
+^OáùàÂyõ<87>Ý¨{ã+ë
+uòêè<95>R^_t^UT¶ÖÅÊ<9c>ªäèh¢ÎJ¯<92>t8^\^L^TþùãòJ}¹9ÿ¬®Î>~9û ^ªùN½õz£®<9c>ËM¡µGG]VV·z<9e>^[u½Tï\^QL^Q*<90><¯+ã_ntQëüùpøú<97>þ^Y^Ãyî­Ùªÿ^M<87>¿<9b>^Pl±R7Aû`^VÃ =^Zàè^XÏ¿Wêlîê ÂÚ(ÞK%òDä· YZ^Oö¨<82>)+e^K´<97>(<8d>DéÊÝã^W´wu^Q?<90>F<99>þ<8a>>²j£ó\l^Z¿1^V<95>^[^SÔÎÕ^U¼Õ(<9f><88>üKE+ì<8a> ^_ÔÚ®Ö9üEEÑ;^Q½ó<85>¥<93>n<9c>7pp$](Wàîs#<8a>ÓøÁ2·l<94>­-^Vn^[?8ë}^P<8d>òû<97>K<96>^]^_õÏ3·«þi<8e>£E?<9b>Ì<81>ù QiéÝFi<95>y]­E+Úõ]n@I^Eo³¯Õp^X·~¾\<9a>,Ø{<93>ïxB^R¿{»+Q!s^[pÔâenáhò£Rÿ­a<99>fJJÜÉïNé­Þ)PAU£æ:û*:q^_^W`<80>xX´<94>
+N^YØ<8c>¨<8d>^NLë@Ï<93>¢^\;<89>~¾,  I§¿<99>ñÁ
+Kç7:@ ª`^^âg&<8d>íJ£[Ï&'M<84>h<9f>­Ûóâ<89>J\Å^Wq^_Ñ·^W._´^KÌú^Q^ZÖ^P¢«µ*½[A¶ÊÜ ÑÑÁ^^^OÄÑ<9e>ç^OeîX£^W^[£n²@^F8p«1Ãám] n<93>/i'<86><8c>* =ã<81>D^^?tçm0^P8<88>>LUæm)vJã<87>Î^V^K<9a>¿1E^]'<8f>zÁ<8b>.»2º)<8d>nú^Wæ<99>Û^Vß¤SD<86>´ÍÊ^\B<91>^S3<87>@¯õ
+Î$á<8f>;û\^W<evÔÆ@<80>4<8f><87>^^^N?<9b>¥ñ¦È"º^L÷><8e> ^Fï      ^^¯0]^W&hØò^B^^@<86>#^DÑ^XþO^QlD3^MÉÂ^Ph²<9e>²^P^K÷0<91>^PVÃ^O<85>§ÏÍ^Kå<8d>^ì0<9a>KHÅ þ~{õ<881>ÂæÓû^K<86>^D^Hds:^\¬C(O^?ûíÞn^VP^Tªå«Â<84>_<8e>Ç^G^X<8c>°ü^Yö^Ga^D^G <94>¨PBBÉ^G{<84>ÿä^Pñ^E<85><99>©*¨^YV·fx5|^TÄ^G<83>=H<8f>÷<83>Û­;^XLö^Cô<9e>e_<81>Ûyx´@                                                                             @                                                                             @                                                                             @                                                                             usr_toc.txt.gz [Help][RO]                                                     user-manual/tmp/tutorlv8053 [+]                                                          :q:q!:q!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LESSON 7.1: GETTING HELP** Use the on-line help system **
+
+  Vim has a comprehensive on-line help system.  To get started, try one of
+  these three:- press the <HELP> key (if you have one)- press the <F1> key (if you have one)- type   :help <ENTER>
+
+  Read the text in the help window to find out how the help works.
+  type  CTRL-W CTRL-W   to jump from one window to another
+  Type    :q <ENTER>    to close the help window.
+
+  You can find help on just about any subject, by giving an argument to the
+  ":help" command.  Try these (don't forget pressing <ENTER>)::help w:help c_CTRL-D:help insert-index:help user-manual
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 7.2: CREATE A STARTUP SCRIPT
+
+
+** Enable Vim features **
+
+Vim has many more features than Vi, but most of them are disabled by
+default.  To start using more features you have to create a "vimrc" file.
+
+1. Start editing the "vimrc" file.  This depends on your system:
+:e ~/.vimrcfor Unix
+:e $VIM/_vimrcfor MS-Windows
+
+2. Now read the example "vimrc" file contents:
+:r $VIMRUNTIME/vimrc_example.vim
+
+3. Write the file with:
+:w
+
+The next time you start Vim it will use syntax highlighting.
+You can add all your preferred settings to this "vimrc" file.
+For more information type  :help vimrc-intro
+
+:e:e :e ~:e ~/:e ~/.:e ~/.v:e ~/.vi:e ~/.vim:e ~/.vimr:e ~/.vimrc:e ~/.vimrcE37: No write since last change (add ! to override):r:r :r $:r $V:r $VI:r $VIM:r $VIMR:r $VIMRU:r $VIMRUN:r $VIMRUNT:r $VIMRUNTI:r $VIMRUNTIM:r $VIMRUNTIME:r $VIMRUNTIME/:r $VIMRUNTIME/v:r $VIMRUNTIME/vi:r $VIMRUNTIME/vim:r $VIMRUNTIME/vimr:r $VIMRUNTIME/vimrc:r $VIMRUNTIME/vimrc_:r $VIMRUNTIME/vimrc_e:r $VIMRUNTIME/vimrc_ex:r $VIMRUNTIME/vimrc_exa:r $VIMRUNTIME/vimrc_exam:r $VIMRUNTIME/vimrc_examp:r $VIMRUNTIME/vimrc_exampl:r $VIMRUNTIME/vimrc_example:r $VIMRUNTIME/vimrc_example.:r $VIMRUNTIME/vimrc_example.v:r $VIMRUNTIME/vimrc_example.vi:r $VIMRUNTIME/vimrc_example.vim:r $VIMRUNTIME/vimrc_example.vim"/usr/share/vim/vim70/vimrc_example.vim" "/usr/share/vim/vim70/vimrc_example.vim" 89L, 2713C
+" An example for a vimrc file.
+:w:w:: 
+"
+" Maintainer:   Bram Moolenaar <Bram@vim.org>
+" Last change:  2006 Aug 12
+"
+" To use it, copy it to
+"     for Unix and OS/2:  ~/.vimrc
+"for Amiga:  s:.vimrc
+"  for MS-DOS and Win32:  $VIM\_vimrc
+"for OpenVMS:  sys$login:.vimrc
+
+" When started as "evim", evim.vim will already have done these settings.
+if v:progname =~? "evim"
+finish
+endif
+
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+if has("vms")
+set nobackup" do not keep a backup file, use versions instead
+else
+set backup" keep a backup file
+endif
+set history=50" keep 50 lines of command line history
+set ruler" show the cursor position all the time
+set showcmd" display incomplete commands
+set incsearch" do incremental searching
+
+" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
+" let &guioptions = substitute(&guioptions, "t", "", "g")
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" In an xterm the mouse should work quite well, thus enable it.
+set mouse=a
+
+" This is an alternative that also works in block mode, but the deleted
+" text is lost and it only works for putting the current register.
+"vnoremap p "_dp
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+syntax on
+set hlsearch
+endif
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+" Enable file type detection.
+" Use the default filetype settings, so that mail gets 'tw' set to 72,
+" 'cindent' is on in C files, etc.
+" Also load indent files, to automatically do language-dependent indenting.
+filetype plugin indent on
+
+" Put these in an autocmd group, so that we can delete them easily.
+augroup vimrcEx
+au!
+
+" For all text files set 'textwidth' to 78 characters.
+autocmd FileType text setlocal textwidth=78
+
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+autocmd BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\   exe "normal g`\"" |
+\ endif
+
+augroup END
+
+else
+
+set autoindent" always set autoindenting on
+
+endif " has("autocmd")
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+\ | wincmd p | diffthis
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LESSON 7.3: COMPLETION
+
+
+** Command line completion with CTRL-D and <TAB> **
+
+1. Make sure Vim is not in compatible mode:  :set nocp
+
+2. Look what files exist in the directory:  :!ls   or  :!dir
+
+3. Type the start of a command:  :e
+
+4. Press  CTRL-D  and Vim will show a list of commands that start with "e".
+
+5. Press <TAB>  and Vim will complete the command name to ":edit".
+
+6. Now add a space and the start of an existing file name:  :edit FIL
+
+7. Press <TAB>.  Vim will complete the name (if it is unique).
+
+NOTE:  Completion works for many commands.  Just try pressing CTRL-D and
+<TAB>.  It is especially useful for  :help .
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:s:se:set:set :set n:set no:set noo:set noop:set noop:set noo:set noo:set no:set noc:set nocp:set nocp:!:!l:!ls:!ls:!ls
+[No write since last change]
+12linefile     Desktoplast_name    TEST who_info
+corp_db        favorite_foodsmiddle_name  textfiles year_2009
+current_users  first.filemonth     third.file
+datainfo       first_namenotes     today
+dept_4540      full_name1.txtpractice     tutor
+dept_4550      full_name22.txtsecond.file  users_info
+
+Press ENTER or type command to continueLESSON 7.3: COMPLETION** Command line completion with CTRL-D and <TAB> **
+
+  1. Make sure Vim is not in compatible mode:  :set nocp
+
+  2. Look what files exist in the directory:  :!ls   or  :!dir
+
+  3. Type the start of a command:  :e
+
+  4. Press  CTRL-D  and Vim will show a list of commands that start with "e".
+
+  5. Press <TAB>  and Vim will complete the command name to ":edit".
+
+  6. Now add a space and the start of an existing file name:  :edit FIL
+
+  7. Press <TAB>.  Vim will complete the name (if it is unique).
+
+NOTE:  Completion works for many commands.  Just try pressing CTRL-D and<TAB>.  It is especially useful for  :help .
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:e:e
+earlier      echomsg      elseif       endif        ex
+echo         echon        emenu        endtry       execute
+echoerr      edit         endfor       endwhile     exit
+echohl       else         endfunction  enew         exusage
+:e...:earlier:earlier...:echo:echo...:echoerr:echoerr...:echohl:echohl...:echomsg:echomsg...:echon:echon...:edit:edit :edit f:edit fi:edit fir:edit fir...:edit first.file:edit first.file:edit first.fil:edit first.fil:edit first.fi:edit first.fi:edit first.f:edit first.f:edit first.:edit first.:edit first:edit first:edit firs:edit firs:edit fir:edit fir:edit fi:edit fi:edit f:edit f:edit :edit :edit:edit:edi:edi:ed:ed:e:e:: LESSON 7.3: COMPLETION** Command line completion with CTRL-D and <TAB> **
+
+LESSON 7 SUMMARY
+
+
+1. Type  :help  or press <F1> or <Help>  to open a help window.
+
+2. Type  :help cmd  to find help on  cmd .
+
+3. Type  CTRL-W CTRL-W  to jump to another window
+
+4. Type  :q  to close the help window
+
+5. Create a vimrc startup script to keep your preferred settings.
+
+6. When typing a  :  command, press CTRL-D to see possible completions.
+Press <TAB> to use one completion.
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This concludes the Vim Tutor.  It was intended to give a brief overview of
+the Vim editor, just enough to allow you to use the editor fairly easily.
+It is far from complete as Vim has many many more commands.  Read the user
+manual next: ":help user-manual".
+
+For further reading and studying, this book is recommended:
+Vim - Vi Improved - by Steve Oualline
+Publisher: New RidersThe first book completely dedicated to Vim.  Especially useful for beginnerss.
+There are many examples and pictures.
+See http://iccf-holland.org/click5.html
+
+This book is older and more about Vi than Vim, but also recommended:
+Learning the Vi Editor - by Linda Lamb
+Publisher: O'Reilly & Associates Inc.
+It is a good book to get to know almost anything you want to do with Vi.
+The sixth edition also includes information on Vim.
+
+This tutorial was written by Michael C. Pierce and Robert K. Ware,
+Colorado School of Mines using ideas supplied by Charles Smith,
+Colorado State University.  E-mail: bware@mines.colorado.edu.
+
+Modified for Vim by Bram Moolenaar.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:q:q!:q!
+[user@localhost ~]$ exit
+logout
+    1  vimtutor
+    2  vimtutor
+    3  vim tutor
+    4  vimtutor
+    5  exit

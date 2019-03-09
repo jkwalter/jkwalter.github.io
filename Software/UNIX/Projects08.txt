@@ -1,0 +1,1290 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.07.25 09:50:20 =~=~=~=~=~=~=~=~=~=~=~=
+login as: user
+user@192.168.1.3's password: 
+Last login: Mon Jul 25 09:24:10 2016 from 192.168.1.2
+--------------------------------------------------------------------
+ATTENTION!
+
+- When completing assignments, be sure to log on using PuTTY!  If
+  you do not use PuTTY, your work will NOT be saved to a log file.
+
+- Do NOT log on as root or other superuser unless directed to do so.
+--------------------------------------------------------------------
+
+[user@localhost ~]$ cat > datafile
+THIS IS MY DATA FILE.
+[user@localhost ~]$ dd if=datafile of=datafile.bak conv=lcase
+0+1 records in
+0+1 records out
+22 bytes (22 B) copied, 3.3198e-05 seconds, 663 kB/s
+[user@localhost ~]$ cat datafile.bak
+this is my data file.
+[user@localhost ~]$ df
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda3              7765136   2031700   5332616  28% /
+/dev/sda1               101086     16494     79373  18% /boot
+tmpfs                   127764         0    127764   0% /dev/shm
+[user@localhost ~]$ df /dev/sda1
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda1               101086     16494     79373  18% /boot
+[user@localhost ~]$ df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda3             7.5G  2.0G  5.1G  28% /
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 125M     0  125M   0% /dev/shm
+[user@localhost ~]$ clear
+[user@localhost ~]$ du | more
+4./.Trash
+8./.gnome/gnome-vfs
+12./.gnome
+72./source
+8./.gconf/apps/panel/applets/window_list/prefs
+12./.gconf/apps/panel/applets/window_list
+8./.gconf/apps/panel/applets/workspace_switcher/prefs
+12./.gconf/apps/panel/applets/workspace_switcher
+8./.gconf/apps/panel/applets/clock/prefs
+12./.gconf/apps/panel/applets/clock
+40./.gconf/apps/panel/applets
+44./.gconf/apps/panel
+8./.gconf/apps/puplet
+56./.gconf/apps
+8./.gconf/desktop/gnome/accessibility/keyboard
+12./.gconf/desktop/gnome/accessibility
+16./.gconf/desktop/gnome
+20./.gconf/desktop
+80./.gconf
+16./corp_db
+4./Desktop
+8./.gnome2/share/cursor-fonts
+8./.gnome2/share/fonts
+--More--[user@localhost ~]$ du -b | more
+4096./.Trash
+4122./.gnome/gnome-vfs
+8218./.gnome
+13961./source
+4766./.gconf/apps/panel/applets/window_list/prefs
+8862./.gconf/apps/panel/applets/window_list
+4541./.gconf/apps/panel/applets/workspace_switcher/prefs
+8637./.gconf/apps/panel/applets/workspace_switcher
+5334./.gconf/apps/panel/applets/clock/prefs
+9430./.gconf/apps/panel/applets/clock
+31025./.gconf/apps/panel/applets
+35121./.gconf/apps/panel
+4341./.gconf/apps/puplet
+43558./.gconf/apps
+5460./.gconf/desktop/gnome/accessibility/keyboard
+9556./.gconf/desktop/gnome/accessibility
+13652./.gconf/desktop/gnome
+17748./.gconf/desktop
+65402./.gconf
+4414./corp_db
+4096./Desktop
+4098./.gnome2/share/cursor-fonts
+4098./.gnome2/share/fonts
+--More--[user@localhost ~]$ du -h | more
+4.0K./.Trash
+8.0K./.gnome/gnome-vfs
+12K./.gnome
+72K./source
+8.0K./.gconf/apps/panel/applets/window_list/prefs
+12K./.gconf/apps/panel/applets/window_list
+8.0K./.gconf/apps/panel/applets/workspace_switcher/prefs
+12K./.gconf/apps/panel/applets/workspace_switcher
+8.0K./.gconf/apps/panel/applets/clock/prefs
+12K./.gconf/apps/panel/applets/clock
+40K./.gconf/apps/panel/applets
+44K./.gconf/apps/panel
+8.0K./.gconf/apps/puplet
+56K./.gconf/apps
+8.0K./.gconf/desktop/gnome/accessibility/keyboard
+12K./.gconf/desktop/gnome/accessibility
+16K./.gconf/desktop/gnome
+20K./.gconf/desktop
+80K./.gconf
+16K./corp_db
+4.0K./Desktop
+8.0K./.gnome2/share/cursor-fonts
+8.0K./.gnome2/share/fonts
+--More--20K./.gnome2/share
+4.0K./.gnome2/nautilus-scripts
+4.0K./.gnome2/keyrings
+4.0K./.gnome2/accels
+36K./.gnome2
+8.0K./dept_4540
+8.0K./dept_4550
+4.0K./test_directory
+8.0K./.mozilla/plugins
+8.0K./.mozilla/extensions
+24K./.mozilla
+4.0K./.gnome2_private
+4.0K./.eggcups
+28K./.metacity/sessions
+32K./.metacity
+48K./.gconfd
+4.0K./tmp
+216K./.gstreamer-0.10
+8.0K./.nautilus/metafiles
+32K./.nautilus
+4.0K./.redhat/esc
+8.0K./.redhat
+824K.
+[user@localhost ~]$ clear
+[user@localhost ~]$ touch ~/core ; touch ~/a.out
+[user@localhost ~]$ touch ~/source/core ; touch ~/soucrrce/a.out
+[user@localhost ~]$ find . "(" -name a.out -o -name core ")"
+./source/core
+./source/a.out
+./core
+./a.out
+[user@localhost ~]$ find . "(" -name a.out -o -name core ")" -exec rem {} \;
+[user@localhost ~]$ find . "(" -name a.out -o -name core ")"
+[user@localhost ~]$ top
+top - 09:56:19 up 36 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   1 running,  75 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.5%us,  0.2%sy,  0.0%ni, 98.8%id,  0.5%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146936k used,   108592k free,    13972k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+    1 root      15   0  2060  664  572 S  0.0  0.3   0:00.54 init             
+    2 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 migration/0      
+    3 root      34  19     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0      
+    4 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 watchdog/0       
+    5 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 events/0         
+    6 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khelper          
+    7 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kthread          
+   10 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kblockd/0        
+   11 root      20  -5     0    0    0 S  0.0  0.0   0:00.00 kacpid           
+  176 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 cqueue/0         
+  179 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khubd            
+  181 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kseriod          
+  246 root      23   0     0    0    0 S  0.0  0.0   0:00.00 pdflush          
+  247 root      15   0     0    0    0 S  0.0  0.0   0:00.02 pdflush          
+  248 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 kswapd0          
+  249 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 aio/0            
+  466 root      11  -5     0    0    0 S  0.0  0.0   0:00.00 kpsmoused        
+[user@localhost ~]$ top
+top - 09:56:30 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   1 running,  75 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.5%us,  0.2%sy,  0.0%ni, 98.8%id,  0.5%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146936k used,   108592k free,    13980k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+    1 root      15   0  2060  664  572 S  0.0  0.3   0:00.54 init             
+    2 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 migration/0      
+    3 root      34  19     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0      
+    4 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 watchdog/0       
+    5 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 events/0         
+    6 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khelper          
+    7 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kthread          
+   10 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kblockd/0        
+   11 root      20  -5     0    0    0 S  0.0  0.0   0:00.00 kacpid           
+  176 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 cqueue/0         
+  179 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khubd            
+  181 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kseriod          
+  246 root      23   0     0    0    0 S  0.0  0.0   0:00.00 pdflush          
+  247 root      15   0     0    0    0 S  0.0  0.0   0:00.02 pdflush          
+  248 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 kswapd0          
+  249 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 aio/0            
+  466 root      11  -5     0    0    0 S  0.0  0.0   0:00.00 kpsmoused        top - 09:56:33 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni, 99.7%id,  0.3%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146936k used,   108592k free,    13988k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:56:36 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    13988k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:56:39 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   1 running,  75 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    13996k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:56:42 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    13996k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:56:45 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14004k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:56:48 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14004k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:56:51 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14012k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+ 7863 user      15   0  2188  984  800 R  0.3  0.4   0:00.01 top              
+    1 root      15   0  2060  664  572 S  0.0  0.3   0:00.54 init             
+    2 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 migration/0      
+    3 root      34  19     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0      
+    4 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 watchdog/0       
+    5 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 events/0         
+    6 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khelper          
+    7 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kthread          
+   10 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kblockd/0        
+   11 root      20  -5     0    0    0 S  0.0  0.0   0:00.00 kacpid           
+  176 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 cqueue/0         
+  179 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khubd            
+  181 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kseriod          
+  246 root      23   0     0    0    0 S  0.0  0.0   0:00.00 pdflush          
+  247 root      15   0     0    0    0 S  0.0  0.0   0:00.02 pdflush          
+  248 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 kswapd0          
+  249 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 aio/0            top - 09:56:54 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   1 running,  75 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14012k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+    1 root      15   0  2060  664  572 S  0.0  0.3   0:00.54 init             
+    2 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 migration/0      
+    3 root      34  19     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0      
+    4 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 watchdog/0       
+    5 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 events/0         
+    6 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khelper          
+    7 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kthread          
+   10 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kblockd/0        
+   11 root      20  -5     0    0    0 S  0.0  0.0   0:00.00 kacpid           
+  176 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 cqueue/0         
+  179 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khubd            
+  181 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kseriod          
+  246 root      23   0     0    0    0 S  0.0  0.0   0:00.00 pdflush          
+  247 root      15   0     0    0    0 S  0.0  0.0   0:00.02 pdflush          
+  248 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 kswapd0          
+  249 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 aio/0            
+  466 root      11  -5     0    0    0 S  0.0  0.0   0:00.00 kpsmoused        top - 09:56:57 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.3%us,  0.3%sy,  0.0%ni, 99.3%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14020k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:57:00 up 37 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14020k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PID to kill: 7863
+Kill PID 7863 with signal [15]: 
+
+[user@localhost ~]$ clear
+[user@localhost ~]$ top -s
+top - 09:57:40 up 38 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   1 running,  75 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.5%us,  0.2%sy,  0.0%ni, 98.9%id,  0.5%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14044k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+    1 root      15   0  2060  664  572 S  0.0  0.3   0:00.54 init             
+    2 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 migration/0      
+    3 root      34  19     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0      
+    4 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 watchdog/0       
+    5 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 events/0         
+    6 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khelper          
+    7 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kthread          
+   10 root      14  -5     0    0    0 S  0.0  0.0   0:00.00 kblockd/0        
+   11 root      20  -5     0    0    0 S  0.0  0.0   0:00.00 kacpid           
+  176 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 cqueue/0         
+  179 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khubd            
+  181 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kseriod          
+  246 root      23   0     0    0    0 S  0.0  0.0   0:00.00 pdflush          
+  247 root      15   0     0    0    0 S  0.0  0.0   0:00.02 pdflush          
+  248 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 kswapd0          
+  249 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 aio/0            
+  466 root      11  -5     0    0    0 S  0.0  0.0   0:00.00 kpsmoused        top - 09:57:43 up 38 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.3%us,  0.0%sy,  0.0%ni, 99.7%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14044k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+top - 09:57:46 up 38 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.3%sy,  0.0%ni, 99.7%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14052k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+   10 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kblockd/0        
+
+
+
+
+
+
+
+
+ Unavailable in secure mode top - 09:57:51 up 38 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   1 running,  75 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   146996k used,   108532k free,    14052k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+    1 root      15   0  2060  664  572 S  0.0  0.3   0:00.54 init             
+    2 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 migration/0      
+    3 root      34  19     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0      
+    4 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 watchdog/0       
+    5 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 events/0         
+    6 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khelper          
+    7 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kthread          
+   10 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kblockd/0        
+   11 root      20  -5     0    0    0 S  0.0  0.0   0:00.00 kacpid           
+  176 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 cqueue/0         
+  179 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 khubd            
+  181 root      10  -5     0    0    0 S  0.0  0.0   0:00.00 kseriod          
+  246 root      23   0     0    0    0 S  0.0  0.0   0:00.00 pdflush          
+  247 root      15   0     0    0    0 S  0.0  0.0   0:00.02 pdflush          
+  248 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 kswapd0          
+  249 root      18  -5     0    0    0 S  0.0  0.0   0:00.00 aio/0            
+  466 root      11  -5     0    0    0 S  0.0  0.0   0:00.00 kpsmoused        top - 09:57:54 up 38 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  76 total,   2 running,  74 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.0%sy,  0.0%ni,100.0%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:    255528k total,   147056k used,   108472k free,    14060k buffers
+Swap:   265064k total,        0k used,   265064k free,    83172k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[user@localhost ~]$ clear
+[user@localhost ~]$ free
+             total       used       free     shared    buffers     cached
+Mem:        255528     147056     108472          0      14076      83172
+-/+ buffers/cache:      49808     205720
+Swap:       265064          0     265064
+[user@localhost ~]$ free -m
+             total       used       free     shared    buffers     cached
+Mem:           249        143        105          0         13         81
+-/+ buffers/cache:         48        200
+Swap:          258          0        258
+[user@localhost ~]$ free -t
+             total       used       free     shared    buffers     cached
+Mem:        255528     147056     108472          0      14092      83172
+-/+ buffers/cache:      49792     205736
+Swap:       265064          0     265064
+Total:      520592     147056     373536
+[user@localhost ~]$ top > topdata
+[user@localhost ~]$ more topdata
+top - 09:58:36 up 39 min,  1 user,  load average: 0.00, 0.00, 0.00
+
+Tasks:  76 total,   1 runn
+ing,  75 sleeping,   0 sto
+pped,   0 zombie
+Cpu(s):  0.5%us,  0.2%sy,
+  0.0%ni, 98.9%id,
+  0.5%wa,  0.0%hi,  
+0.0%si,  0.0%st
+Mem:    255528k total,   147056k 
+used,   108472k free,    14108
+k buffers
+Swap:   265064k total,        0k 
+used,   265064k free,    83172
+k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND       
+   
+    1 root      15   0  2060  664  572 S  0.0  0.3   0:00.54 init         
+    
+    2 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 migration/0  
+    
+    3 root      39  19     0    0    0 S  0.0  0.0   0:00.00 ksoftirqd/0  
+--More--(21%)    
+--More--(22%)    4 root      RT  -5     0    0    0 S  0.0  0.0   0:00.00 watchdog/0   
+--More--(23%)    
+--More--(23%)[user@localhost ~]$ free > freedata
+[user@localhost ~]$ more freedata
+             total       used       free     shared    buffers     cached
+Mem:        255528     147116     108412          0      14144      83172
+-/+ buffers/cache:      49800     205728
+Swap:       265064          0     265064
+[user@localhost ~]$ clear
+[user@localhost ~]$ otptop&
+[1] 7881
+[user@localhost ~]$ ps
+  PID TTY          TIME CMD
+ 7804 pts/1    00:00:00 bash
+ 7881 pts/1    00:00:00 top
+ 7882 pts/1    00:00:00 ps
+
+[1]+  Stopped                 top
+[user@localhost ~]$ ps -A |more more
+  PID TTY          TIME CMD
+    1 ?        00:00:00 init
+    2 ?        00:00:00 migration/0
+    3 ?        00:00:00 ksoftirqd/0
+    4 ?        00:00:00 watchdog/0
+    5 ?        00:00:00 events/0
+    6 ?        00:00:00 khelper
+    7 ?        00:00:00 kthread
+   10 ?        00:00:00 kblockd/0
+   11 ?        00:00:00 kacpid
+  176 ?        00:00:00 cqueue/0
+  179 ?        00:00:00 khubd
+  181 ?        00:00:00 kseriod
+  246 ?        00:00:00 pdflush
+  247 ?        00:00:00 pdflush
+  248 ?        00:00:00 kswapd0
+  249 ?        00:00:00 aio/0
+  466 ?        00:00:00 kpsmoused
+  496 ?        00:00:00 scsi_eh_0
+  499 ?        00:00:00 ata/0
+  500 ?        00:00:00 ata_aux
+  509 ?        00:00:00 kjournald
+  537 ?        00:00:00 kauditd
+--More--  571 ?        00:00:00 udevd
+ 6070 ?        00:00:00 kmpathd/0
+ 6095 ?        00:00:00 kjournald
+ 6527 ?        00:00:00 vmmemctl
+ 6705 ?        00:00:00 vmtoolsd
+ 7005 ?        00:00:00 auditd
+ 7007 ?        00:00:00 audispd
+ 7030 ?        00:00:00 syslogd
+ 7033 ?        00:00:00 klogd
+ 7065 ?        00:00:00 portmap
+ 7094 ?        00:00:00 rpc.statd
+ 7130 ?        00:00:00 rpc.idmapd
+ 7149 ?        00:00:00 dbus-daemon
+ 7160 ?        00:00:00 hcid
+ 7166 ?        00:00:00 sdpd
+ 7186 ?        00:00:00 krfcommd
+ 7227 ?        00:00:00 pcscd
+ 7247 ?        00:00:00 hidd
+ 7262 ?        00:00:00 automount
+ 7281 ?        00:00:00 acpid
+ 7296 ?        00:00:00 sshd
+ 7307 ?        00:00:00 cupsd
+ 7327 ?        00:00:00 sendmail
+--More-- 7335 ?        00:00:00 sendmail
+ 7347 ?        00:00:00 gpm
+ 7358 ?        00:00:00 crond
+ 7389 ?        00:00:00 xfs
+ 7400 ?        00:00:00 anacron
+ 7410 ?        00:00:00 atd
+ 7437 ?        00:00:00 avahi-daemon
+ 7438 ?        00:00:00 avahi-daemon
+ 7449 ?        00:00:01 hald
+ 7450 ?        00:00:00 hald-runner
+ 7459 ?        00:00:00 hald-addon-acpi
+ 7470 ?        00:00:00 hald-addon-keyb
+ 7479 ?        00:00:00 hald-addon-stor
+ 7552 ?        00:00:00 smartd
+ 7557 tty1     00:00:00 mingetty
+ 7558 tty2     00:00:00 mingetty
+ 7559 tty3     00:00:00 mingetty
+ 7560 tty4     00:00:00 mingetty
+ 7561 tty5     00:00:00 mingetty
+ 7562 tty6     00:00:00 mingetty
+ 7563 ?        00:00:00 gdm-binary
+ 7625 ?        00:00:00 yum-updatesd
+ 7627 ?        00:00:00 gam_server
+--More-- 7659 ?        00:00:00 gdm-binary
+ 7661 ?        00:00:00 gdm-rh-security
+ 7664 tty7     00:00:00 Xorg
+ 7677 ?        00:00:00 gdmgreeter
+ 7801 ?        00:00:00 sshd
+ 7803 ?        00:00:00 sshd
+ 7804 pts/1    00:00:00 bash
+ 7881 pts/1    00:00:00 top
+ 7884 pts/1    00:00:00 ps
+ 7885 pts/1    00:00:00 more
+[user@localhost ~]$ ps l
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+0   500  7804  7803  15   0   4528  1416 wait   Ss   pts/1      0:00 -bash
+0   500  7881  7804  25   0   2144   668 finish T    pts/1      0:00 top
+0   500  7886  7804  17   0   4200   836 -      R+   pts/1      0:00 ps l
+[user@localhost ~]$ ps -A u | more
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2   2060   664 ?        Ss   09:19   0:00 init [5]     
+                        
+root         2  0.0  0.0      0     0 ?        S<   09:19   0:00 [migration/0]
+root         3  0.0  0.0      0     0 ?        SN   09:19   0:00 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S<   09:19   0:00 [watchdog/0]
+root         5  0.0  0.0      0     0 ?        S<   09:19   0:00 [events/0]
+root         6  0.0  0.0      0     0 ?        S<   09:19   0:00 [khelper]
+root         7  0.0  0.0      0     0 ?        S<   09:19   0:00 [kthread]
+root        10  0.0  0.0      0     0 ?        S<   09:19   0:00 [kblockd/0]
+root        11  0.0  0.0      0     0 ?        S<   09:19   0:00 [kacpid]
+root       176  0.0  0.0      0     0 ?        S<   09:19   0:00 [cqueue/0]
+root       179  0.0  0.0      0     0 ?        S<   09:19   0:00 [khubd]
+root       181  0.0  0.0      0     0 ?        S<   09:19   0:00 [kseriod]
+root       246  0.0  0.0      0     0 ?        S    09:19   0:00 [pdflush]
+root       247  0.0  0.0      0     0 ?        S    09:19   0:00 [pdflush]
+root       248  0.0  0.0      0     0 ?        S<   09:19   0:00 [kswapd0]
+root       249  0.0  0.0      0     0 ?        S<   09:19   0:00 [aio/0]
+root       466  0.0  0.0      0     0 ?        S<   09:19   0:00 [kpsmoused]
+root       496  0.0  0.0      0     0 ?        S<   09:19   0:00 [scsi_eh_0]
+root       499  0.0  0.0      0     0 ?        S<   09:19   0:00 [ata/0]
+root       500  0.0  0.0      0     0 ?        S<   09:19   0:00 [ata_aux]
+root       509  0.0  0.0      0     0 ?        S<   09:19   0:00 [kjournald]
+--More--root       537  0.0  0.0      0     0 ?        S<   09:19   0:00 [kauditd]
+root       571  0.0  0.2   2264   680 ?        S<s  09:19   0:00 /sbin/udevd -
+d
+root      6070  0.0  0.0      0     0 ?        S<   09:19   0:00 [kmpathd/0]
+root      6095  0.0  0.0      0     0 ?        S<   09:19   0:00 [kjournald]
+root      6527  0.0  0.0      0     0 ?        S<   09:19   0:00 [vmmemctl]
+root      6705  0.0  1.5  38176  3940 ?        Sl   09:19   0:00 /usr/sbin/vmt
+oolsd
+root      7005  0.0  0.2  12128   656 ?        S<sl 09:20   0:00 auditd
+root      7007  0.0  0.2  12052   664 ?        S<sl 09:20   0:00 /sbin/audispd
+root      7030  0.0  0.2   1720   572 ?        Ss   09:20   0:00 syslogd -m 0
+root      7033  0.0  0.1   1668   400 ?        Ss   09:20   0:00 klogd -x
+rpc       7065  0.0  0.2   1808   552 ?        Ss   09:20   0:00 portmap
+rpcuser   7094  0.0  0.2   1848   716 ?        Ss   09:20   0:00 rpc.statd
+root      7130  0.0  0.2   5436   592 ?        Ss   09:20   0:00 rpc.idmapd
+dbus      7149  0.0  0.3   2748   792 ?        Ss   09:20   0:00 dbus-daemon -
+-system
+root      7160  0.0  0.2   2144   752 ?        Ss   09:20   0:00 /usr/sbin/hci
+d
+root      7166  0.0  0.1   1740   492 ?        Ss   09:20   0:00 /usr/sbin/sdp
+d
+root      7186  0.0  0.0      0     0 ?        S<   09:20   0:00 [krfcommd]
+root      7227  0.0  0.5  22964  1296 ?        Ssl  09:20   0:00 pcscd
+--More--root      7247  0.0  0.1   1904   444 ?        Ss   09:20   0:00 /usr/bin/hidd
+ --server
+root      7262  0.0  0.4   9376  1156 ?        Ssl  09:20   0:00 automount
+root      7281  0.0  0.2   1668   536 ?        Ss   09:20   0:00 /usr/sbin/acp
+id
+root      7296  0.0  0.4   6988  1056 ?        Ss   09:20   0:00 /usr/sbin/ssh
+d
+root      7307  0.0  0.7   9720  1960 ?        Ss   09:20   0:00 cupsd
+root      7327  0.0  0.6   8996  1664 ?        Ss   09:20   0:00 sendmail: acc
+epting connections
+smmsp     7335  0.0  0.5   8048  1468 ?        Ss   09:20   0:00 sendmail: Que
+ue runner@01:00:00 for /var/spool/clientmqueue
+root      7347  0.0  0.1   1900   356 ?        Ss   09:20   0:00 gpm -m /dev/i
+nput/mice -t exps2
+root      7358  0.0  0.4   5264  1108 ?        Ss   09:20   0:00 crond
+xfs       7389  0.0  0.6   3928  1696 ?        Ss   09:20   0:00 xfs -droppriv
+ -daemon
+root      7400  0.0  0.2   1664   528 ?        SNs  09:20   0:00 anacron -s
+root      7410  0.0  0.1   2244   432 ?        Ss   09:20   0:00 /usr/sbin/atd
+avahi     7437  0.0  0.5   2568  1332 ?        Ss   09:20   0:00 avahi-daemon:
+ running [localhost.local]
+avahi     7438  0.0  0.1   2568   312 ?        Ss   09:20   0:00 avahi-daemon:
+ chroot helper
+--More--68        7449  0.0  1.6   6228  4332 ?        Ss   09:20   0:01 hald
+root      7450  0.0  0.3   3128   968 ?        S    09:20   0:00 hald-runner
+68        7459  0.0  0.3   1988   792 ?        S    09:20   0:00 hald-addon-ac
+pi: listening on acpid socket /var/run/acpid.socket
+68        7470  0.0  0.3   1992   776 ?        S    09:20   0:00 hald-addon-ke
+yboard: listening on /dev/input/event0
+root      7479  0.0  0.2   1944   608 ?        S    09:20   0:00 hald-addon-st
+orage: polling /dev/hdc
+root      7552  0.0  0.1   1932   344 ?        S    09:20   0:00 /usr/sbin/sma
+rtd -q never
+root      7557  0.0  0.1   1656   428 tty1     Ss+  09:20   0:00 /sbin/mingett
+y tty1
+root      7558  0.0  0.1   1652   424 tty2     Ss+  09:20   0:00 /sbin/mingett
+y tty2
+root      7559  0.0  0.1   1652   420 tty3     Ss+  09:20   0:00 /sbin/mingett
+y tty3
+root      7560  0.0  0.1   1656   428 tty4     Ss+  09:20   0:00 /sbin/mingett
+y tty4
+root      7561  0.0  0.1   1656   452 tty5     Ss+  09:20   0:00 /sbin/mingett
+y tty5
+root      7562  0.0  0.1   1656   428 tty6     Ss+  09:20   0:00 /sbin/mingett
+y tty6
+root      7563  0.0  0.9  15460  2340 ?        Ss   09:20   0:00 /usr/sbin/gdm
+--More---binary -nodaemon
+root      7625  0.0  3.7  24416  9696 ?        SN   09:20   0:00 /usr/bin/pyth
+on -tt /usr/sbin/yum-updatesd
+root      7627  0.0  0.4   2548  1040 ?        SN   09:20   0:00 /usr/libexec/
+gam_server
+root      7659  0.0  0.8  16180  2220 ?        S    09:20   0:00 /usr/sbin/gdm
+-binary -nodaemon
+root      7661  0.0  1.4  27400  3756 ?        Sl   09:20   0:00 /usr/libexec/
+gdm-rh-security-token-helper
+root      7664  0.0  1.8  10180  4656 tty7     Ss+  09:20   0:00 /usr/bin/Xorg
+ :0 -br -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+gdm       7677  0.0  6.1  31172 15800 ?        Ss   09:20   0:00 /usr/libexec/
+gdmgreeter
+root      7801  0.0  1.1   9840  3020 ?        Ss   09:50   0:00 sshd: user [p
+riv]
+user      7803  0.0  0.5   9840  1516 ?        S    09:50   0:00 sshd: user@pt
+s/1 
+user      7804  0.0  0.5   4528  1416 pts/1    Ss   09:50   0:00 -bash
+user      7881  0.0  0.2   2144   668 pts/1    T    09:59   0:00 top
+user      7890  0.0  0.3   4248   940 pts/1    R+   10:01   0:00 ps -A u
+user      7891  0.0  0.1   3740   500 pts/1    R+   10:01   0:00 more
+[user@localhost ~]$ ps
+  PID TTY          TIME CMD
+ 7804 pts/1    00:00:00 bash
+ 7881 pts/1    00:00:00 top
+ 7892 pts/1    00:00:00 ps
+[user@localhost ~]$ kill %top
+[user@localhost ~]$ top&
+[2] 7895
+[1]   Terminated              top
+[user@localhost ~]$ pskill 7895
+
+[2]+  Stopped                 top
+[user@localhost ~]$ ps l
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+0   500  7804  7803  15   0   4528  1420 wait   Ss   pts/1      0:00 -bash
+0   500  7895  7804  25   0   2140   664 finish T    pts/1      0:00 top
+0   500  7897  7804  17   0   4200   812 -      R+   pts/1      0:00 ps l
+[user@localhost ~]$ vi document1
+"document1" [New File]~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             0,0-1         All-- INSERT --0,1           AllT1,2           Allh1,3           Alli1,4           Alls1,5           All1,6           Alli1,7           Alls1,8           All1,9           Alla1,10          All1,11          Alld1,12          Allo1,13          Allc1,14          Allu1,15          Allm1,16          Alle1,17          Alln1,18          Allt1,19          All1,20          Allt1,21          Allh1,22          Alla1,23          Allt1,24          All1,25          Alld1,26          Alle1,27          Alls1,28          Allc1,29          Allr1,30          Alli1,31          Allb1,32          Alle1,33          Alls1,34          All1,35          Allo1,36          Allu1,37          Allr1,38          All1,39          Alln1,40          Alle1,41          Allw1,42          Alle1,43          Alls1,44          Allt1,45          All2,1           Alla2,2           Alln2,3           Alld2,4           All2,5           Allf2,6           Alla2,7           Alls2,8           Allt2,9           Alle2,10          Alls2,11          Allt2,12          All2,13          Allm2,14          Alla2,15          Allc2,16          Allh2,17          Alli2,18          Alln2,19          Alle2,20          Alle2,21          Allr2,22          Ally2,23          All.2,24          All2,25          Allt2,26          Alla2,27          Allk2,28          Alle2,29          All2,30          All2,29          All2,28          All2,27          All2,26          All2,25          AllT2,26          Alla2,27          Allk2,28          Alle2,29          All2,30          Allt2,31          Alli2,32          Alle2,33          Allm2,34          All2,35          All2,34          All2,33          All2,32          Allm2,33          Alle2,34          All2,35          All2,34          All2,33          All2,32          All2,31          All2,30          Allttime2,31          Allhtime2,32          Alletime2,33          All time2,34          All2,35          All2,36          All2,37          All2,38          All2,39          Allt2,40          Allo2,41          All2,42          Alll2,43          Alle2,44          Allr2,45          Alln2,46          All3,1           Allh3,2           Allo3,3           Allw3,4           All3,5           Allt3,6           Allo3,7           All3,8           Allu3,9           Alls3,10          Alle3,11          Allr3,12          All3,11          All3,12          Alla3,13          All3,12          Alle3,13          Alla3,14          Allc3,15          Allh3,16          All3,17          Allp3,18          Alli3,19          Alle3,20          Allc3,21          Alle3,22          All3,23          Allo3,24          Allf3,25          All3,26          Alle3,27          Allq3,28          Allu3,29          Alli3,30          Allp3,31          Allm3,32          Alle3,33          Allt3,34          Alln3,35          All3,34          All3,33          All3,32          Alle3,33          Alln3,34          Allt3,35          All.3,36          All3,35          All:x:x"document1" "document1" [New] 3L, 127C written
+[user@localhost ~]$ ispell document1
+This is a document that describes our newestand fastest machineery. Take the time to lernhow to use each piece of equipment.                                                                              1) machinery4) machined2) machine5) machines3) machinery's6) machine'si) IgnoreI) Ignore allr) ReplaceR) Replace alla) Addl) Add Lowerb) Abortx) Exit                                                                              ? 1machinery. Take the time to lernlearn    6) leanLen    7) lornKern       8) Bern4) Lean9) Fern5) Leon0) Vern 1[user@localhost ~]$ cat document 1
+This is a document that describes our newest
+and fastest machinery. Take the time to learn
+how to use each piece of equipment.
+[user@localhost ~]$ vi file1
+"file1" [New File]~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             0,0-1         All-- INSERT --0,1           AllT1,2           Allh1,3           Alli1,4           Alls1,5           All1,6           Alli1,7           Alls1,8           All1,9           Allf1,10          Alli1,11          Alll1,12          Alle1,13          All1,14          All11,15          All.1,16          All2,1           AllI2,2           Allt2,3           All2,4           Alli2,5           Alls2,6           All2,7           Alla2,8           All2,9           Allp2,10          Allr2,11          Alle2,12          Allc2,13          All2,12          All2,11          Alla2,12          Allc2,13          Allt2,14          Alli2,15          Allv2,16          All2,15          Allce2,17          All2,18          Allf2,19          Alli2,20          Alll2,21          Alle2,22          All.2,23          All3,1           AllI3,2           Allt3,3           All3,4           Allb3,5           Alle3,6           Alll3,7           Allo3,8           Alln3,9           Allg3,10          Alls3,11          All3,12          Allt3,13          Allo3,14          All3,15          Allm3,16          Alle3,17          All.3,18          All3,17          All:x:x"file1" "file1" [New] 3L, 57C written
+[user@localhost ~]$ vi file2
+"file2" [New File]~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             0,0-1         All-- INSERT --0,1           AllT1,2           Allh1,3           Alli1,4           Alls1,5           All1,6           Alli1,7           Alls1,8           All1,9           Allf1,10          Alli1,11          Alll1,12          Alle1,13          All1,14          All21,15          All.1,16          All2,1           AllI2,2           Allt2,3           All2,4           Alli2,5           Alls2,6           All2,7           Alla2,8           All2,9           Allp2,10          Allr2,11          Alla2,12          Allc2,13          Allt2,14          Alli2,15          Allc2,16          Alle2,17          All2,18          Allf2,19          Alli2,20          Alll2,21          Alle2,22          All.2,23          All3,1           AllI3,2           Allt3,3           All3,4           Allb3,5           Alle3,6           Alll3,7           Allo3,8           Alln3,9           Allg3,10          Alls3,11          All3,12          Allto3,15          Ally3,16          Allo3,17          Allu3,18          All.3,19          All3,18          All:x:x"file2" "file2" [New] 3L, 58C written
+[user@localhost ~]$ cmp file1 file2
+file1 file2 differ: byte 14, line 1
+[user@localhost ~]$ clear
+[user@localhost ~]$ dc cd ~/csource
+[user@localhost source]$ vi vphmenu.1
+"phmenu.1" [New File]~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             ~                                                                             0,0-1         All-- INSERT --0,1           All.1,2           AllT1,3           AllH1,4           All1,5           AllP1,6           AllH1,7           AllM1,8           AllE1,9           AllN1,10          AllU1,11          All1,12          All11,13          All1,14          All"1,15          AllN1,16          Allo1,17          Allv1,18          Alle1,19          Allm1,20          Allb1,21          Alle1,22          Allr1,23          All1,24          All21,25          All01,26          All01,27          All81,28          All"1,29          All1,30          All"1,31          Allp1,32          Allh1,33          Allm1,34          Alle1,35          Alln1,36          Allu1,37          All1,38          AllV1,39          Alle1,40          Allr1,41          Alls1,42          Alli1,43          Allo1,44          Alln1,45          All1,46          All11,47          All.1,48          All01,49          All11,50          All"1,51          All2,1           All.2,2           AllS2,3           AllH2,4           All2,5           AllN2,6           AllA2,7           AllM2,8           AllE2,9           All3,1           Allp3,2           Allh3,3           Allm3,4           Alle3,5           Alln3,6           Allu3,7           All3,8           All\3,9           All-3,10          All3,11          AllM3,12          Alle3,13          Alln3,14          Allu3,15          All3,16          Allf3,17          Allo3,18          Allr3,19          All3,20          AllD3,21          Allo3,22          Allm3,23          Alli3,24          Alln3,25          Alli3,26          Allu3,27          All3,26          Allo3,27          Alln3,28          All3,29          AllE3,30          Allm3,31          Allp3,32          Alll3,33          Allo3,34          Ally3,35          Alld3,36          Alle3,37          Alle3,38          All3,37          All3,36          All3,35          Alle3,36          Alle3,37          All3,38          AllT3,39          Alle3,40          Alll3,41          Alle3,42          Allp3,43          Allh3,44          Allo3,45          Alln3,46          Alle3,47          All3,48          AllL3,49          Alli3,50          Alls3,51          Allting3,55          Alls3,56          All4,1           All.4,2           AllS4,3           AllH4,4           All4,5           AllS4,6           AllY4,7           AllN4,8           AllO4,9           AllP4,10          AllS4,11          AllI4,12          AllS4,13          All5,1           All\5,2           Allf5,3           AllB5,4           All5,5           Allp5,6           Allh5,7           Allm5,8           Alle5,9           Alln5,10          Allu5,11          All\5,12          Allf5,13          AllP5,14          All6,1           All.6,2           AllS6,3           AllH6,4           All6,5           AllD6,6           AllE6,7           AllS6,8           AllC6,9           AllR6,10          AllI6,11          AllP6,12          AllT6,13          AllI6,14          AllO6,15          AllN6,16          All7,1           All\7,2           Allf7,3           AllP7,4           All7,5           AllM7,6           Alle7,7           Alln7,8           Allu7,9           All7,10          Allf7,11          Allo7,12          Allr7,13          All7,14          Allm7,15          Alla7,16          Alli7,17          Alln7,18          Allt7,19          Alla7,20          Alli7,21          Alln7,22          Alli7,23          Alln7,24          Allg7,25          All7,26          Alle7,27          Allm7,28          Allp7,29          Alll7,30          Allo7,31          Ally7,32          Alle7,33          Alle7,34          Alls7,35          All'7,36          All7,37          Allp7,38          Allh7,39          Allon7,41          Alle7,42          Alls7,43          All7,44          Alla7,45          Alln7,46          Alld7,47          All7,48          Allj7,49          Allo7,50          Allb7,51          All7,52          Allt7,53          Alli7,54          Allt7,55          Alll7,56          Alle7,57          Alls7,58          All\7,59          Allf7,60          AllP7,61          All8,1           All~                                                                             7,61          All.7,62          All8,1           All\8,2           Allf8,3           AllP8,4           All8,5           AllR8,6           Alle8,7           Allc8,8           Allo8,9           Alld8,10          All8,9           Allr8,10          Alld8,11          All8,12          Alli8,13          Alln8,14          Allc8,15          Alll8,16          Allu8,17          Alld8,18          Alle8,19          Alls8,20          All8,21          Allp8,22          Allh8,23          Allo8,24          Alln8,25          Alle8,26          All8,27          Alln8,28          Allu8,29          Allm8,30          Allb8,31          Alle8,32          Allr8,33          All8,34          All8,33          All,8,34          All8,35          Alln8,36          Alla8,37          Allm8,38          Alle8,39          All8,40          All8,39          All,8,40          All8,41          Alld8,42          Alle8,43          Allp8,44          Allt8,45          All.8,46          All8,45          All,8,46          All8,47          Alla8,48          Alln8,49          Alld8,50          All8,51          Alld8,52          Alla8,53          Allt8,54          Alla8,55          All8,54          Alle8,55          All-8,56          Allh8,57          Alli8,58          Allr8,59          Alle8,60          Alld8,61          All\8,62          Allf8,63          AllP8,64          All.8,65          All9,1           All.9,2           AllS9,3           AllS9,4           All9,5           AllO9,6           AllP9,7           AllT9,8           AllI9,9           AllO9,10          AllN9,11          AllS9,12          All10,1          All.10,2          AllT10,3          AllP10,4          All11,1          All\11,2          Allf11,3          AllB11,4          All11,5          All-11,6          Allv11,7          All11,8          All\11,9          Allf11,10         AllI11,11         All11,12         All11,11         AllV11,12         Alli11,13         Alle11,14         Allw11,15         All11,16         AllP11,17         Allh11,18         Allo11,19         Alln11,20         Alle11,21         All11,22         AllL11,23         Alli11,24         Alls11,25         Allt11,26         All\11,27         Allf11,28         AllR11,29         All12,1          AllD12,2          Alli12,3          Alls12,4          Allp12,5          Alll12,6          Alla12,7          Ally12,8          All12,9          Allu12,10         Alln12,11         Allf12,12         Allo12,13         Allr12,14         Allm12,15         Alla12,16         Allt12,17         Allt12,18         Alle12,19         Alld12,20         All12,21         Allp12,22         Allh12,23         Allo12,24         Alln12,25         Alle12,26         All12,27         Allr12,28         Alle12,29         Allc12,30         Allo12,31         Alld12,32         All12,31         Allr12,32         Alld12,33         Alls12,34         All.12,35         All13,1          All12,1          All11,1          All10,1          All9,1           All9,2           All9,3           All9,4           All9,5           All9,6           All9,7           All9,8           All9,9           All9,10          All9,11          All9,12          All9,11          All9,10          All9,9           All9,8           All9,7           All9,6           Allp9,7           Allt9,8           Alli9,9           Allo9,10          Alln9,11          Alls9,12          All10,4          All11,12         All12,12         All13,1          All.13,2          AllT13,3          AllP13,4          All14,1          All\14,2          Allf14,3          AllB14,4          All14,5          All-14,6          Allp14,7          All14,8          All\14,9          AllF14,10         All14,9          Allf14,10         AllI14,11         AllP14,12         Allr14,13         Alli14,14         Alln14,15         Allt14,16         All14,17         AllP14,18         Allh14,19         Allo14,20         Alln14,21         Alle14,22         All14,23         AllL14,24         Alli14,25         Alls14,26         Allt14,27         All\14,28         Allf14,29         AllR14,30         All15,1          AllC15,2          Allo15,3          Allr15,4          Allp15,5          Allo15,6          Allr15,7          Alla15,8          Allt15,9          Alle15,10         All15,11         AllP15,12         Allo15,13         All15,12         Allh15,13         Allo15,14         Alln15,15         Alle15,16         Alls15,17         All15,18         Allr15,19         Alle15,20         Allp15,21         Allr15,22         Allo15,23         Allt15,24         All15,25         All15,24         All15,23         All15,22         All15,21         Allo15,22         Allr15,23         Allt15,24         All15,25         Alls15,26         Allo15,27         Allr15,28         Allt15,29         Alle15,30         Alld15,31         All15,32         Allb15,33         Ally15,34         All15,35         AllE15,36         Allm15,37         Allp15,38         Alll15,39         Ally15,40         All15,39         Allo15,40         Ally15,41         Alle15,42         Alle15,43         All15,44         Alln15,45         Alla15,46         Allm15,47         Alle15,48         All15,47         All15,46         All15,45         All15,44         AllN15,45         Alla15,46         Allm15,47         Alle15,48         All.15,49         All16,1          All.16,2          AllT16,3          AllP16,4          All17,1          All\17,2          Allf17,3          AllB17,4          All17,5          All-17,6          Alla17,7          All17,8          All\17,9          Allf17,10         AllI17,11         AllA17,12         Alld17,13         Alld17,14         All17,15         AllP17,16         Allh17,17         Allo17,18         Alln17,19         Alle17,20         All17,21         Allt17,22         Allo17,23         All17,24         AllL17,25         Alli17,26         Alls17,27         Allt17,28         All\17,29         Allf17,30         Allr17,31         All17,30         AllR17,31         All18,1          AllA18,2          Alld18,3          Alld18,4          All18,5          Alln18,6          Alle18,7          Allw18,8          All18,9          Allp18,10         Allh18,11         Allo18,12         Alln18,13         Alle18,14         All18,15         Allr18,16         Alle18,17         Alld18,18         All18,17         Allc18,18         Allo18,19         Alld18,20         All18,19         Allr18,20         Alld18,21         All.18,22         All19,1          All.19,2          AllT19,3          AllP19,4          All20,1          All\20,2          Allf20,3          AllB20,4          All20,5          All-20,6          Alls20,7          All20,8          All\20,9          Allf20,10         AllI20,11         AllS20,12         Alle20,13         Alla20,14         Allr20,15         Allc20,16         Allh20,17         All20,18         Allo20,19         Allf20,20         Allr20,21         All20,22         All20,21         All20,20         All20,19         All20,18         Allf20,19         Allor20,21         All20,22         AllE20,23         Allm20,24         Allp20,25         Alll20,26         Allo20,27         Ally20,28         Alle20,29         Alle20,30         All20,31         AllP20,32         Allh20,33         Allo20,34         Alln20,35         Alle20,36         Alls20,37         All\20,38         Allf20,39         AllR20,40         All21,1          AllE21,2          Alln21,3          Allt21,4          Alle21,5          Allr21,6          All21,7          Alln21,8          Alla21,9          Allm21,10         Alle21,11         All21,12         Alla21,13         Alln21,14         Alld21,15         All21,16         All21,15         All21,14         All21,13         All21,12         All21,11         All21,10         All21,9          All21,8          All21,7          AllN21,8          Alla21,9          Allm21,10         Alle21,11         All21,12         Allt21,13         Allo21,14         All21,15         Alls21,16         Alle21,17         Alla21,18         Allr21,19         Allc21,20         Allh21,21         All21,22         Allf21,23         Allo21,24         Allr21,25         All21,26         All21,25         All21,24         All21,23         All21,22         Alla21,23         Alln21,24         Alld21,25         All21,26         Allr21,27         Alle21,28         Allt21,29         Allr21,30         Alli21,31         Alle21,32         Allv21,33         Alle21,34         All21,35         Allp21,36         Allh21,37         Allo21,38         Alln21,39         Alle21,40         All21,41         Allr21,42         Alle21,43         Allc21,44         Allo21,45         Allr21,46         Alld21,47         All.21,48         All22,1          All.22,2          AllT22,3          AllP22,4          All23,1          All\23,2          Allf23,3          AllB23,4          All23,5          All-23,6          Alld23,7          All23,8          All\23,9          Allf23,10         AllI23,11         AllD23,12         Alle23,13         Alll23,14         Alle23,15         Allt23,16         Alle23,17         All23,18         AllP23,19         Allh23,20         Allo23,21         Alln23,22         Alle23,23         All\23,24         Allf23,25         AllR23,26         All
+-- INSERT --24,1          BotR24,2          Bote24,3          Botm24,4          Boto24,5          Botv24,6          Bote24,7          Bot24,8          Botp24,9          Both24,10         Boto24,11         Botn24,12         Bote24,13         Bot24,14         Botr24,15         Bote24,16         Botc24,17         Boto24,18         Botr24,19         Botd24,20         Bot.24,21         Bot
+-- INSERT --25,1          Bot.25,2          BotS25,3          BotH25,4          Bot25,5          BotF25,6          BotI25,7          BotL25,8          BotE25,9          BotS25,10         Bot
+-- INSERT --26,1          Bot.26,2          BotT26,3          BotP26,4          Bot
+-- INSERT --27,1          Bot\27,2          Botf27,3          BotC27,4          Bot/27,5          Both27,6          Boto27,7          Botme27,9          Bot/27,10         Bots27,11         Boto27,12         Botu27,13         Botr27,14         Botc27,15         Bote27,16         Bot/27,17         Botc27,18         Boto27,19         Botr27,20         Botp27,21         Bot_27,22         Botp27,23         Both27,24         Boto27,25         Botn27,26         Bote27,27         Bots27,28         Bot\27,29         Botf27,30         BotR27,31         Bot27,30         Bot:x:x"phmenu.1" "phmenu.1" [New] 27L, 694C written
+[user@localhost source]$ groff -Tascii -nman phmentu.1 | more
+PHMENU(1)                                                            PHMENU(1)
+
+
+
+NNAAMMEE
+       phmenu - Menu for Dominion Employee Telephone Listings
+
+SSYYNNOOPPSSIISS
+        pphhmmeennuu
+
+DDEESSCCRRIIPPTTIIOONN
+        MMeennuu ffoorr mmaaiinnttaaiinniinngg eemmppllooyyeeeess'' pphhoonneess aanndd jjoobb ttiittlleess.
+        RReeccoorrdd iinncclluuddeess pphhoonnee nnuummbbeerr,, nnaammee,, ddeepptt,, aanndd ddaattee--hhiirreedd.
+
+   OOppttiioonnss
+        --vv View Phone List
+              Display unformatted phone records.
+
+        --pp Print Phone List
+              Corporate Phones report sorted by Employee Name.
+
+        --aa Add Phone to List
+              Add new phone record.
+--More--[user@localhost source]$ man ./phmenu.1
+PHMENU(1)                                                            PHMENU(1)
+
+NAME
+       phmenu - Menu for Dominion Employee Telephone Listings
+
+SYNOPSIS
+        phmenu
+
+DESCRIPTION
+        Menu for maintaining employees phones and job titles.
+        Record includes phone number, name, dept, and date-hired.
+
+   Options
+        -v View Phone List
+              Display unformatted phone records.
+
+        -p Print Phone List
+              Corporate Phones report sorted by Employee Name.
+
+        -a Add Phone to List
+              Add new phone record.
+
+        -s Search for Employee Phones
+:[user@localhost source]$ su
+Password: 
+[root@localhost source]# cp phmenu.1 /usr/sheare/man/man1
+[root@localhost source]# exit
+exit
+[user@localhost source]$ man phmenu
+PHMENU(1)                                                            PHMENU(1)
+
+NAME
+       phmenu - Menu for Dominion Employee Telephone Listings
+
+SYNOPSIS
+        phmenu
+
+DESCRIPTION
+        Menu for maintaining employees phones and job titles.
+        Record includes phone number, name, dept, and date-hired.
+
+   Options
+        -v View Phone List
+              Display unformatted phone records.
+
+        -p Print Phone List
+              Corporate Phones report sorted by Employee Name.
+
+        -a Add Phone to List
+              Add new phone record.
+
+        -s Search for Employee Phones
+:              Enter Name to search and retrieve phone record.
+
+        -d Delete Phone
+              Remove phone record.
+
+FILES
+       /home/source/corp_phones
+
+phmenu Version 1.01              November 2008                       PHMENU(1)
+(END) [user@localhost source]$ mail user
+Subject: Reminder
+Your report is due tomorrow by noon.
+Don't forget to spell check it before you send it it n.
+Cc: 
+[user@localhost source]$ mail
+Mail version 8.1 6/6/93.  Type ? for help.
+"/var/spool/mail/user": 1 message 1 new
+>N  1 user@localhost.local  Mon Jul 25 10:26  17/756   "Reminder"
+& 1
+Message 1:
+From user@localhost.localdomain  Mon Jul 25 10:26:21 2016
+Date: Mon, 25 Jul 2016 10:26:21 -0500
+From: non-administrative user <user@localhost.localdomain>
+To: user@localhost.localdomain
+Subject: Reminder
+
+Your report is due tomorrow by noon.
+Don't forget to spell check it before you send it in.
+
+& ?
+    Mail   Commands
+t <message list>type messages
+ngoto and type next message
+e <message list>edit messages
+f <message list>give head lines of messages
+d <message list>delete messages
+s <message list> fileappend messages to file
+u <message list>undelete messages
+R <message list>reply to message senders
+r <message list>reply to message senders and all recipients
+pre <message list>make messages go back to /usr/spool/mail
+m <user list>mail to specific users
+qquit, saving unresolved messages in mbox
+xquit, do not remove system mailbox
+hprint out active message headers
+!shell escape
+cd [directory]chdir to directory or home if none given
+
+A <message list> consists of integers, ranges of same, or user names separated
+by spaces.  If omitted, Mail uses the last message typed.
+
+A <user list> consists of user names or aliases separated by spaces.
+Aliases are defined in .mailrc in your home directory.
+& d 1
+& h
+No applicable messages
+& q
+[user@localhost source]$ clear
+[user@localhost source]$ /sbin/ifconfig eth0
+eth0      Link encap:Ethernet  HWaddr 00:50:56:05:1B:D3  
+          inet addr:192.168.1.3  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::250:56ff:fe05:1bd3/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:7458 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3922 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:15179147 (14.4 MiB)  TX bytes:604198 (590.0 KiB)
+          Interrupt:75 Base address:0x2024 
+
+[user@localhost source]$ ping -c 5 192.168.1.3
+PING 192.168.1.3 (192.168.1.3) 56(84) bytes of data.
+64 bytes from 192.168.1.3: icmp_seq=1 ttl=64 time=0.016 ms
+64 bytes from 192.168.1.3: icmp_seq=2 ttl=64 time=0.032 ms
+64 bytes from 192.168.1.3: icmp_seq=3 ttl=64 time=0.023 ms
+64 bytes from 192.168.1.3: icmp_seq=4 ttl=64 time=0.023 ms
+64 bytes from 192.168.1.3: icmp_seq=5 ttl=64 time=0.025 ms
+
+--- 192.168.1.3 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4001ms
+rtt min/avg/max/mdev = 0.016/0.023/0.032/0.008 ms
+[user@localhost source]$ clear
+[user@localhost source]$ treaceroute 192.168.1.3
+traceroute to 192.168.1.3 (192.168.1.3), 30 hops max, 40 byte packets
+ 1   (192.168.1.3)  0.030 ms  0.007 ms  0.006 ms
+[user@localhost source]$ clear
+[user@localhost source]$ netstat -a
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State      
+tcp        0      0 *:sunrpc                    *:*                         LISTEN      
+tcp        0      0 *:916                       *:*                         LISTEN      
+tcp        0      0 localhost.localdomain:ipp   *:*                         LISTEN      
+tcp        0      0 localhost.localdomain:smtp  *:*                         LISTEN      
+tcp        0      0 *:ssh                       *:*                         LISTEN      
+getnameinfo failed
+getnameinfo failed
+tcp        0    264 [UNKNOWN]:ssh               [UNKNOWN]:49158             ESTABLISHED 
+udp        0      0 *:910                       *:*                                     
+udp        0      0 *:apex-edge                 *:*                                     
+udp        0      0 *:40523                     *:*                                     
+udp        0      0 *:mdns                      *:*                                     
+udp        0      0 *:sunrpc                    *:*                                     
+udp        0      0 *:ipp                       *:*                                     
+udp        0      0 *:56666                     *:*                                     
+udp        0      0 *:mdns                      *:*                                     
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING     12224  /var/run/sdp
+unix  2      [ ACC ]     STREAM     LISTENING     14655  @/tmp/fam-root-
+unix  2      [ ACC ]     STREAM     LISTENING     12317  /var/run/pcscd.comm
+unix  2      [ ACC ]     STREAM     LISTENING     12438  /var/run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     12868  @/var/run/hald/dbus-WmdQCkfHC6
+unix  16     [ ]         DGRAM                    11853  /dev/log
+unix  2      [ ]         DGRAM                    1473   @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     12869  @/var/run/hald/dbus-yqInQfVbyO
+unix  2      [ ACC ]     STREAM     LISTENING     12658  /dev/gpmctl
+unix  2      [ ]         DGRAM                    12877  @/org/freedesktop/hal/udev_event
+unix  2      [ ACC ]     STREAM     LISTENING     12721  /tmp/.font-unix/fs7100
+unix  2      [ ACC ]     STREAM     LISTENING     14752  /tmp/.gdm_socket
+unix  2      [ ACC ]     STREAM     LISTENING     14782  /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     11810  /var/run/audispd_events
+unix  2      [ ACC ]     STREAM     LISTENING     12157  /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     12508  /var/run/cups/cups.sock
+unix  2      [ ACC ]     STREAM     LISTENING     12835  /var/run/avahi-daemon/socket
+unix  3      [ ]         STREAM     CONNECTED     17190  
+unix  3      [ ]         STREAM     CONNECTED     17189  
+unix  2      [ ]         DGRAM                    17185  
+unix  3      [ ]         STREAM     CONNECTED     14883  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     14882  
+unix  3      [ ]         STREAM     CONNECTED     14859  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     14858  
+unix  3      [ ]         STREAM     CONNECTED     14836  /tmp/.font-unix/fs7100
+unix  3      [ ]         STREAM     CONNECTED     14835  
+unix  3      [ ]         STREAM     CONNECTED     14788  /var/run/pcscd.comm
+unix  3      [ ]         STREAM     CONNECTED     14787  
+unix  3      [ ]         STREAM     CONNECTED     14839  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     14786  
+unix  3      [ ]         STREAM     CONNECTED     14785  /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     14784  
+unix  2      [ ]         DGRAM                    14765  
+unix  3      [ ]         STREAM     CONNECTED     14658  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     14657  
+unix  3      [ ]         STREAM     CONNECTED     14648  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     14647  
+unix  3      [ ]         STREAM     CONNECTED     14356  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     14355  
+unix  3      [ ]         STREAM     CONNECTED     14329  @/var/run/hald/dbus-WmdQCkfHC6
+unix  3      [ ]         STREAM     CONNECTED     14328  
+unix  3      [ ]         STREAM     CONNECTED     14156  @/var/run/hald/dbus-WmdQCkfHC6
+unix  3      [ ]         STREAM     CONNECTED     14154  
+unix  3      [ ]         STREAM     CONNECTED     14096  /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     14095  
+unix  3      [ ]         STREAM     CONNECTED     14090  @/var/run/hald/dbus-WmdQCkfHC6
+unix  3      [ ]         STREAM     CONNECTED     14088  
+unix  3      [ ]         STREAM     CONNECTED     12872  @/var/run/hald/dbus-yqInQfVbyO
+unix  3      [ ]         STREAM     CONNECTED     12871  
+unix  3      [ ]         STREAM     CONNECTED     12838  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     12837  
+unix  3      [ ]         STREAM     CONNECTED     12832  
+unix  3      [ ]         STREAM     CONNECTED     12831  
+unix  2      [ ]         DGRAM                    12829  
+unix  2      [ ]         DGRAM                    12663  
+unix  2      [ ]         DGRAM                    12636  
+unix  2      [ ]         DGRAM                    12613  
+unix  2      [ ]         DGRAM                    12584  
+unix  2      [ ]         DGRAM                    12398  
+unix  2      [ ]         DGRAM                    12350  
+unix  2      [ ]         DGRAM                    12309  
+unix  3      [ ]         STREAM     CONNECTED     12227  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     12226  
+unix  2      [ ]         DGRAM                    12193  
+unix  2      [ ]         DGRAM                    12183  
+unix  3      [ ]         STREAM     CONNECTED     12160  
+unix  3      [ ]         STREAM     CONNECTED     12159  
+unix  3      [ ]         STREAM     CONNECTED     12117  
+unix  3      [ ]         STREAM     CONNECTED     12116  
+unix  2      [ ]         DGRAM                    11974  
+unix  2      [ ]         DGRAM                    11861  
+unix  3      [ ]         STREAM     CONNECTED     11805  
+unix  3      [ ]         STREAM     CONNECTED     11804  
+[user@localhost source]$ netstat -n
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State      
+tcp        0    132 ::ffff:192.168.1.3:22       ::ffff:192.168.1.2:49158    ESTABLISHED 
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  16     [ ]         DGRAM                    11853  /dev/log
+unix  2      [ ]         DGRAM                    1473   @/org/kernel/udev/udevd
+unix  2      [ ]         DGRAM                    12877  @/org/freedesktop/hal/udev_event
+unix  3      [ ]         STREAM     CONNECTED     17190  
+unix  3      [ ]         STREAM     CONNECTED     17189  
+unix  2      [ ]         DGRAM                    17185  
+unix  3      [ ]         STREAM     CONNECTED     14883  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     14882  
+unix  3      [ ]         STREAM     CONNECTED     14859  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     14858  
+unix  3      [ ]         STREAM     CONNECTED     14836  /tmp/.font-unix/fs7100
+unix  3      [ ]         STREAM     CONNECTED     14835  
+unix  3      [ ]         STREAM     CONNECTED     14788  /var/run/pcscd.comm
+unix  3      [ ]         STREAM     CONNECTED     14787  
+unix  3      [ ]         STREAM     CONNECTED     14839  /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     14786  
+unix  3      [ ]         STREAM     CONNECTED     14785  /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     14784  
+unix  2      [ ]         DGRAM                    14765  
+unix  3      [ ]         STREAM     CONNECTED     14658  @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     14657  
+unix  3      [ ]         STREAM     CONNECTED     14648  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     14647  
+unix  3      [ ]         STREAM     CONNECTED     14356  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     14355  
+unix  3      [ ]         STREAM     CONNECTED     14329  @/var/run/hald/dbus-WmdQCkfHC6
+unix  3      [ ]         STREAM     CONNECTED     14328  
+unix  3      [ ]         STREAM     CONNECTED     14156  @/var/run/hald/dbus-WmdQCkfHC6
+unix  3      [ ]         STREAM     CONNECTED     14154  
+unix  3      [ ]         STREAM     CONNECTED     14096  /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     14095  
+unix  3      [ ]         STREAM     CONNECTED     14090  @/var/run/hald/dbus-WmdQCkfHC6
+unix  3      [ ]         STREAM     CONNECTED     14088  
+unix  3      [ ]         STREAM     CONNECTED     12872  @/var/run/hald/dbus-yqInQfVbyO
+unix  3      [ ]         STREAM     CONNECTED     12871  
+unix  3      [ ]         STREAM     CONNECTED     12838  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     12837  
+unix  3      [ ]         STREAM     CONNECTED     12832  
+unix  3      [ ]         STREAM     CONNECTED     12831  
+unix  2      [ ]         DGRAM                    12829  
+unix  2      [ ]         DGRAM                    12663  
+unix  2      [ ]         DGRAM                    12636  
+unix  2      [ ]         DGRAM                    12613  
+unix  2      [ ]         DGRAM                    12584  
+unix  2      [ ]         DGRAM                    12398  
+unix  2      [ ]         DGRAM                    12350  
+unix  2      [ ]         DGRAM                    12309  
+unix  3      [ ]         STREAM     CONNECTED     12227  /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     12226  
+unix  2      [ ]         DGRAM                    12193  
+unix  2      [ ]         DGRAM                    12183  
+unix  3      [ ]         STREAM     CONNECTED     12160  
+unix  3      [ ]         STREAM     CONNECTED     12159  
+unix  3      [ ]         STREAM     CONNECTED     12117  
+unix  3      [ ]         STREAM     CONNECTED     12116  
+unix  2      [ ]         DGRAM                    11974  
+unix  2      [ ]         DGRAM                    11861  
+unix  3      [ ]         STREAM     CONNECTED     11805  
+unix  3      [ ]         STREAM     CONNECTED     11804  
+[user@localhost source]$ netstat -s
+Ip:
+    6779 total packets received
+    0 forwarded
+    0 incoming packets discarded
+    6778 incoming packets delivered
+    5274 requests sent out
+Icmp:
+    35 ICMP messages received
+    0 input ICMP message failed.
+    ICMP input histogram:
+        destination unreachable: 25
+        echo requests: 5
+        echo replies: 5
+    35 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 25
+        echo request: 5
+        echo replies: 5
+IcmpMsg:
+        InType0: 5
+        InType3: 25
+        InType8: 5
+        OutType0: 5
+        OutType3: 25
+        OutType8: 5
+Tcp:
+    123 active connections openings
+    5 passive connection openings
+    120 failed connection attempts
+    0 connection resets received
+    1 connections established
+    6561 segments received
+    5182 segments send out
+    8 segments retransmited
+    0 bad segments received.
+    120 resets sent
+Udp:
+    21 packets received
+    25 packets to unknown port received.
+    0 packet receive errors
+    46 packets sent
+TcpExt:
+    3 TCP sockets finished time wait in fast timer
+    158 delayed acks sent
+    Quick ack mode was activated 1 times
+    2 packets directly queued to recvmsg prequeue.
+    1845 packets header predicted
+    966 acknowledgments not containing data received
+    2443 predicted acknowledgments
+    4 congestion windows recovered after partial ack
+    0 TCP data loss events
+    3 timeouts after SACK recovery
+    5 other TCP timeouts
+    7 DSACKs sent for old packets
+    4 DSACKs received
+IpExt:
+    InMcastPkts: 14
+    OutMcastPkts: 16
+    InBcastPkts: 135
+[user@localhost source]$ exit
+logout
+There are stopped jobs.
+[user@localhost source]$ exit
+logout
+    1  cat > datafile
+    2  dd if=datafile of=datafile.bak conv=lcase
+    3  cat datafile.bak
+    4  df
+    5  df /dev/sda1
+    6  df -h
+    7  clear
+    8  du | more
+    9  du -b | more
+   10  du -h | more
+   11  clear
+   12  touch ~/core ; touch ~/a.out
+   13  touch ~/source/core ; touch ~/source/a.out
+   14  find . "(" -name a.out -o -name core ")"
+   15  find . "(" -name a.out -o -name core ")" -exec rm {} \;
+   16  find . "(" -name a.out -o -name core ")"
+   17  top
+   18  top
+   19  clear
+   20  top -s
+   21  clear
+   22  free
+   23  free -m
+   24  free -t
+   25  top > topdata
+   26  more topdata
+   27  free > freedata
+   28  more freedata
+   29  clear
+   30  top&
+   31  ps
+   32  ps -A | more
+   33  ps l
+   34  ps -A u | more
+   35  ps
+   36  kill %top
+   37  top&
+   38  kill 7895
+   39  ps l
+   40  vi document1
+   41  ispell document1
+   42  cat document1
+   43  vi file1
+   44  vi file2
+   45  cmp file1 file2
+   46  clear
+   47  cd ~/source
+   48  vi phmenu.1
+   49  groff -Tascii -man phmenu.1 | more
+   50  man ./phmenu.1
+   51  su
+   52  man phmenu
+   53  mail user
+   54  mail
+   55  clear
+   56  /sbin/ifconfig eth0
+   57  ping -c 5 192.168.1.3
+   58  clear
+   59  traceroute 192.168.1.3
+   60  clear
+   61  netstat -a
+   62  netstat -n
+   63  netstat -s
+   64  exit
+   65  exit

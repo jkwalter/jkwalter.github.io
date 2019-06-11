@@ -13,7 +13,7 @@ Compiling and Running in Microsoft Visual Studio:
 
  - Open Developer Command Prompt for Visual Studio
  - Navigate to the same directory as "program".c
-      cd "C:\Users\Josh Walter\Documents\Programs\C"
+      cd "C:\Users\Josh Walter\source\repos\jkwalter\jkwalter.github.io\Software\C"
  - Type the following to compile "program".c
       cl "program".c
  - Type the following to run "program".c

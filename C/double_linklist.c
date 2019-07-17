@@ -3,21 +3,11 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as double_linklist.c
-      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+      cd ~/Documents/Programs/jkwalter.github.io/C
  - Type the following to compile double_linklist.c
       gcc double_linklist.c
  - Type the following to run double_linklist.c
       ./a.out
-
-Compiling and Running in Microsoft Visual Studio:
-
- - Open Developer Command Prompt for Visual Studio
- - Navigate to the same directory as double_linklist.c
-      cd "C:\Users\Josh Walter\Documents\Programs\C"
- - Type the following to compile double_linklist.c
-      cl double_linklist.c
- - Type the following to run double_linklist.c
-      double_linklist
 */
 
 #include <stdio.h>

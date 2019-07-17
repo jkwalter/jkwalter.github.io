@@ -3,21 +3,11 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as leapyear.c
-      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+      cd ~/Documents/Programs/jkwalter.github.io/C
  - Type the following to compile leapyear.c
       gcc leapyear.c
  - Type the following to run leapyear.c
       ./a.out
-
-Compiling and Running in Microsoft Visual Studio:
-
- - Open Developer Command Prompt for Visual Studio
- - Navigate to the same directory as leapyear.c
-      cd "C:\Users\Josh Walter\Documents\Programs\C"
- - Type the following to compile leapyear.c
-      cl leapyear.c
- - Type the following to run leapyear.c
-      leapyear
 */
 
 #include <stdio.h>

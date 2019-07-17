@@ -3,21 +3,11 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as sum.c
-      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+      cd ~/Documents/Programs/jkwalter.github.io/C
  - Type the following to compile sum.c
       gcc sum.c
  - Type the following to run sum.c
       ./a.out
-
-Compiling and Running in Microsoft Visual Studio:
-
- - Open Developer Command Prompt for Visual Studio
- - Navigate to the same directory as sum.c
-      cd "C:\Users\Josh Walter\Documents\Programs\C"
- - Type the following to compile sum.c
-      cl sum.c
- - Type the following to run sum.c
-      sum
 */
 
 #include <stdio.h>

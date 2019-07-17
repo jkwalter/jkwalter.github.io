@@ -3,7 +3,7 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as eatdot.c
-      cd ~/Documents/Programs/jkwalter.github.io/Software/C/EatDot
+      cd ~/Documents/Programs/jkwalter.github.io/C/EatDot
  - Type the following to compile eatdot.c
       gcc eatdot.c
  - Type the following to run eatdot.c

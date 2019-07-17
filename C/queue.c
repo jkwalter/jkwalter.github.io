@@ -3,7 +3,7 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as queue.c
-      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+      cd ~/Documents/Programs/jkwalter.github.io/C
  - Type the following to compile queue.c
       gcc queue.c
  - Type the following to run queue.c

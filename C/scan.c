@@ -3,21 +3,11 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as scan.c
-      cd ~/Documents/Programs/jkwalter.github.io/Software/C
+      cd ~/Documents/Programs/jkwalter.github.io/C
  - Type the following to compile scan.c
       gcc scan.c
  - Type the following to run scan.c
       ./a.out
-
-Compiling and Running in Microsoft Visual Studio:
-
- - Open Developer Command Prompt for Visual Studio
- - Navigate to the same directory as scan.c
-      cd "C:\Users\Josh Walter\Documents\Programs\C"
- - Type the following to compile scan.c
-      cl scan.c
- - Type the following to run scan.c
-      scan
 */
 
 #include <stdio.h>

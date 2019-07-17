@@ -3,21 +3,11 @@ Compiling and Running in UNIX:
 
  - Open a terminal
  - Navigate to the same directory as linklist.cpp
-      cd ~/Documents/Programs/jkwalter.github.io/Software/C++
+      cd ~/Documents/Programs/jkwalter.github.io/C++
  - Type the following to compile linklist.cpp
-      gcc linklist.cpp
+      g++ linklist.cpp
  - Type the following to run linklist.cpp
       ./a.out
-
-Compiling and Running in Microsoft Visual Studio:
-
- - Open Developer Command Prompt for Visual Studio
- - Navigate to the same directory as linklist.cpp
-      cd "C:\Users\Josh Walter\Documents\Programs\C++"
- - Type the following to compile linklist.cpp
-      cl linklist.cpp
- - Type the following to run linklist.cpp
-      linklist
 */
 
 #include <iostream>

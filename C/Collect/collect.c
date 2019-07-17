@@ -1,3 +1,22 @@
+/*
+Compiling and Running in UNIX:
+
+ - Open a terminal
+ - Navigate to the same directory as collect.c
+      cd ~/Documents/Programs/jkwalter.github.io/C/Collect
+ - Type the following to compile collect.c
+      gcc collect.c
+ - Type the following to run collect.c
+      ./a.out
+ - Type one of the following maze files after the program starts
+      map1.txt
+      map2.txt
+ - Use the arrow keys to move the character
+
+NOTE: collect.c only works with Bash shell
+NOTE: Map files and collect.c must be in the same directory
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
